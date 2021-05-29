@@ -1,3 +1,45 @@
+
+  :root {
+  --bg-main: #fff;
+  --bg-sub: #f3be92;
+  --txt-main: #1d3387;
+  --txt-hover: #ff9b49;
+}
+
+.gradient {
+  background: rgb(0,0,255);
+  background: linear-gradient(90deg, rgba(0,0,255,1) 20%, rgba(229,161,75,1) 80%); 
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#__next,
 .app {
-    background-color: red;
+  position: relative;
+  z-index: 1;
+  height: 100%;
+}
+
+.app {
+  background-color: var(--bg-main);
+}
+
+.header {
+  &__heading {
+    padding-top: 16px;
+    text-align: center;
+    color: var(--txt-main);
+  }
+}
+
+.index {
+  &__content {
+    height: 100%;
+  }
 }

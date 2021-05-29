@@ -1,0 +1,36 @@
+.Info {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100%;
+
+  &.left {
+    grid-template-areas: "i-image i-text";
+  }
+
+  &.right {
+    grid-template-areas: "i-text i-image";
+  }
+
+  &__image {
+    grid-area: i-image;
+  }
+
+  &__text {
+    grid-area: i-text;
+    display: flex;
+    flex-direction: column;
+
+    &-top {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    &-center {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

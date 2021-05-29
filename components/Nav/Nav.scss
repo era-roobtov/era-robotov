@@ -1,0 +1,50 @@
+$hoverTransitionDur: 0.5s;
+
+.list {
+  margin-top: 16px;
+  list-style-type: none;
+  align-items: center;
+  justify-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  &__item {
+    width: 33.3%;
+    &__text {
+      position: relative;
+      text-align: center;
+      padding: 8px;
+      cursor: pointer;
+      color: var(--txt-main);
+      transition: color $hoverTransitionDur;
+
+      &::after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        content: "";
+        width: 0;
+        height: 1px;
+        transition: width $hoverTransitionDur;
+        border-bottom: 1px solid red;
+
+      }
+      &:hover {
+        transition: color $hoverTransitionDur;
+        color: var(--txt-hover);
+
+        &::after {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          content: "";
+          width: 100%;
+          transition: width $hoverTransitionDur;
+          height: 1px;
+          border-bottom: 1px solid red;
+        }
+      }
+    }
+  }
+}
