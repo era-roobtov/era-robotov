@@ -5,13 +5,13 @@ const Nav = () => {
     <nav className="header__nav">
       <ul className="list">
         <li className="list__item">
-          <p className="list__item__text">Контакты</p>
+          <p className="list__item__text">Курсы</p>
         </li>
         <li className="list__item">
           <p className="list__item__text">Ифнормация о школе</p>
         </li>
         <li className="list__item">
-          <p className="list__item__text">Курсы</p>
+          <p className="list__item__text">Контакты</p>
         </li>
       </ul>
     </nav>

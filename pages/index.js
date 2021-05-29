@@ -14,10 +14,10 @@ const Index = () => {
         <h1 className="header__heading">Эра роботов</h1>
         <Nav/>
       </header>
-      <div className="index__content">
+      <section className="index__content">
         <Info align="left"/>
         <Info align="right"/>
-      </div>
+      </section>
     </div>
   );
 };

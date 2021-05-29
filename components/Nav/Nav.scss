@@ -5,20 +5,27 @@ $hoverTransitionDur: 0.5s;
   list-style-type: none;
   align-items: center;
   justify-items: center;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+
+  @media (min-width: 992px) {
+    grid-template-rows: unset;
+    grid-template-columns: repeat(3, 1fr);
+  }
 
   &__item {
-    width: 33.3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     &__text {
+      font-size: 1.25rem;
+      display: inline-block;
       position: relative;
       text-align: center;
       padding: 8px;
-      cursor: pointer;
       color: var(--txt-main);
-      transition: color $hoverTransitionDur;
-
+      cursor: pointer;
       &::after {
         position: absolute;
         bottom: 0;
@@ -27,22 +34,12 @@ $hoverTransitionDur: 0.5s;
         width: 0;
         height: 1px;
         transition: width $hoverTransitionDur;
-        border-bottom: 1px solid red;
-
+        border-bottom: 1px solid var(--txt-hover);
       }
       &:hover {
-        transition: color $hoverTransitionDur;
-        color: var(--txt-hover);
-
         &::after {
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          content: "";
           width: 100%;
           transition: width $hoverTransitionDur;
-          height: 1px;
-          border-bottom: 1px solid red;
         }
       }
     }
