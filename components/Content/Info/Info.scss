@@ -1,7 +1,6 @@
 .Info {
   position: relative;
   display: grid;
-  // grid-template-rows: repeat(2, 1fr);
   height: 60vh;
   padding: 0 1rem;
 
@@ -50,28 +49,32 @@
   &__text {
     position: relative;
     grid-area: i-text;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    display: grid;
+    grid-template-areas:
+      "t-top"
+      "t-center"
+      "t-link";
+    gap: 16px;
 
     @media (min-width: 992px) {
       justify-content: center;
     }
 
     &-top {
+      align-self: flex-end;
+      grid-area: t-top;
       text-align: center;
-      margin-bottom: 16px;
     }
 
     &-center {
+      grid-area: t-center;
       text-align: center;
     }
 
     &-link {
-      position: absolute;
-      bottom: 1rem;
-      // left: 0;
-      // margin: 0 16px;
+      grid-area: t-link;
+      align-self: center;
+      justify-self: center;
       width: 100%;
       padding: 0.5rem;
       text-decoration: none;
@@ -79,6 +82,11 @@
       font-size: 1.25rem;
       background-color: var(--txt-main);
       color: var(--bg-sub);
+
+      @media (min-width: 992px) {
+        width: 50%;
+        align-self: center;
+      }
     }
   }
 }

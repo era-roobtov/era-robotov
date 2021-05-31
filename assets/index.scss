@@ -51,26 +51,16 @@ h2 {
 }
 
 .app {
-  // background: url("/static/imgs/spike_hello.png");
   background-color: var(--bg-main);
 }
 
 .index {
-  &__header {
-    z-index: 10;
-    background-color: var(--bg-main);
-    position: sticky;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 0 16px;
+  &__content {
+    display: grid;
+    gap: 32px;
   }
 }
 
-.header {
-  &__heading {
-    padding-top: 16px;
-    text-align: center;
-    color: var(--txt-main);
-  }
+a {
+  text-decoration: none;
 }

@@ -1,0 +1,26 @@
+$scaleDur: 0.5s;
+
+.course {
+  cursor: pointer;
+  transition: all $scaleDur;
+  padding: 8px;
+  display: grid;
+  border-radius: 25px;
+  height: 30vh;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+
+  &__title {
+    align-self: center;
+    text-align: center;
+  }
+
+  &__description {
+    text-align: center;
+  }
+
+  &:hover {
+    transition: all $scaleDur;
+    // transform: translate3d();
+    scale: 1.05;
+  }
+}

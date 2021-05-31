@@ -1,6 +1,6 @@
 import Head from "next/head";
-import Info from "../components/Content/Info";
-import Nav from "../components/Nav"
+import Info from "@/components/Content/Info";
+import Header from "@/components/Header"
 import "../assets/index.scss";
 
 const Index = () => {
@@ -10,10 +10,7 @@ const Index = () => {
         <title>Робомир</title>
         <meta name="description" content="Школа робототехники Эра роботов"/>
       </Head>
-      <header className="index__header">
-        <h1 className="header__heading">Эра роботов</h1>
-        <Nav/>
-      </header>
+      <Header header='Эра роботов'/>
       <section className="index__content">
         <Info align="left"/>
         <Info align="right"/>

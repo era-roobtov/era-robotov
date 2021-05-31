@@ -1,4 +1,19 @@
 $hoverTransitionDur: 0.5s;
+.header {
+  z-index: 10;
+  background-color: var(--bg-main);
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 16px;
+  border-bottom: 1px solid var(--txt-main);
+  &__heading {
+    padding-top: 16px;
+    text-align: center;
+    color: var(--txt-main);
+  }
+}
 
 .list {
   margin-top: 16px;
