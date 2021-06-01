@@ -1,66 +1,111 @@
-:root {
-  --bg-main: #fff;
-  --bg-sub: #f3be92;
-  --txt-main: #123eab;
-  --txt-hover: #FF7100;
-}
-
-.gradient {
-  background: rgb(0, 0, 255);
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 255, 1) 20%,
-    rgba(229, 161, 75, 1) 80%
-  );
-}
-
-@font-face {
-  font-family: "Quicksand";
-  src: url("/static/fonts/PressStart2P-Regular.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Vollkorn";
-  src: url("/static/fonts/Vollkorn-VariableFont_wght.ttf") format("truetype");
-}
-
-html {
-  font-size: 14px;
-
-  @media (min-width: 992px) {
-    font-size: 24px;
-  }
-}
-
-* {
-  font-family: "Vollkorn", sans-serif;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-h1 {
-  font-family: "Quicksand", sans-serif;
-  font-size: 2rem;
-  font-weight: 700;
-}
-
-h2 {
-  font-weight: 700;
-  font-size: 1.5rem;
-}
-
-.app {
-  background-color: var(--bg-main);
-}
+$svgWidth: 16px;
 
 .index {
+  &__school {
+    display: grid;
+    gap: 16px;
+    grid-template-rows: 0.1fr 0.5fr 0.8fr auto;
+    grid-template-areas:
+      "s-header"
+      "s-add"
+      "s-list"
+      "s-choose";
+
+    @media (min-width: 992px) {
+      height: 60vh;
+      grid-template-columns: 1fr 500px;
+      gap: 0;
+      grid-template-areas:
+        "s-header s-image"
+        "s-add s-image"
+        "s-list s-image"
+        "s-choose s-image";
+    }
+  }
+
   &__content {
     display: grid;
     gap: 32px;
   }
 }
 
-a {
-  text-decoration: none;
+.school {
+  &__header {
+    & > p {
+      font-size: 1.5rem;
+      text-align: start;
+      font-weight: 500;
+    }
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    grid-area: s-header;
+
+    @media (min-width: 992px) {
+      margin-bottom: 36px;
+    }
+  }
+
+  &__add {
+    font-weight: 500;
+    font-size: 1.5rem;
+    grid-area: s-add;
+
+    @media (min-width: 992px) {
+      // margin-bottom: 64px;
+    }
+  }
+
+  &__image {
+    &-container {
+      display: none;
+      position: relative;
+      grid-area: s-image;
+
+      @media (min-width: 992px) {
+        display: block;
+      }
+    }
+  }
+
+  &__list {
+    grid-area: s-list;
+  }
+
+  &__choose {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    width: 40%;
+    justify-self: center;
+    border: 1px solid var(--txt-main);
+    border-radius: 20px;
+    grid-area: s-choose;
+    background-color: var(--txt-main);
+
+    &:visited {
+      color: var(--bg-main);
+    }
+
+    @media (min-width: 992px) {
+      justify-self: start;
+    }
+  }
+}
+
+.list {
+  &__text {
+    position: relative;
+    padding-left: $svgWidth + 8px;
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 20%;
+      content: '';
+      height: 16px;
+      width: 16px;
+      background: url("/static/svg/clipboard.svg") no-repeat;
+    }
+  }
 }

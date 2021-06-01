@@ -1,7 +1,8 @@
 const navPaths = {
-    courses: '/courses',
-    about: '/about',
-    contact: '/contact' 
-}
+  home: "/",
+  courses: "/courses",
+  about: "/about",
+  contact: "/contact",
+};
 
 export default navPaths;

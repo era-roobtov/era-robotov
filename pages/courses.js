@@ -1,25 +1,10 @@
 import Head from "next/head";
 import React from "react";
-import Header from "@/components/Header";
 import Course from "@/components/Content/Course";
 import "@/assets/courses.scss";
-import FlipCourse from "@/components/Content/FlipCourse/FlipCourse";
-
-const animationDur = 3000;
+import Layout from "@/components/Layout/Layout";
 
 const Courses = ({ courses }) => {
-  const [curFilp, setCurFlip] = React.useState(0);
-
-  React.useEffect(() => {
-    if (curFilp === courses.length) {
-      setCurFlip(0);
-    }
-
-    setTimeout(() => {
-      setCurFlip(curFilp + 1);
-    }, 3000);
-  }, [curFilp]);
-
   return (
     <div className="courses">
       <Head>
@@ -29,16 +14,14 @@ const Courses = ({ courses }) => {
           content="Курсы школы робототехники Эра роботов"
         />
       </Head>
-      <Header header="Курсы" />
-      <section className="courses__list">
-        {/* {
-            courses.map((info) => <Course key={info.id} info={info}/>)
-        } */}
 
-        {courses.map((info) => (
-          <FlipCourse flipNumber={curFilp} key={info.id} info={info} />
-        ))}
-      </section>
+      <Layout headerText="Курсы">
+        <div className="courses__list">
+          {courses.map((info) => (
+            <Course key={info.id} info={info} />
+          ))}
+        </div>
+      </Layout>
     </div>
   );
 };

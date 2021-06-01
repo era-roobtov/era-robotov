@@ -3,19 +3,27 @@ $scaleDur: 0.5s;
 .course {
   cursor: pointer;
   transition: all $scaleDur;
-  padding: 8px;
   display: grid;
   border-radius: 25px;
-  height: 30vh;
+  height: 100%;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 
   &__title {
+    // color: var(--bg-main);
+    // background-color: var(--txt-hover);
     align-self: center;
     text-align: center;
+    border-bottom: 3px solid var(--txt-main);
+    border-radius: 10px;
   }
 
   &__description {
+    // background-color: var(--txt-main);
+    padding: 8px;
     text-align: center;
+    font-size: 0.8rem;
+    font-weight: 400;
+    font-style: normal;
   }
 
   &:hover {

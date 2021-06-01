@@ -4,12 +4,17 @@ import navPaths from "@/utils/paths";
 import "./Header.scss";
 
 const Header = ({ header }) => {
-  const { about, contact, courses } = navPaths;
+  const { about, contact, courses, home } = navPaths;
   return (
     <header className="header">
       <h1 className="header__heading">{header}</h1>
       <nav className="header__nav">
         <ul className="list">
+          <li className="list__item">
+            <Link href={home}>
+              <a className="list__item__text">Главная</a>
+            </Link>
+          </li>
           <li className="list__item">
             <Link href={courses}>
               <a className="list__item__text">Курсы</a>
@@ -17,7 +22,7 @@ const Header = ({ header }) => {
           </li>
           <li className="list__item">
             <Link href={about}>
-              <a className="list__item__text">Ифнормация о школе</a>
+              <a className="list__item__text">О школе</a>
             </Link>
           </li>
           <li className="list__item">

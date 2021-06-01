@@ -1,0 +1,63 @@
+:root {
+  --bg-main: #fff;
+  --bg-sub: #f3be92;
+  --txt-main: #123eab;
+  --txt-hover: #ff7100;
+}
+
+.gradient {
+  background: rgb(0, 0, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 255, 1) 20%,
+    rgba(229, 161, 75, 1) 80%
+  );
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("/static/fonts/PressStart2P-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Vollkorn";
+  src: url("/static/fonts/Vollkorn-VariableFont_wght.ttf") format("truetype");
+}
+
+html {
+  font-size: 14px;
+
+  @media (min-width: 992px) {
+    font-size: 24px;
+  }
+}
+
+* {
+  font-family: "Vollkorn", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.app {
+  background-color: var(--bg-main);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}

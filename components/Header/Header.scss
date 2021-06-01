@@ -21,11 +21,11 @@ $hoverTransitionDur: 0.5s;
   align-items: center;
   justify-items: center;
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
 
   @media (min-width: 992px) {
     grid-template-rows: unset;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 
   &__item {
@@ -38,9 +38,14 @@ $hoverTransitionDur: 0.5s;
       display: inline-block;
       position: relative;
       text-align: center;
-      padding: 8px;
+      padding: 4px;
       color: var(--txt-main);
       cursor: pointer;
+
+      @media (min-width: 992px) {
+        padding: 8px;
+      }
+
       &::after {
         position: absolute;
         bottom: 0;
