@@ -1,7 +1,9 @@
 $svgWidth: 16px;
+$animDur: 0.5s;
 
 .index {
   &__school {
+    margin-bottom: var(--gap-between);
     display: grid;
     gap: 16px;
     grid-template-rows: 0.1fr 0.5fr 0.8fr auto;
@@ -77,18 +79,26 @@ $svgWidth: 16px;
     align-items: center;
     justify-content: center;
     padding: 8px;
-    width: 40%;
+    width: 200px;
     justify-self: center;
     border: 1px solid var(--txt-main);
     border-radius: 20px;
     grid-area: s-choose;
     background-color: var(--txt-main);
+    transition: scale $animDur;
 
     &:visited {
       color: var(--bg-main);
     }
 
+    &:hover {
+      scale: 1.05;
+      transition: scale $animDur;
+    }
+
     @media (min-width: 992px) {
+      padding: 12px;
+      width: 250px;
       justify-self: start;
     }
   }

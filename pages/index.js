@@ -35,8 +35,8 @@ const Index = () => {
             </li>
           </ul>
           <Link href={navPaths.courses}>
-              <a className="school__choose">Выбрать курс</a>
-            </Link>
+            <a className="school__choose">Выбрать курс</a>
+          </Link>
           <div className="school__image-container">
             <Image
               className="school__image"

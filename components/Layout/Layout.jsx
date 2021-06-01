@@ -4,12 +4,12 @@ import "./Layout.scss";
 
 const Layout = ({headerText, children}) => {
     return (
-        <>
+        <div className="container">
             <Header header={headerText}/>
             <section className="layout">
                 {children}
             </section>
-        </>
+        </div>
     )
 }
 
