@@ -1,5 +1,7 @@
 import PropTypes from "prop-types";
+import React from "react";
 import Link from "next/link";
+import { YMaps, Map } from "react-yandex-maps";
 import "./ContactItem.scss";
 
 const tel = "+7(777)7777777";
@@ -25,6 +27,11 @@ const ContactItem = ({ title, subT, tel, adress, email }) => {
         <Link href={emailLink}>
           <a className="contact__email_text">{email}</a>
         </Link>
+      </div>
+      <div className="contact__map">
+        <YMaps>
+          <Map defaultState={{ center: [55.75, 37.57], zoom: 9 }} />
+        </YMaps>
       </div>
     </div>
   );

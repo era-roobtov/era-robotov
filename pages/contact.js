@@ -7,12 +7,13 @@ const headerTitle = "Наши контакты";
 
 const schools = [
   {
+    id: 0,
     title: "Эра роботов Пушкино",
     subT: "Школа робототехники",
     adress: "Ул. Пушкина, дом Колотушкина",
     email: "mailTo@m.ru",
     tel: "+77777777777",
-  }
+  },
 ];
 
 const Contact = () => {
@@ -29,9 +30,10 @@ const Contact = () => {
         <div className="contacts">
           {schools.map((school) => {
             console.log(school);
-            const { title, subT, adress, email, tel } = school;
+            const { title, subT, adress, email, tel, id } = school;
             return (
               <ContactItem
+                key={id}
                 title={title}
                 subT={subT}
                 adress={adress}
