@@ -1,44 +1,14 @@
-.contact {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
+.contacts {
+    margin: 0 auto;
     @media (min-width: 992px) {
-        height: 70vh;
+        width: 620px;
     }
 
-    &__container {
-        height: 100%;
+    @media (min-width: 1200px) {
+        width: 900px;
     }
 
-    &__title {
-        font-size: 1.5rem;
-        font-weight: 300;
-        color: black;
-    }
-
-    &__tel {
-        font-weight: 700;
-        font-size: 2.5rem;
-        color: black;
-        font-style: bold;
-        
-        @media (min-width: 992px) {
-            font-size: 4.5rem;
-        }
-    }
-
-    &__email {
-        font-size: 1rem;
-        font-weight: 500;
-        margin-top: 36px;
-        
-        color: black;
-
-        @media (min-width: 992px) {
-            font-size: 1.5rem;
-        }
+    @media (min-width: 1400px) {
+        width: 1200px;
     }
 }
