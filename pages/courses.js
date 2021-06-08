@@ -1,7 +1,7 @@
 import Head from "next/head";
 import React from "react";
 import Course from "@/components/Content/Course";
-import "@/assets/courses.scss";
+import "./courses.scss";
 import Layout from "@/components/Layout/Layout";
 
 const Courses = ({ courses }) => {

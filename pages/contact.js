@@ -1,7 +1,7 @@
 import Head from "next/head";
 import ContactItem from "@/components/ContactItem";
 import Layout from "@/components/Layout/Layout";
-import "@/assets/contact.scss";
+import "./contact.scss";
 
 const headerTitle = "Наши контакты";
 

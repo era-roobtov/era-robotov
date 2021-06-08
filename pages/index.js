@@ -4,7 +4,7 @@ import Link from "next/link";
 import Info from "@/components/Content/Info";
 import Layout from "@/components/Layout/Layout";
 import navPaths from "@/utils/paths";
-import "../assets/index.scss";
+import styles from "./home.module.scss";
 
 const headerTitle = "Эра роботов";
 
@@ -16,7 +16,7 @@ const Index = () => {
         <meta name="description" content="Школа робототехники Эра роботов" />
       </Head>
       <Layout headerText={headerTitle}>
-        <div className="index__school">
+        <div className={styles.index__school}>
           <h2 className="school__header">Школа программирования для детей</h2>
           <p className="school__add">
             Учим создавать игры, конструировать и программировать роботов.

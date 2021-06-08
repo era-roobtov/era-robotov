@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import Image from "next/image";
-import "./Info.scss";
+import "./Info.module.scss";
 
 const Info = ({ align }) => {
   return (

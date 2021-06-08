@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import Link from "next/link";
 import navPaths from "@/utils/paths";
-import "./Header.scss";
+import "./kek.module.scss";
 
 const Header = ({ header }) => {
   const { about, contact, courses, home } = navPaths;
