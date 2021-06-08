@@ -1,13 +1,13 @@
 import PropTypes from "prop-types";
-import './Course.scss';
+import styles from './Course.module.scss';
 
 const Course = ({ info }) => {
   const { title, description } = info;
 
   return (
-    <div className="course">
-      <h2 className="course__title">{title}</h2>
-      <p className="course__description">{description}</p>
+    <div className={styles.course}>
+      <h2 className={styles.course__title}>{title}</h2>
+      <p className={styles.course__description}>{description}</p>
     </div>
   );
 };

@@ -1,7 +1,7 @@
 import Head from "next/head";
 import ContactItem from "@/components/ContactItem";
 import Layout from "@/components/Layout/Layout";
-import "./contact.scss";
+import styles from "@/assets/contact.module.scss";
 
 const headerTitle = "Наши контакты";
 
@@ -18,7 +18,7 @@ const schools = [
 
 const Contact = () => {
   return (
-    <div className="contact__container">
+    <div className={styles.contact__container}>
       <Head>
         <title>Робомир. Контакты</title>
         <meta
@@ -27,7 +27,7 @@ const Contact = () => {
         />
       </Head>
       <Layout headerText={headerTitle}>
-        <div className="contacts">
+        <div className={styles.contacts}>
           {schools.map((school) => {
             console.log(school);
             const { title, subT, adress, email, tel, id } = school;

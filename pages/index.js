@@ -4,7 +4,7 @@ import Link from "next/link";
 import Info from "@/components/Content/Info";
 import Layout from "@/components/Layout/Layout";
 import navPaths from "@/utils/paths";
-import styles from "./home.module.scss";
+import styles from "@/assets/index.module.scss";
 
 const headerTitle = "Эра роботов";
 
@@ -17,36 +17,36 @@ const Index = () => {
       </Head>
       <Layout headerText={headerTitle}>
         <div className={styles.index__school}>
-          <h2 className="school__header">Школа программирования для детей</h2>
-          <p className="school__add">
+          <h2 className={styles.school__header}>Школа программирования для детей</h2>
+          <p className={styles.school__add}>
             Учим создавать игры, конструировать и программировать роботов.
           </p>
-          <ul className="school__list">
+          <ul className={styles.school__list}>
             <li>
-              <p className="list__text">Lorem ipsum dolor sit amet.</p>
+              <p className={styles.list__text}>Lorem ipsum dolor sit amet.</p>
             </li>
             <li>
-              <p className="list__text">Lorem ipsum dolor sit.</p>
+              <p className={styles.list__text}>Lorem ipsum dolor sit.</p>
             </li>
             <li>
-              <p className="list__text">
+              <p className={styles.list__text}>
                 Lorem ipsum dolor sit amet consectetur adipisicing.
               </p>
             </li>
           </ul>
           <Link href={navPaths.courses}>
-            <a className="school__choose">Выбрать курс</a>
+            <a className={styles.school__choose}>Выбрать курс</a>
           </Link>
-          <div className="school__image-container">
+          <div className={styles.school__image_container}>
             <Image
-              className="school__image"
+              className={styles.school__image}
               src="/static/imgs/girl.png"
               alt="Картинка школы"
               layout="fill"
             />
           </div>
         </div>
-        <div className="index__content">
+        <div className={styles.index__content}>
           <Info align="left" />
           <Info align="right" />
         </div>

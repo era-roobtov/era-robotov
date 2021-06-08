@@ -1,12 +1,12 @@
 import PropTypes from "prop-types";
 import Header from "@/components/Header";
-import "./Layout.module.scss";
+import styles from "./Layout.module.scss";
 
 const Layout = ({headerText, children}) => {
     return (
         <div className="container">
             <Header header={headerText}/>
-            <section className="layout">
+            <section className={styles.layout}>
                 {children}
             </section>
         </div>
