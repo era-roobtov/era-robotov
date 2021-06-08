@@ -40,7 +40,7 @@ const Index = () => {
           <div className="school__image-container">
             <Image
               className="school__image"
-              src="/static/imgs/gachi.png"
+              src="/static/imgs/girl.png"
               alt="Картинка школы"
               layout="fill"
             />
