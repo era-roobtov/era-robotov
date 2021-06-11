@@ -1,12 +1,12 @@
 import Head from "next/head";
 import React from "react";
 import Course from "@/components/Content/Course";
-import "@/assets/courses.scss";
+import styles from "@/assets/courses.module.scss";
 import Layout from "@/components/Layout/Layout";
 
 const Courses = ({ courses }) => {
   return (
-    <div className="courses">
+    <div className={styles.courses}>
       <Head>
         <title>Робомир. Курсы</title>
         <meta
@@ -16,7 +16,7 @@ const Courses = ({ courses }) => {
       </Head>
 
       <Layout headerText="Курсы">
-        <div className="courses__list">
+        <div className={styles.courses__list}>
           {courses.map((info) => (
             <Course key={info.id} info={info} />
           ))}

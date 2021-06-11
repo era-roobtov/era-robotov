@@ -1,17 +1,24 @@
 import Head from "next/head";
-import Link from "next/link";
+import ContactItem from "@/components/ContactItem";
 import Layout from "@/components/Layout/Layout";
-import "@/assets/contact.scss";
+import styles from "@/assets/contact.module.scss";
 
 const headerTitle = "Наши контакты";
-const tel = "+7(777)7777777";
-const telLink = "tel:" + tel;
-const email = "testMailForSendMessage@mail.ru";
-const emailLink = "mailto:" + email;
+
+const schools = [
+  {
+    id: 0,
+    title: "Эра роботов Пушкино",
+    subT: "Школа робототехники",
+    adress: "Ул. Пушкина, дом Колотушкина",
+    email: "mailTo@m.ru",
+    tel: "+77777777777",
+  },
+];
 
 const Contact = () => {
   return (
-    <div className="contact__container">
+    <div className={styles.contact__container}>
       <Head>
         <title>Робомир. Контакты</title>
         <meta
@@ -20,14 +27,21 @@ const Contact = () => {
         />
       </Head>
       <Layout headerText={headerTitle}>
-        <div className="contact">
-          <h2 className="contact__title">Свяжитесь с нашим администратором</h2>
-          <Link href={telLink}>
-            <a className="contact__tel">{tel}</a>
-          </Link>
-          <Link href={emailLink}>
-            <a className="contact__email">{email}</a>
-          </Link>
+        <div className={styles.contacts}>
+          {schools.map((school) => {
+            console.log(school);
+            const { title, subT, adress, email, tel, id } = school;
+            return (
+              <ContactItem
+                key={id}
+                title={title}
+                subT={subT}
+                adress={adress}
+                email={email}
+                tel={tel}
+              />
+            );
+          })}
         </div>
       </Layout>
     </div>

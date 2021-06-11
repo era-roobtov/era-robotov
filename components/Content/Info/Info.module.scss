@@ -31,7 +31,7 @@
   }
 
   &__image {
-    &-container {
+    &_container {
       position: relative;
       align-self: center;
       justify-self: center;
@@ -61,18 +61,17 @@
       justify-content: center;
     }
 
-    &-top {
+    &_top {
       align-self: flex-end;
       grid-area: t-top;
       text-align: center;
     }
 
-    &-center {
+    &_center {
       grid-area: t-center;
-      text-align: center;
     }
 
-    &-link {
+    &_link {
       grid-area: t-link;
       align-self: center;
       justify-self: center;
