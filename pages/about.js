@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div className="about">
       <Head>
-        <title>Робомир. О нас</title>
+        <title>Эра роботов. О нас</title>
         <meta name="description" content="О школе робототехники" />
       </Head>
       <Header header='О нас'/>

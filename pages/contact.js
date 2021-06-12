@@ -20,7 +20,7 @@ const Contact = () => {
   return (
     <div className={styles.contact__container}>
       <Head>
-        <title>Робомир. Контакты</title>
+        <title>Эра роботов. Контакты</title>
         <meta
           name="description"
           content="Контакты школы робототехники Эра роботов"

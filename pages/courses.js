@@ -8,7 +8,7 @@ const Courses = ({ courses }) => {
   return (
     <div className={styles.courses}>
       <Head>
-        <title>Робомир. Курсы</title>
+        <title>Эра роботов. Курсы</title>
         <meta
           name="description"
           content="Курсы школы робототехники Эра роботов"

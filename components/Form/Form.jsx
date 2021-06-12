@@ -16,17 +16,19 @@ const Form = () => {
             name,
             email,
             telephoneNumber: tel,
-            courses
+            courses,
+            "aos": ""
         };
 
-        let response = await fetch(URL  , {
+        await fetch(URL, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json;charset=utf-8',
                 'origin': 'http://era-robotov.ru'
             },
             body: JSON.stringify(json)
-        }).then((r) => console.log(r))
+        })
+            .then((r) => console.log(r))
             .catch((e) => console.error(e))
     }
 

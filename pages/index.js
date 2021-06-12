@@ -12,7 +12,7 @@ const Index = () => {
   return (
     <div className="app">
       <Head>
-        <title>Робомир</title>
+        <title>Эра роботов</title>
         <meta name="description" content="Школа робототехники Эра роботов" />
       </Head>
       <Layout headerText={headerTitle}>
