@@ -14,7 +14,6 @@ const Index = () => {
       <Head>
         <title>Эра роботов</title>
         <meta name="description" content="Школа робототехники Эра роботов" />
-        <meta name="yandex-verification" content="e8ea578e74248b77" />
       </Head>
       <Layout headerText={headerTitle}>
         <div className={styles.index__school}>
