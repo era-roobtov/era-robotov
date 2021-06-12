@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const URL = "http://era-robotov.ru/api/mail";
+const URL = "https://era-robotov.ru/api/mail";
 
 const Form = () => {
     const [name, setName] = useState('');
