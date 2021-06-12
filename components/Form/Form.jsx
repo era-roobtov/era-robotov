@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const URL = "https://era-robotov.ru/api/mail";
+const URL = "http://era-robotov.ru/api/mail";
 
 const Form = () => {
     const [name, setName] = useState('');
@@ -22,7 +22,8 @@ const Form = () => {
         let response = await fetch(URL  , {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json;charset=utf-8'
+                'Content-Type': 'application/json;charset=utf-8',
+                'origin': 'http://era-robotov.ru'
             },
             body: JSON.stringify(json)
         }).then((r) => console.log(r))
