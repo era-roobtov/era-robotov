@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Header from "@/components/Header"
+import Form from "@/components/Form";
 
 const About = () => {
   return (
@@ -11,6 +12,7 @@ const About = () => {
       <Header header='О нас'/>
       <section>
           О нас
+          <Form/>
       </section>
     </div>
   );
