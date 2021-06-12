@@ -24,7 +24,7 @@ const Form = () => {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json;charset=utf-8',
-                'origin': 'http://era-robotov.ru'
+                'origin': 'https://era-robotov.ru'
             },
             body: JSON.stringify(json)
         })
