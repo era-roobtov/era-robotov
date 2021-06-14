@@ -7,7 +7,8 @@ const Header = ({ header }) => {
   const { about, contact, courses, home } = navPaths;
   return (
     <header className={styles.header}>
-      <h1 className={styles.header__heading}>{header}</h1>
+      <div className={styles.header__logo}>
+      </div>
       <nav className={styles.header__nav}>
         <ul className={styles.list}>
           <li className={styles.list__item}>

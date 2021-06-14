@@ -27,6 +27,16 @@
   src: url("/static/fonts/Vollkorn-VariableFont_wght.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Roboto";
+  src: url("/static/fonts/Roboto/Roboto-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RobotoBold";
+  src: url("/static/fonts/Roboto/Roboto-Bold.ttf") format("truetype");
+}
+
 html {
   font-size: 14px;
 
@@ -36,14 +46,13 @@ html {
 }
 
 * {
-  font-family: "Vollkorn", sans-serif;
+  font-family: "Roboto", sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 h1 {
-  font-family: "Quicksand", sans-serif;
   font-size: 2rem;
   font-weight: 700;
 }

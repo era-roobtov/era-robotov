@@ -1,0 +1,28 @@
+.hello {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 160px;
+}
+
+.greeting {
+
+  &__head {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 120%;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    text-align: justify;
+  }
+}
+
+.img {
+    height: 100%;
+    width: 100%;
+    background: url("/static/new_img/greeting/robots.png") no-repeat;
+}

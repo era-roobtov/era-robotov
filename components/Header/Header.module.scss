@@ -1,4 +1,4 @@
-$hoverTransitionDur: 0.5s;
+/* $hoverTransitionDur: 0.5s;
 .header {
   z-index: 10;
   background-color: var(--bg-main);
@@ -63,5 +63,66 @@ $hoverTransitionDur: 0.5s;
         }
       }
     }
+  }
+}
+*/
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  min-height: 200px;
+
+  &__nav {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    background: url("/static/new_img/heaeder/blue.png") no-repeat;
+    background-position: top right;
+  }
+
+  &__logo {
+    width: 100vw;
+    position: absolute;
+    height: 100%;
+    margin-top: 20px;
+    z-index: 1;
+    background: url("/static/new_img/heaeder/orange.png") no-repeat;
+  }
+}
+
+.list {
+  
+  z-index: 1;
+  display: flex;
+  margin-right: 11%;
+  padding: 45px 0;
+  align-items: center;
+  justify-content: end;
+
+  @media (min-width: 1440px) {
+  }
+
+  &__item {
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    &:not(:last-child) {
+      margin-right: 48px;
+    }
+
+    & > a {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 120%;
+      color: var(--bg-main);
+    }
+
+    text-align: center;
   }
 }

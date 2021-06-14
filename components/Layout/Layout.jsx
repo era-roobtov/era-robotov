@@ -6,9 +6,9 @@ const Layout = ({headerText, children}) => {
     return (
         <div className="container">
             <Header header={headerText}/>
-            <section className={styles.layout}>
+            <div className={styles.layout}>
                 {children}
-            </section>
+            </div>
         </div>
     )
 }
