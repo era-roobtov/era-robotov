@@ -6,3 +6,10 @@ function MyApp({ Component, pageProps }) {
 
 export default MyApp;
 
+
+let kek = 'close';
+if (kek) {
+  console.log('k')
+} else {
+  console.log('l')
+}

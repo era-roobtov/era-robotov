@@ -1,20 +1,48 @@
+import { useState } from "react";
 import PropTypes from "prop-types";
 import Header from "@/components/Header";
 import styles from "./Layout.module.scss";
 
-const Layout = ({headerText, children}) => {
-    return (
-        <div className="container">
-            <Header header={headerText}/>
-            <div className={styles.layout}>
-                {children}
-            </div>
-        </div>
-    )
-}
+const Layout = ({ headerText, children }) => {
+  const [burgerStatus, setBurgerStatus] = useState("loading");
+
+  const handleClickBurger = () => {
+    switch (burgerStatus) {
+      case "loading": {
+        setBurgerStatus("open");
+        break;
+      }
+      case "open": {
+        setBurgerStatus("closed");
+        break;
+      }
+      case "closed": {
+        setBurgerStatus("open");
+        break;
+      }
+    }
+  };
+
+  return (
+    <div className="container">
+      <Header
+        burger={burgerStatus}
+        handler={handleClickBurger}
+        header={headerText}
+      />
+      <div
+        className={`${styles.layout} ${
+          burgerStatus === "open" ? styles.layout__open : ""
+        }`}
+      >
+        {children}
+      </div>
+    </div>
+  );
+};
 
 Layout.propTypes = {
-    headerText: PropTypes.string,
-}
+  headerText: PropTypes.string,
+};
 
 export default Layout;

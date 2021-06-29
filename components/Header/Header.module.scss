@@ -55,7 +55,6 @@ $duration: 400ms;
     position: absolute;
     right: 0;
     top: -50vh;
-    transition: all 0.8s;
     z-index: 2;
 
     @media (min-width: 768px) {
@@ -71,8 +70,35 @@ $duration: 400ms;
     }
 
     &_open {
-      transition: all 0.8s;
-      top: 7vh;
+      animation: down 0.5s 1 forwards;
+      @keyframes down {
+        from{
+          top: -50vh;
+        }
+        70% {
+          top: 7vh;
+        }
+        85% {
+          top: 6vh
+        }
+        to{
+          top: 7vh;
+        }
+      }
+      // transition: all 0.5s;
+      // top: 7vh;
+    }
+
+    &_closed {
+      @keyframes up {
+        from {
+          top: 7vh;
+        }
+        to{
+          top: -50vh;
+        }
+      }
+      animation: up 0.5s 1 forwards;
     }
   }
 

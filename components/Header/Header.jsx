@@ -3,46 +3,38 @@ import PropTypes from "prop-types";
 import Link from "next/link";
 import navPaths from "@/utils/paths";
 import styles from "./Header.module.scss";
-import RainbowButton from "../Buttons/RainbowButton/RainbowButton";
 
-const Header = ({ header }) => {
-  const [burgerStatus, setBurgerStatus] = useState(false);
-
-  const handleClickBurger = () => {
-    setBurgerStatus(!burgerStatus);
-  };
-
+const Header = ({ header, burger, handler }) => {
   const { about, contact, courses, home } = navPaths;
+  let burgerStyle = "";
+  console.log(burger);
+
+  switch (burger) {
+    case "open": {
+      burgerStyle = styles.header__nav_open;
+      break;
+    }
+    case "closed": {
+      burgerStyle = styles.header__nav_closed;
+      break;
+    }
+    default: {
+      break;
+    }
+  }
 
   return (
     <header className={styles.header}>
       <div className={styles.header__logo}></div>
-      <div
-        onClick={() => handleClickBurger()}
-        className={`${styles.burgerContainer} `}
-      >
+      <div onClick={() => handler()} className={`${styles.burgerContainer} `}>
         <div
-          className={`${styles.hamburgerToClose} ${
-            burgerStatus ? styles.close : ""
-          }`}
+          className={`${styles.hamburgerToClose} ${burger === "open" ? styles.close : ""}`}
         >
           <div className={styles.hamburgerMiddle} />
         </div>
       </div>
-      <nav className={`${styles.header__nav} ${burgerStatus ? styles.header__nav_open : ''}`}>
+      <nav className={`${styles.header__nav} ${burgerStyle}`}>
         <ul className={styles.list}>
-          {/* <li className={styles.list__item}>
-            <RainbowButton path={home} text={'Главная'}/>
-          </li>
-          <li className={styles.list__item}>
-            <RainbowButton path={courses} text={'Курсы'}/>
-          </li>
-          <li className={styles.list__item}>
-            <RainbowButton path={about} text={'О школе'}/>
-          </li>
-          <li className={styles.list__item}>
-            <RainbowButton path={contact} text={'Контакты'}/>
-          </li> */}
           <li className={styles.list__item}>
             <Link href={home}>
               <a className={styles.list__item__text}>Главная</a>
@@ -71,6 +63,8 @@ const Header = ({ header }) => {
 
 Header.propTypes = {
   header: PropTypes.string,
+  burger: PropTypes.string,
+  handler: PropTypes.func,
 };
 
 export default Header;
