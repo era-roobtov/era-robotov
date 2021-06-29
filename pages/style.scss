@@ -5,6 +5,8 @@
   --txt-hover: #ff7100;
   --txt-gray: #807b78;
   --gap-between: 16px;
+  --bg-image-b: #060693;
+  --bg-image-o: #E5A14B;
   --gray: #666666;
 }
 
@@ -38,6 +40,7 @@
 }
 
 html {
+  overflow: hidden;
   font-size: 14px;
 
   @media (min-width: 992px) {
