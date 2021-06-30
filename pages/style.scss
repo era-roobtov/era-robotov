@@ -8,6 +8,9 @@
   --bg-image-b: #060693;
   --bg-image-o: #E5A14B;
   --gray: #666666;
+  --txt-black: #070921;
+  --txt-sublack: #000000;
+  --txt-white: #fcfcfc;
 }
 
 .gradient {
@@ -37,6 +40,16 @@
 @font-face {
   font-family: "RobotoBold";
   src: url("/static/fonts/Roboto/Roboto-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RobotoLight";
+  src: url("/static/fonts/Roboto/Roboto-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RobotoMedium";
+  src: url("/static/fonts/Roboto/Roboto-Medium.ttf") format("truetype");
 }
 
 html {

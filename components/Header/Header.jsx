@@ -1,4 +1,3 @@
-import { useState } from "react";
 import PropTypes from "prop-types";
 import Link from "next/link";
 import navPaths from "@/utils/paths";
@@ -7,7 +6,6 @@ import styles from "./Header.module.scss";
 const Header = ({ header, burger, handler }) => {
   const { about, contact, courses, home } = navPaths;
   let burgerStyle = "";
-  console.log(burger);
 
   switch (burger) {
     case "open": {

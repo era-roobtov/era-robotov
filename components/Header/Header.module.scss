@@ -85,8 +85,6 @@ $duration: 400ms;
           top: 7vh;
         }
       }
-      // transition: all 0.5s;
-      // top: 7vh;
     }
 
     &_closed {
@@ -137,15 +135,15 @@ $duration: 400ms;
       margin-right: 10px;
 
       &:last-child {
-        margin-right: 25px;
+        margin-right: 10px;
       }
     }
 
     @media (min-width: 992px) {
-      margin-right: 50px;
+      margin-right: 42px;
 
       &:last-child {
-        margin-right: 120px;
+        margin-right: 100px;
       }
     }
 
