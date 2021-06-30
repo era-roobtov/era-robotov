@@ -10,4 +10,10 @@
   background-color: var(--bg-image-b);
   border-radius: 20px;
   padding: 12px;
+
+  @media (min-width: 768px) {
+    padding: 16px 34px;
+    font-size: 16px;
+    align-self: center;
+  }
 }
