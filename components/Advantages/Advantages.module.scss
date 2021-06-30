@@ -8,8 +8,13 @@
   background-color: var(--bg-image-b);
   clip-path: polygon(0px 0%, 100% 5%, 100% 100%, 0% 95%);
 
+  @media (min-width: 768px) {
+    padding: 203px 285px 280px 285px;
+    // grid-template-rows: 0.1fr 1fr;
+  }
+
   &__header {
-    font-family: "RobotoMedium", "Roboto",sans-serif;
+    font-family: "RobotoMedium", "Roboto", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -17,11 +22,34 @@
     text-align: center;
 
     color: var(--txt-white);
+
+    @media (min-width: 768px) {
+      font-family: "RobotoBold", "Roboto", sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 120%;
+      text-align: center;
+    }
   }
 
   &__list {
     display: grid;
     gap: 19px;
     grid-template-rows: repeat(5, 1fr);
+
+    @media (min-width: 768px) {
+      grid-template-rows: unset;
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+
+  &__btn {
+    justify-self: center;
+    margin-top: 16px;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
   }
 }

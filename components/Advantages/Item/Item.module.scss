@@ -3,6 +3,11 @@
   grid-template-columns: 44px 1fr;
   gap: 26px;
 
+  @media (min-width: 768px) {
+    grid-template-columns: unset;
+    grid-template-rows: 95px 1fr;
+  }
+
   &__text {
     font-family: "RobotoLight", "Roboto", sans-serif;
     font-style: normal;
@@ -13,6 +18,18 @@
     align-items: center;
     text-align: justify;
 
-    color: #ffffff;
+    color: var(--txt-white);
+
+    @media (min-width: 768px) {
+      font-size: 16px;
+    }
+  }
+
+  &__img {
+    @media (min-width: 768px) {
+      height: 100%;
+      width: 95px;
+      justify-self: center;
+    }
   }
 }

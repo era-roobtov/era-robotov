@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import ColorButton from "@/components/Buttons/ColorButton/ColorButton";
 import Item from "./Item/Item";
 import styles from "./Advantages.module.scss";
+import navPaths from "@/utils/paths";
 
 const Advantages = ({ title, list }) => {
   return (
@@ -12,7 +13,13 @@ const Advantages = ({ title, list }) => {
           <Item {...item} />
         ))}
       </ul>
-      <ColorButton />
+      <div className={styles.advantages__btn}>
+        <ColorButton
+          path={navPaths.courses}
+          text={"Записаться на курс"}
+          reverse={false}
+        />
+      </div>
     </section>
   );
 };

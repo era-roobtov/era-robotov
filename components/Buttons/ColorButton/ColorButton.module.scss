@@ -1,0 +1,16 @@
+.btn {
+  padding: 10px 13px;
+  font-family: "RobotoMedium", "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 120%;
+  text-align: justify;
+  border-radius: 15px;
+  width: var(--btn-size-mobile);
+
+  &__common {
+    background-color: var(--bg-image-o);
+    color: var(--txt-white);
+  }
+}

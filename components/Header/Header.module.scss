@@ -122,7 +122,7 @@ $duration: 400ms;
 
   &__item {
     cursor: pointer;
-    width: 156px;
+    width: var(--btn-size-mobile);
     padding: 3px;
     background: linear-gradient(270deg, #060693 0%, #e5a14b 100%);
     border-radius: 15px;

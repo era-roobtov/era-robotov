@@ -4,7 +4,7 @@ import styles from "./Item.module.scss";
 const Item = ({ img, text }) => {
   return (
     <div className={styles.item}>
-      <img src={img} alt="_" />
+      <img className={styles.item__img} src={img} alt="_" />
       <p className={styles.item__text}>{text}</p>
     </div>
   );
