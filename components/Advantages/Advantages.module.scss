@@ -1,0 +1,27 @@
+.advantages {
+  display: grid;
+  gap: 16px;
+  position: relative;
+  z-index: 2;
+  top: -10px;
+  padding: 41px 16px;
+  background-color: var(--bg-image-b);
+  clip-path: polygon(0px 0%, 100% 5%, 100% 100%, 0% 95%);
+
+  &__header {
+    font-family: "RobotoMedium", "Roboto",sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    text-align: center;
+
+    color: var(--txt-white);
+  }
+
+  &__list {
+    display: grid;
+    gap: 19px;
+    grid-template-rows: repeat(5, 1fr);
+  }
+}

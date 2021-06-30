@@ -1,16 +1,14 @@
 import Head from "next/head";
 // import Image from "next/image";
-import Link from "next/link";
-import Info from "@/components/Content/Info";
 import Layout from "@/components/Layout/Layout";
-import navPaths from "@/utils/paths";
 import styles from "@/assets/index.module.scss";
 import Greeting from "@/components/Greeting/Greeting";
 import TextList from "@/components/TextList/TextList";
+import Advantages from "@/components/Advantages/Advantages";
 
 const headerTitle = "Эра роботов";
 
-const Index = ({textList}) => {
+const Index = ({textList, advantagesList}) => {
   return (
     <div className="app">
       <Head>
@@ -21,6 +19,7 @@ const Index = ({textList}) => {
         <Greeting />
         <div className={styles.robots} />
         <TextList {...textList} />
+        <Advantages {...advantagesList}/>
       </Layout>
     </div>
   );
@@ -39,6 +38,31 @@ export async function getStaticProps() {
           "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ",
         ],
       },
+      advantagesList: {
+        title: "Наши преимущества",
+        list: [
+          {
+            img: "/static/new_img/advantages/1.png",
+            text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+          },
+          {
+            img: "/static/new_img/advantages/1.png",
+            text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+          },
+          {
+            img: "/static/new_img/advantages/1.png",
+            text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+          },
+          {
+            img: "/static/new_img/advantages/1.png",
+            text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+          },
+          {
+            img: "/static/new_img/advantages/1.png",
+            text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+          }
+        ]
+      }
     },
   };
 }

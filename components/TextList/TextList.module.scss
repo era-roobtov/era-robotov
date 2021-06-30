@@ -1,4 +1,6 @@
 .list {
+  position: relative;
+  z-index: 3;
   display: grid;
   row-gap: 41px;
   grid-template-areas:
