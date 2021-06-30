@@ -119,3 +119,17 @@ $animDur: 0.5s;
     }
   }
 }
+
+/// new code
+
+.robots {
+  width: 100%;
+  height: 155px;
+  background: url("/static/new_img/robots.png") no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
