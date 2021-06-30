@@ -5,10 +5,11 @@ import styles from "@/assets/index.module.scss";
 import Greeting from "@/components/Greeting/Greeting";
 import TextList from "@/components/TextList/TextList";
 import Advantages from "@/components/Advantages/Advantages";
+import Footer from "@/components/Footer/Footer";
 
 const headerTitle = "Эра роботов";
 
-const Index = ({textList, advantagesList}) => {
+const Index = ({ textList, advantagesList }) => {
   return (
     <div className="app">
       <Head>
@@ -19,7 +20,8 @@ const Index = ({textList, advantagesList}) => {
         <Greeting />
         <div className={styles.robots} />
         <TextList {...textList} />
-        <Advantages {...advantagesList}/>
+        <Advantages {...advantagesList} />
+        <Footer />
       </Layout>
     </div>
   );
@@ -31,11 +33,11 @@ export async function getStaticProps() {
       textList: {
         title: "Чему научится наш слушатель",
         list: [
-          "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ",
-          "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ",
-          "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ",
-          "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ",
-          "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ",
+          "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 1",
+          "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 2",
+          "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 3",
+          "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 4",
+          "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 5",
         ],
       },
       advantagesList: {
@@ -43,26 +45,26 @@ export async function getStaticProps() {
         list: [
           {
             img: "/static/new_img/advantages/1.png",
-            text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+            text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 1",
           },
           {
             img: "/static/new_img/advantages/1.png",
-            text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+            text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.2",
           },
           {
             img: "/static/new_img/advantages/1.png",
-            text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+            text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.3",
           },
           {
             img: "/static/new_img/advantages/1.png",
-            text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+            text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.4",
           },
           {
             img: "/static/new_img/advantages/1.png",
-            text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
-          }
-        ]
-      }
+            text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.5",
+          },
+        ],
+      },
     },
   };
 }

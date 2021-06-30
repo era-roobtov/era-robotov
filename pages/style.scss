@@ -6,7 +6,7 @@
   --txt-gray: #807b78;
   --gap-between: 16px;
   --bg-image-b: #060693;
-  --bg-image-o: #E5A14B;
+  --bg-image-o: #e5a14b;
   --gray: #666666;
   --txt-black: #070921;
   --txt-sublack: #000000;
@@ -23,6 +23,22 @@
     rgba(0, 0, 255, 1) 20%,
     rgba(229, 161, 75, 1) 80%
   );
+}
+
+.clip-blue {
+  clip-path: polygon(0px 0%, 100% 5%, 100% 100%, 0% 95%);
+
+  @media (min-width: 768px) {
+    clip-path: polygon(0px 0%, 100% 15%, 100% 100%, 0% 85%);
+  }
+}
+
+.clip-orange {
+  clip-path: polygon(0px 5%, 100% 0%, 100% 95%, 0% 100%);
+
+  @media (min-width: 768px) {
+    clip-path: polygon(0px 15%, 100% 0%, 100% 85%, 0% 100%);
+  }
 }
 
 @font-face {

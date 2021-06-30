@@ -6,11 +6,11 @@ import navPaths from "@/utils/paths";
 
 const Advantages = ({ title, list }) => {
   return (
-    <section className={styles.advantages}>
+    <section className={`${styles.advantages} clip-blue`}>
       <h2 className={styles.advantages__header}>{title}</h2>
       <ul className={styles.advantages__list}>
         {list.map((item) => (
-          <Item {...item} />
+          <Item key={item.text} {...item} />
         ))}
       </ul>
       <div className={styles.advantages__btn}>

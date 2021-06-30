@@ -4,10 +4,10 @@ import styles from "./TextList.module.scss";
 
 const TextList = ({title, list}) => {
   return (
-    <section className={styles.list}>
+    <section className={`${styles.list} clip-orange`}>
       <div className={styles.list__robots}/>
       <h2 className={styles.list__header}>{title}</h2>
-      <ul className={styles.list__items}>
+      <ul className={`${styles.list__items}`}>
         {list.map((item) => <Item key={item} text={item}/>)}
       </ul>
       
