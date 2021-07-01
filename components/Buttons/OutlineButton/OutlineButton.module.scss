@@ -1,0 +1,28 @@
+%btn {
+  border-radius: 15px;
+  padding: 9px 13px;
+  width: 156px;
+  background-color: inherit;
+  font-family: "RobotoMedium", "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 120%;
+  text-align: center;
+}
+
+.common {
+  @extend %btn;
+}
+
+.orange {
+  @extend %btn;
+  border: 1px solid var(--bg-image-o);
+  color: var(--txt-white);
+}
+
+.blue {
+  @extend %btn;
+  border: 1px solid var(--bg-image-b);
+  color: var(--bg-image-b);
+}

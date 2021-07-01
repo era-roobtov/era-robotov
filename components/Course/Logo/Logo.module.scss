@@ -1,0 +1,29 @@
+.logo {
+  justify-self: center;
+  margin-bottom: 16px;
+
+  & > img {
+    max-width: 236px;
+  }
+
+  &_double {
+    display: grid;
+    justify-content: center;
+    @media (min-width: 768px) {
+      grid-template-rows: 1fr 45px 1fr;
+    }
+
+    & > img {
+      max-width: 236px;
+    }
+
+  }
+
+  &_plus {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: block;
+    }
+  }
+}

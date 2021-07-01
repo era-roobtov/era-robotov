@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import Header from "@/components/Header";
 import styles from "./Layout.module.scss";
 
-const Layout = ({ headerText, children }) => {
+const Layout = ({ children }) => {
   const [burgerStatus, setBurgerStatus] = useState("loading");
 
   const handleClickBurger = () => {
@@ -28,7 +28,6 @@ const Layout = ({ headerText, children }) => {
       <Header
         burger={burgerStatus}
         handler={handleClickBurger}
-        header={headerText}
       />
       <div
         className={`${styles.layout} ${

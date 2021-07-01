@@ -1,24 +1,24 @@
-import {useEffect, useState} from 'react';
-import Link from 'next/link';
+import {useState, useEffect} from "react";
 import PropTypes from 'prop-types';
-import {ORANGE, BLUE} from '@/utils/colors';
-import styles from './ColorButton.module.scss';
+import Link from 'next/link';
+import {ORANGE, BLUE} from "@/utils/colors"
+import styles from './OutlineButton.module.scss';
 
-const ColorButton = ({path, text, color}) => {
+const OutlineButton = ({color, path, text}) => {
   const [btnColor, setBtnColor] = useState(styles.common);
 
   useEffect(() => {
     switch (color) {
       case ORANGE:
-        setBtnColor(styles.orange);
+        setBtnColor(styles.orange)
         break;
       case BLUE:
-        setBtnColor(styles.blue);
+        setBtnColor(styles.blue)
         break;
       default:
         break;
     }
-  }, []);
+  }, [])
 
   return (
       <Link href={path}>
@@ -31,10 +31,10 @@ const ColorButton = ({path, text, color}) => {
   );
 };
 
-ColorButton.propTypes = {
+OutlineButton.propTypes = {
   color: PropTypes.string,
-  text: PropTypes.string,
   path: PropTypes.string,
+  text: PropTypes.string
 };
 
-export default ColorButton;
+export default OutlineButton;

@@ -1,4 +1,4 @@
-.btn {
+%btn {
   padding: 10px 13px;
   font-family: "RobotoMedium", "Roboto", sans-serif;
   font-style: normal;
@@ -8,9 +8,25 @@
   text-align: justify;
   border-radius: 15px;
   width: var(--btn-size-mobile);
+  color: var(--txt-white);
 
-  &__common {
-    background-color: var(--bg-image-o);
-    color: var(--txt-white);
+  @media (min-width: 768px) {
+    font-size: 16px;
+    width: var(--btn-size-tablets);
   }
+}
+
+.common {
+  @extend %btn;
+  background-color: inherit;
+}
+
+.orange {
+  @extend %btn;
+  background-color: var(--bg-image-o);
+}
+
+.blue {
+  @extend %btn;
+  background-color: var(--bg-image-b);
 }

@@ -1,28 +1,27 @@
-import Head from "next/head";
-import React from "react";
-import Course from "@/components/Content/Course";
-import styles from "@/assets/courses.module.scss";
-import Layout from "@/components/Layout/Layout";
+import Head from 'next/head';
+import React from 'react';
+import Course from '@/components/Course';
+import styles from '@/assets/courses.module.scss';
+import Layout from '@/components/Layout/Layout';
+import Footer from '@/components/Footer';
 
-const Courses = ({ courses }) => {
+const Courses = ({courses}) => {
   return (
-    <div className={styles.courses}>
-      <Head>
-        <title>Эра роботов. Курсы</title>
-        <meta
-          name="description"
-          content="Курсы школы робототехники Эра роботов"
-        />
-      </Head>
+      <div className={styles.courses}>
+        <Head>
+          <title>Эра роботов. Курсы</title>
+          <meta
+              name="description"
+              content="Курсы школы робототехники Эра роботов"
+          />
+        </Head>
 
-      <Layout headerText="Курсы">
-        <div className={styles.courses__list}>
-          {courses.map((info) => (
-            <Course key={info.id} info={info} />
-          ))}
-        </div>
-      </Layout>
-    </div>
+        <Layout>
+          {courses.map((course, index) => <Course index={index}
+                                                  key={course.id} {...course}/>)}
+          <Footer/>
+        </Layout>
+      </div>
   );
 };
 
@@ -32,51 +31,48 @@ export async function getStaticProps() {
       courses: [
         {
           id: 0,
-          title: "Arduino",
+          title: 'Scratch',
+          logo: ['/static/new_img/courses/scratch.png'],
           description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nesciunt accusantium animi tempore minima totam ea distinctio! Eaque quo corrupti, facilis culpa magnam, similique ut ab nam doloremque qui temporibus architecto molestias iure odio debitis consequuntur consequatur cumque? Labore, laborum.",
+              'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate',
         },
         {
           id: 1,
-          title: "Python",
+          title: 'Arduino',
+          logo: ['/static/new_img/courses/arduino.png'],
           description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nesciunt accusantium animi tempore minima totam ea distinctio! Eaque quo corrupti, facilis culpa magnam, similique ut ab nam doloremque qui temporibus architecto molestias iure odio debitis consequuntur consequatur cumque? Labore, laborum.",
+              'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate',
         },
         {
           id: 2,
-          title: "Scratch",
+          title: 'Lego WeDo',
+          logo: ['/static/new_img/courses/lego.png'],
           description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nesciunt accusantium animi tempore minima totam ea distinctio! Eaque quo corrupti, facilis culpa magnam, similique ut ab nam doloremque qui temporibus architecto molestias iure odio debitis consequuntur consequatur cumque? Labore, laborum.",
+              'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate',
         },
         {
           id: 3,
-          title: "WeDo",
+          title: 'Scratch и Arduino',
+          logo: [
+            '/static/new_img/courses/scratch.png',
+            '/static/new_img/courses/arduino.png',
+          ],
           description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nesciunt accusantium animi tempore minima totam ea distinctio! Eaque quo corrupti, facilis culpa magnam, similique ut ab nam doloremque qui temporibus architecto molestias iure odio debitis consequuntur consequatur cumque? Labore, laborum.",
+              'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate',
         },
         {
           id: 4,
-          title: "Lego Spike",
+          title: 'Python',
+          logo: ['/static/new_img/courses/python.png'],
           description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nesciunt accusantium animi tempore minima totam ea distinctio! Eaque quo corrupti, facilis culpa magnam, similique ut ab nam doloremque qui temporibus architecto molestias iure odio debitis consequuntur consequatur cumque? Labore, laborum.",
+              'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate',
         },
         {
           id: 5,
-          title: "3D Печать",
+          title: 'Mindstorms',
+          logo: ['/static/new_img/courses/mindstorms.png'],
           description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nesciunt accusantium animi tempore minima totam ea distinctio! Eaque quo corrupti, facilis culpa magnam, similique ut ab nam doloremque qui temporibus architecto molestias iure odio debitis consequuntur consequatur cumque? Labore, laborum.",
-        },
-        {
-          id: 6,
-          title: "Web",
-          description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nesciunt accusantium animi tempore minima totam ea distinctio! Eaque quo corrupti, facilis culpa magnam, similique ut ab nam doloremque qui temporibus architecto molestias iure odio debitis consequuntur consequatur cumque? Labore, laborum.",
-        },
-        {
-          id: 7,
-          title: "Special",
-          description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nesciunt accusantium animi tempore minima totam ea distinctio! Eaque quo corrupti, facilis culpa magnam, similique ut ab nam doloremque qui temporibus architecto molestias iure odio debitis consequuntur consequatur cumque? Labore, laborum.",
+              'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate',
         },
       ],
     },
