@@ -6,7 +6,7 @@ import Greeting from '@/components/Greeting/Greeting';
 import TextList from '@/components/TextList/TextList';
 import Advantages from '@/components/Advantages/Advantages';
 import Footer from '@/components/Footer/Footer';
-import {CLIP_BLUE} from '@/utils/colors';
+import {CLIP_BLUE} from '@/utils/globalStyles';
 
 const headerTitle = 'Эра роботов';
 

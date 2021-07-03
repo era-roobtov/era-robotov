@@ -3,7 +3,7 @@ import Header from '@/components/Header';
 import Layout from '@/components/Layout';
 import Greeting from '@/components/Greeting';
 import Advantages from '@/components/Advantages';
-import {CLIP_BLUE, CLIP_ORANGE} from '@/utils/colors';
+import {CLIP_BLUE, CLIP_ORANGE} from '@/utils/globalStyles';
 import Footer from '@/components/Footer';
 import Teachers from '@/components/Teachers';
 
@@ -15,7 +15,6 @@ const About = ({advantagesList, teachersList, subText}) => {
           <title>Эра роботов. О нас</title>
           <meta name="description" content="О школе робототехники"/>
         </Head>
-        <Header header='О нас'/>
         <Layout>
           <Greeting
               header="О школе"

@@ -1,7 +1,7 @@
 import {useState, useEffect} from "react";
 import PropTypes from 'prop-types';
 import Link from 'next/link';
-import {ORANGE, BLUE} from "@/utils/colors"
+import {ORANGE, BLUE} from "@/utils/globalStyles"
 import styles from './OutlineButton.module.scss';
 
 const OutlineButton = ({color, path, text}) => {

@@ -1,7 +1,7 @@
 import {useEffect, useState} from 'react';
 import Link from 'next/link';
 import PropTypes from 'prop-types';
-import {ORANGE, BLUE} from '@/utils/colors';
+import {ORANGE, BLUE} from '@/utils/globalStyles';
 import styles from './ColorButton.module.scss';
 
 const ColorButton = ({path, text, color}) => {

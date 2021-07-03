@@ -5,7 +5,7 @@ import Course from '@/components/Course';
 import styles from '@/assets/courses.module.scss';
 import Layout from '@/components/Layout/Layout';
 import Footer from '@/components/Footer';
-import {CLIP_BLUE, CLIP_BLUE_REVERSE} from '@/utils/colors';
+import {CLIP_BLUE, CLIP_BLUE_REVERSE} from '@/utils/globalStyles';
 
 const Courses = ({courses}) => {
   let reverseClip = true;

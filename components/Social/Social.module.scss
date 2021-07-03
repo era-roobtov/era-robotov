@@ -1,0 +1,20 @@
+.social {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(5, 23px);
+  gap: 18px;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(5, 30px);
+  }
+
+  &__item {
+    cursor: pointer;
+
+    @media (min-width: 768px) {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}

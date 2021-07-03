@@ -1,0 +1,109 @@
+.contact {
+  padding: 42px 16px 16px 16px;
+  display: grid;
+  grid-template-rows: repeat(auto-fill, auto);
+  gap: 35px;
+  grid-template-areas:
+          "cs-header"
+          "cs-info"
+          "cs-social"
+          "cs-map";
+  justify-content: center;
+
+  @media (min-width: 768px) {
+    grid-template-rows: auto auto 1fr;
+    padding: 81px 163px 41px 230px;
+    gap: 49px 49px;
+    grid-template-areas:
+          "cs-header cs-map"
+          "cs-info cs-map"
+          "cs-social cs-map";
+  }
+
+  @media (min-width: 992px) {
+    padding: 81px 140px 41px 180px;
+  }
+
+  @media (min-width: 1440px) {
+    gap: 49px 89px;
+  }
+
+  &__header {
+    grid-area: cs-header;
+    font-family: "RobotoMedium", "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    text-align: center;
+    color: var(--txt-white);
+
+    @media (min-width: 768px) {
+      text-align: start;
+      margin-top: 42px;
+      font-family: "RobotoBold", "Roboto", sans-serif;
+      font-weight: 700;
+      font-size: 24px;
+    }
+
+    @media (min-width: 1440px) {
+      margin-top: 82px;
+    }
+  }
+
+  &__info {
+    grid-area: cs-info;
+    display: grid;
+    grid-template-rows: repeat(3, 20px);
+    justify-content: center;
+    gap: 12px;
+
+    @media (min-width: 768px) {
+      justify-content: flex-start;
+    }
+
+    & > a {
+      display: grid;
+      grid-template-columns: 24px auto;
+      gap: 8px;
+      align-items: center;
+      font-family: "RobotoLight", "Roboto", sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 120%;
+      color: var(--txt-white);
+
+      @media (min-width: 768px) {
+        font-family: "RobotoMedium", "Roboto", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+      }
+    }
+  }
+
+  &__social {
+    grid-area: cs-social;
+  }
+
+  &__map {
+    grid-area: cs-map;
+    width: 289px;
+    height: 208px;
+
+    @media (min-width: 768px) {
+      width: 314px;
+      height: 400px;
+    }
+
+    @media (min-width: 992px) {
+      width: 420px;
+      height: 400px;
+    }
+
+    @media (min-width: 1440px) {
+      width: 782px;
+      height: 527px;
+    }
+  }
+}

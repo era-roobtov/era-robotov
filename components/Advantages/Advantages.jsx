@@ -6,7 +6,7 @@ import {
   BLUE,
   CLIP_ORANGE,
   ORANGE,
-} from '@/utils/colors';
+} from '@/utils/globalStyles';
 import Item from '@/components/Advantages/Item';
 import styles from './Advantages.module.scss';
 

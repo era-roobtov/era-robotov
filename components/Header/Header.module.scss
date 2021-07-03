@@ -8,7 +8,7 @@ $duration: 400ms;
 
 .header {
   width: 100%;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: 10;
@@ -120,7 +120,6 @@ $duration: 400ms;
   }
 
   &__item {
-    width: var(--btn-size-mobile);
     cursor: pointer;
     background: linear-gradient(270deg, #060693 0%, #e5a14b 100%);
     border-radius: 15px;
@@ -151,6 +150,8 @@ $duration: 400ms;
     }
 
     & > a {
+      display: block;
+      width: var(--btn-size-mobile);
       padding: 3px;
       position: relative;
       font-style: normal;
@@ -161,6 +162,7 @@ $duration: 400ms;
       color: var(--bg-main);
 
       @media (min-width: 768px) {
+        display: unset;
         padding: 10px 52px;
       }
 

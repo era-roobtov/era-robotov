@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import styles from './Course.module.scss';
 import Logo from '@/components/Course/Logo';
-import {ORANGE, BLUE} from '@/utils/colors';
+import {ORANGE, BLUE} from '@/utils/globalStyles';
 import OutlineButton from '@/components/Buttons/OutlineButton';
 import ColorButton from '@/components/Buttons/ColorButton';
 
