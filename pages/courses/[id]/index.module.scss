@@ -1,0 +1,38 @@
+.course {
+  display: grid;
+  padding: 0 16px;
+  justify-content: center;
+  align-content: center;
+
+  &__logo {
+    text-align: center;
+    margin-bottom: 3px;
+  }
+
+  &__header {
+    font-family: "RobotoBold", "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    color: var(--txt-black);
+    margin-bottom: 8px;
+    text-align: center;
+  }
+
+  &__description {
+    font-family: "RobotoLight", "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 120%;
+    text-align: justify;
+    color: var(--txt-sublack);
+    margin-bottom: 22px;
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import {ORANGE, BLUE} from '@/utils/globalStyles';
 import styles from './ColorButton.module.scss';
 
-const ColorButton = ({path, text, color}) => {
+const ColorButton = ({path, text, color, func}) => {
   const [btnColor, setBtnColor] = useState(styles.common);
 
   useEffect(() => {
@@ -20,21 +20,29 @@ const ColorButton = ({path, text, color}) => {
     }
   }, [color]);
 
-  return (
-      <Link href={path}>
-        <a
-            className={btnColor}
-        >
-          {text}
-        </a>
-      </Link>
-  );
+  if (path) {
+    return (
+        <Link href={path}>
+          <a
+              className={btnColor}
+          >
+            {text}
+          </a>
+        </Link>
+    );
+  } else {
+    return (<button onClick={func} className={btnColor}>
+      {text}
+    </button>);
+  }
+
 };
 
 ColorButton.propTypes = {
-  color: PropTypes.string,
-  text: PropTypes.string,
+  color: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
   path: PropTypes.string,
+  func: PropTypes.func,
 };
 
 export default ColorButton;

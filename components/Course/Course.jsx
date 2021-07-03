@@ -4,14 +4,17 @@ import Logo from '@/components/Course/Logo';
 import {ORANGE, BLUE} from '@/utils/globalStyles';
 import OutlineButton from '@/components/Buttons/OutlineButton';
 import ColorButton from '@/components/Buttons/ColorButton';
+import navPaths from '@/utils/paths';
 
-const Course = ({index, id, title, logo, description, clip}) => {
+const Course = ({index, id, title, logo, description, clip, asPath}) => {
   const isOdd = index % 2 === 0;
   const anchor = '#' + title + id;
-  console.log(clip)
+
+  console.log(clip);
   return (
       <section id={anchor}
-               className={`${styles.course} ${isOdd ? clip : ''}`}>
+               className={`${styles.course} ${isOdd ? clip : ''}`}
+      >
         <div className={styles.course__logo}><Logo logo={logo}/></div>
         <h2 className={`${styles.course__header} ${isOdd ?
             styles.white :
@@ -22,8 +25,9 @@ const Course = ({index, id, title, logo, description, clip}) => {
         <div className={styles.course__buttons}>
           <OutlineButton
               color={isOdd ? ORANGE : BLUE}
-              path={'#'}
+              path={navPaths.dynamicCourses}
               text={'Подробнее о курсе'}
+              as={`/courses/${id}`}
           />
           <ColorButton
               color={isOdd ? ORANGE : BLUE}
@@ -42,6 +46,7 @@ Course.propTypes = {
   description: PropTypes.string,
   index: PropTypes.number,
   clip: PropTypes.string,
+  asPath: PropTypes.string,
 };
 
 export default Course;

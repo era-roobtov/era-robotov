@@ -1,4 +1,3 @@
-import {useState} from 'react';
 import Head from 'next/head';
 import React from 'react';
 import Course from '@/components/Course';
@@ -46,6 +45,7 @@ export async function getStaticProps() {
         {
           id: 0,
           title: 'Scratch',
+          asPath: 'Scratch',
           logo: ['/static/new_img/courses/scratch.png'],
           description:
               'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate',
@@ -53,6 +53,7 @@ export async function getStaticProps() {
         {
           id: 1,
           title: 'Arduino',
+          asPath: 'Arduino',
           logo: ['/static/new_img/courses/arduino.png'],
           description:
               'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate',
@@ -60,6 +61,7 @@ export async function getStaticProps() {
         {
           id: 2,
           title: 'Lego WeDo',
+          asPath: 'LegoWeDo',
           logo: ['/static/new_img/courses/lego.png'],
           description:
               'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate',
@@ -67,6 +69,7 @@ export async function getStaticProps() {
         {
           id: 3,
           title: 'Scratch и Arduino',
+          asPath: 'ScratchArduino',
           logo: [
             '/static/new_img/courses/scratch.png',
             '/static/new_img/courses/arduino.png',
@@ -77,6 +80,7 @@ export async function getStaticProps() {
         {
           id: 4,
           title: 'Python',
+          asPath: 'Python',
           logo: ['/static/new_img/courses/python.png'],
           description:
               'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate',
@@ -84,6 +88,7 @@ export async function getStaticProps() {
         {
           id: 5,
           title: 'Mindstorms',
+          asPath: 'Mindstorms',
           logo: ['/static/new_img/courses/mindstorms.png'],
           description:
               'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate',
