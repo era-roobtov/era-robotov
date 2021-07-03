@@ -1,0 +1,47 @@
+.section {
+  padding: 42px 16px 80px 16px;
+
+  @media (min-width: 768px) {
+    position: relative;
+    z-index: 2;
+    top: -85px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 179px 286px 191px 286px;
+  }
+}
+
+.teachers {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  gap: 23px;
+  justify-content: center;
+  flex-wrap: wrap;
+  place-items: center;
+
+  @media (min-width: 768px) {
+    gap: 43px;
+  }
+}
+
+.title {
+  font-family: "RobotoMedium", "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 120%;
+  text-align: center;
+  color: var(--txt-white);
+
+  margin-bottom: 34px;
+
+  @media (min-width: 768px) {
+    font-family: "RobotoBold", "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+  }
+}

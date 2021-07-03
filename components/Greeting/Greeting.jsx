@@ -16,9 +16,9 @@ const Greeting = ({btn, header, imgPath, subText, mobileImgTop}) => {
         <h1 className={styles.greeting__head}>
           {header}
         </h1>
-        <p className={styles.sub__text}>
-          {subText}
-        </p>
+        <div className={styles.sub__text}>
+          {subText.map((str) => <p key={str}>{str}</p>)}
+        </div>
         <div className={styles.sub__img}>
           <img src={imgPath} alt=""/>
         </div>
@@ -31,13 +31,10 @@ const Greeting = ({btn, header, imgPath, subText, mobileImgTop}) => {
 
 Greeting.propTypes = {
   header: PropTypes.string,
-  subText: PropTypes.string,
+  subText: PropTypes.array,
   imgPath: PropTypes.string,
   mobileImgTop: PropTypes.bool,
-  btn: {
-    show: PropTypes.bool,
-    btnText: PropTypes.string | undefined,
-  },
+  btn: PropTypes.object,
 };
 
 export default Greeting;

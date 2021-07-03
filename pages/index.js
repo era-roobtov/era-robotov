@@ -6,10 +6,15 @@ import Greeting from '@/components/Greeting/Greeting';
 import TextList from '@/components/TextList/TextList';
 import Advantages from '@/components/Advantages/Advantages';
 import Footer from '@/components/Footer/Footer';
+import {CLIP_BLUE} from '@/utils/colors';
 
 const headerTitle = 'Эра роботов';
 
 const Index = ({textList, advantagesList}) => {
+  const str = [
+    'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
+  ];
+
   return (
       <div className="app">
         <Head>
@@ -19,14 +24,14 @@ const Index = ({textList, advantagesList}) => {
         <Layout headerText={headerTitle}>
           <Greeting
               header="Школа программирования для детей"
-              btn={{show: true, btnText: "Выбрать курс"}}
-              subText="Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+              btn={{show: true, btnText: 'Выбрать курс'}}
+              subText={str}
               imgPath="/static/new_img/greeting/robots.png"
               mobileImgTop={false}
           />
           <div className={styles.robots}/>
           <TextList {...textList} />
-          <Advantages {...advantagesList} />
+          <Advantages {...advantagesList} showBtn={false} clip={CLIP_BLUE} />
           <Footer/>
         </Layout>
       </div>

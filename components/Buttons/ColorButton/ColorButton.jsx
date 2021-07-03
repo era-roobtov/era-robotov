@@ -18,7 +18,7 @@ const ColorButton = ({path, text, color}) => {
       default:
         break;
     }
-  }, []);
+  }, [color]);
 
   return (
       <Link href={path}>

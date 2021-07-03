@@ -1,11 +1,12 @@
 %btn {
+  display: flex;
+  justify-content: center;
   padding: 10px 13px;
   font-family: "RobotoMedium", "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 120%;
-  text-align: center;
   border-radius: 15px;
   width: var(--btn-size-mobile);
   color: var(--txt-white);

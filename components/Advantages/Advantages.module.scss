@@ -1,3 +1,8 @@
+%btn {
+  justify-self: center;
+  margin-top: 16px;
+}
+
 .advantages {
   display: grid;
   gap: 16px;
@@ -5,7 +10,11 @@
   z-index: 2;
   top: -10px;
   padding: 41px 16px;
-  background-color: var(--bg-image-b);
+
+  @media (min-width: 768px) {
+    gap: 42px;
+    padding: 121px 32px 121px 32px;
+  }
 
   @media (min-width: 1440px) {
     padding: 203px 285px 280px 285px;
@@ -42,12 +51,21 @@
     }
   }
 
-  &__btn {
-    justify-self: center;
-    margin-top: 16px;
+  &__btn_unshow {
+    @extend %btn;
 
     @media (min-width: 768px) {
       display: none;
+    }
+  }
+
+  &__btn_show {
+    @extend %btn;
+    display: none;
+
+    @media (min-width: 768px) {
+      display: block;
+      margin-top: 29px;
     }
   }
 }

@@ -2,10 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23c62aac-87d1-4bbe-a2ed-c23d59aae260" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/about.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Teachers/Teacher/Teacher.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Teachers/Teacher/Teacher.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Teachers/Teacher/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Teachers/Teachers.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Teachers/Teachers.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Teachers/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/new_img/circle_holder95.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/new_img/teachers/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/new_img/teachers/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/new_img/teachers/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/new_img/teachers/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/new_img/teachers/5.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Course/Course.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Course/Course.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Course/Course.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/Course/Course.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Advantages/Advantages.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Advantages/Advantages.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Advantages/Advantages.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/Advantages/Advantages.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Advantages/Item/Item.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/Advantages/Item/Item.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Buttons/ColorButton/ColorButton.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Buttons/ColorButton/ColorButton.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Buttons/ColorButton/ColorButton.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/Buttons/ColorButton/ColorButton.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Greeting/Greeting.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Greeting/Greeting.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Greeting/Greeting.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/Greeting/Greeting.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Header/Header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/Header/Header.module.scss" afterDir="false" />
@@ -13,6 +27,7 @@
       <change beforePath="$PROJECT_DIR$/pages/courses.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/courses.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/colors.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/colors.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +37,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="SCSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -47,7 +62,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -62,7 +77,8 @@
       <workItem from="1625154768628" duration="163000" />
       <workItem from="1625154945645" duration="231000" />
       <workItem from="1625155191276" duration="8611000" />
-      <workItem from="1625303408147" duration="6171000" />
+      <workItem from="1625303408147" duration="10859000" />
+      <workItem from="1625328271245" duration="5421000" />
     </task>
     <servers />
   </component>

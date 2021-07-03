@@ -5,6 +5,7 @@ import Course from '@/components/Course';
 import styles from '@/assets/courses.module.scss';
 import Layout from '@/components/Layout/Layout';
 import Footer from '@/components/Footer';
+import {CLIP_BLUE, CLIP_BLUE_REVERSE} from '@/utils/colors';
 
 const Courses = ({courses}) => {
   let reverseClip = true;
@@ -26,7 +27,7 @@ const Courses = ({courses}) => {
                 }
 
                 return <Course
-                    clip={reverseClip ? 'clip-blue-reverse' : 'clip-blue'}
+                    clip={reverseClip ? CLIP_BLUE_REVERSE : CLIP_BLUE}
                     index={index}
                     key={course.id} {...course}
                 />;

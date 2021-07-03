@@ -120,15 +120,15 @@ $duration: 400ms;
   }
 
   &__item {
-    cursor: pointer;
     width: var(--btn-size-mobile);
-    padding: 3px;
+    cursor: pointer;
     background: linear-gradient(270deg, #060693 0%, #e5a14b 100%);
     border-radius: 15px;
     align-items: center;
     margin-bottom: 4px;
 
     @media (min-width: 768px) {
+      width: unset;
       border-radius: unset;
       background: inherit;
       margin-right: 10px;
@@ -151,6 +151,7 @@ $duration: 400ms;
     }
 
     & > a {
+      padding: 3px;
       position: relative;
       font-style: normal;
       font-weight: 500;
@@ -158,6 +159,10 @@ $duration: 400ms;
       line-height: 120%;
       font-weight: 500;
       color: var(--bg-main);
+
+      @media (min-width: 768px) {
+        padding: 10px 52px;
+      }
 
       @media (min-width: 992px) {
         font-size: 16px;
