@@ -8,9 +8,10 @@ import ColorButton from '@/components/Buttons/ColorButton';
 const Course = ( {index, id, title, logo, description} ) => {
   const isOdd = index % 2 === 0;
   const anchor = '#' + title + id;
+
   return (
     <section id={anchor} className={`${styles.course} ${isOdd ? "clip-blue" : ""}`}>
-      <Logo logo={logo}/>
+      <div className={styles.course__logo}><Logo logo={logo}/></div>
       <h2 className={`${styles.course__header} ${isOdd ? styles.white : styles.black}`}>{title}</h2>
       <p className={styles.course__description}>
         {description}

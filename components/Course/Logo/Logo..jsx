@@ -6,20 +6,19 @@ const plusPath = '/static/new_img/courses/plus.png';
 const Logo = ({logo}) => {
   const logos = [];
 
-  logo.forEach((logoItem, index) => {
-    if (index === 0) { // Если картинка курса то вернем ее
-      logos.push(
-          <img src={logoItem} alt=""/>,
-      );
-    } else { // Иначе вернем плюсик и картиночку
-      logos.push(
-          <div className={styles.logo_double}>
-            <img className={styles.logo_plus} src={plusPath} alt=""/>
-            <img src={logoItem} alt=""/>
-          </div>,
-      );
-    }
-  })
+  if (logo.length === 2) {
+    logos.push(
+        <>
+          <img src={logo[0]} alt=""/>
+          <img className={styles.logo_plus} src={plusPath} alt=""/>
+          <img src={logo[1]} alt=""/>
+        </>,
+    );
+  } else {
+    logos.push(
+        <img src={logo[0]} alt=""/>,
+    );
+  }
 
   return (
       <div className={`${logo.length > 1 ? styles.logo_double : styles.logo}`}>

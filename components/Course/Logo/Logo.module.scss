@@ -1,20 +1,36 @@
+%imgSize {
+  max-width: 236px;
+
+  @media (min-width: 768px) {
+    max-width: 200px;
+  }
+
+  @media (min-width: 992px) {
+    max-width: 312px;
+  }
+
+  @media (min-width: 1440px) {
+    max-width: 462px;
+  }
+}
+
 .logo {
   justify-self: center;
   margin-bottom: 16px;
 
   & > img {
-    max-width: 236px;
+    @extend %imgSize
   }
 
   &_double {
     display: grid;
-    justify-content: center;
+    justify-items: center;
     @media (min-width: 768px) {
-      grid-template-rows: 1fr 45px 1fr;
+      grid-template-rows: auto 43px auto;
     }
 
     & > img {
-      max-width: 236px;
+      @extend %imgSize
     }
 
   }

@@ -3,8 +3,37 @@
   display: grid;
   align-items: center;
   justify-content: center;
+  grid-template-areas:
+  "c-logo"
+  "c-header"
+  "c-description"
+  "c-buttons";
+
+  @media (min-width: 768px) {
+    padding: 46px 32px 133px 32px;
+
+    grid-template-areas:
+    "c-logo c-header"
+    "c-logo c-description"
+    "c-logo c-buttons";
+    grid-template-columns: 200px auto;
+    column-gap: 15px;
+  }
+
+  @media (min-width: 992px) {
+    padding: 116px 260px 133px 116px;
+    grid-template-columns: 380px auto;
+    column-gap: 8px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 146px 260px 133px 146px;
+    grid-template-columns: 462px auto;
+    column-gap: 15px;
+  }
 
   &__header {
+    grid-area: c-header;
     font-family: "RobotoBold", "Roboto", sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -12,9 +41,15 @@
     line-height: 120%;
     text-align: center;
     margin-bottom: 8px;
+
+    @media (min-width: 768px) {
+      text-align: start;
+      margin-bottom: 26px;
+    }
   }
 
   &__description {
+    grid-area: c-description;
     font-family: "RobotoLight", "Roboto", sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -22,12 +57,29 @@
     line-height: 120%;
     text-align: justify;
     margin-bottom: 25px;
+
+    @media (min-width: 768px) {
+      font-size: 16px;
+      margin-bottom: 38px;
+    }
   }
 
   &__buttons {
+    grid-area: c-buttons;
     display: grid;
     justify-content: center;
     gap: 12px;
+
+    @media (min-width: 768px) {
+      justify-content: unset;
+      grid-template-columns: repeat(2, auto);
+      gap: 71px;
+    }
+  }
+
+  &__logo {
+    grid-area: c-logo;
+    text-align: center;
   }
 }
 
