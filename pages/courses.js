@@ -1,3 +1,4 @@
+import {useState} from 'react';
 import Head from 'next/head';
 import React from 'react';
 import Course from '@/components/Course';
@@ -6,6 +7,8 @@ import Layout from '@/components/Layout/Layout';
 import Footer from '@/components/Footer';
 
 const Courses = ({courses}) => {
+  let reverseClip = true;
+
   return (
       <div className={styles.courses}>
         <Head>
@@ -17,8 +20,18 @@ const Courses = ({courses}) => {
         </Head>
 
         <Layout>
-          {courses.map((course, index) => <Course index={index}
-                                                  key={course.id} {...course}/>)}
+          {courses.map((course, index) => {
+                if (index % 2 === 0) {
+                  reverseClip = !reverseClip;
+                }
+
+                return <Course
+                    clip={reverseClip ? 'clip-blue-reverse' : 'clip-blue'}
+                    index={index}
+                    key={course.id} {...course}
+                />;
+              },
+          )}
           <Footer/>
         </Layout>
       </div>

@@ -1,21 +1,10 @@
-.hello {
+// общий вид компоненты
+%helloT {
   padding: 24px 16px 0 16px;
   display: grid;
-  grid-template-columns: 0.75fr 1fr;
-  grid-template-rows: 1fr 156px 1fr;
-  grid-template-areas:
-    "h-head h-head"
-    "h-text h-img"
-    "h-btn h-btn";
+
   @media (min-width: 768px) {
     padding: 0 120px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 0.8fr 0.1fr;
-
-    grid-template-areas:
-      "h-head h-img"
-      "h-text h-img"
-      "h-btn h-btn";
   }
 
   @media (min-width: 1440px) {
@@ -23,8 +12,72 @@
   }
 }
 
+// разделенный на две колонки
+%helloTDoubleColumns {
+  @extend %helloT;
+  grid-template-columns: 0.75fr 1fr;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+// Если на компоненте нет кнопки
+.helloWithBtn {
+  @extend %helloTDoubleColumns;
+
+  grid-template-rows: 1fr 156px 1fr;
+  grid-template-areas:
+    "h-head h-head"
+    "h-text h-img"
+    "h-btn h-btn";
+
+  @media (min-width: 768px) {
+    grid-template-rows: 1fr 0.8fr 0.1fr;
+
+    grid-template-areas:
+      "h-head h-img"
+      "h-text h-img"
+      "h-btn h-img";
+  }
+}
+
+.helloWithOutBtn {
+  @extend %helloTDoubleColumns;
+
+  grid-template-areas:
+    "h-head h-head"
+    "h-text h-img";
+
+  @media (min-width: 768px) {
+    grid-template-rows: auto 0.8fr;
+
+    grid-template-areas:
+      "h-head h-img"
+      "h-text h-img";
+  }
+}
+
+.helloWithoutBtnImgTop {
+  @extend %helloT;
+
+  grid-template-areas:
+    "h-img"
+    "h-head"
+    "h-text";
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "h-head h-img"
+      "h-text h-img";
+  }
+}
+
+
 .greeting {
   margin-bottom: 32px;
+
   &__head {
     grid-area: h-head;
     padding: 0 29px;
@@ -70,11 +123,16 @@
   }
 
   &__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     grid-area: h-img;
     height: 100%;
     width: 100%;
-    background: url("/static/new_img/greeting/robots.png") no-repeat;
-    background-size: contain;
+
+    & > img {
+      width: 100%;
+    }
   }
 
   &__btn {
@@ -82,5 +140,9 @@
     justify-content: center;
     align-items: center;
     grid-area: h-btn;
+
+    @media (min-width: 768px) {
+      justify-content: end;
+    }
   }
 }
