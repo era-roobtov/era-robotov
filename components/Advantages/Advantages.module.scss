@@ -8,10 +8,11 @@
   gap: 16px;
   position: relative;
   z-index: 2;
-  top: -10px;
+  top: -15px;
   padding: 41px 16px;
 
   @media (min-width: 768px) {
+    top: -100px;
     gap: 42px;
     padding: 121px 32px 121px 32px;
   }

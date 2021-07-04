@@ -10,7 +10,7 @@ import {
 import Item from '@/components/Advantages/Item';
 import styles from './Advantages.module.scss';
 
-const Advantages = ({title, list, clip, showBtn}) => {
+const Advantages = ({title, list, clip, showBtn, shift}) => {
   const [btnColor, setBtnColor] = useState(ORANGE);
 
   useEffect(() => {
@@ -20,7 +20,7 @@ const Advantages = ({title, list, clip, showBtn}) => {
   }, [clip]);
 
   return (
-      <section className={`${styles.advantages} ${clip}`}>
+      <section style={{top: shift}} className={`${styles.advantages} ${clip}`}>
         <h2 className={styles.advantages__header}>{title}</h2>
         <ul className={styles.advantages__list}>
           {list.map((item) => (
@@ -43,6 +43,7 @@ Advantages.propTypes = {
   list: PropTypes.array,
   clip: PropTypes.string,
   showBtn: PropTypes.bool,
+  shift: PropTypes.string
 };
 
 export default Advantages;

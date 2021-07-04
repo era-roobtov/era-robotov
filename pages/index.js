@@ -1,5 +1,4 @@
 import Head from 'next/head';
-// import Image from "next/image";
 import Layout from '@/components/Layout/Layout';
 import styles from '@/assets/index.module.scss';
 import Greeting from '@/components/Greeting/Greeting';
@@ -8,7 +7,6 @@ import Advantages from '@/components/Advantages/Advantages';
 import Footer from '@/components/Footer/Footer';
 import {CLIP_BLUE} from '@/utils/globalStyles';
 
-const headerTitle = 'Эра роботов';
 
 const Index = ({textList, advantagesList}) => {
   const str = [
@@ -21,7 +19,7 @@ const Index = ({textList, advantagesList}) => {
           <title>Эра роботов</title>
           <meta name="description" content="Школа робототехники Эра роботов"/>
         </Head>
-        <Layout headerText={headerTitle}>
+        <Layout>
           <Greeting
               header="Школа программирования для детей"
               btn={{show: true, btnText: 'Выбрать курс'}}

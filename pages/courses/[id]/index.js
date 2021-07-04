@@ -8,6 +8,7 @@ import LessonDescription from '@/components/LessonDescription';
 import LessonWillLearn from '@/components/LessonWillLearn';
 import LessonPayCard from '@/components/LessonPayCard';
 import Footer from '@/components/Footer';
+import Request from '@/components/Forms/Request';
 import styles from './index.module.scss';
 
 const Course = () => {
@@ -232,7 +233,8 @@ const Course = () => {
           />
           <LessonWillLearn list={courses[id]?.willLearn}/>
           <LessonPayCard {...courses[id]?.payCard}/>
-          <Footer />
+          <Footer shift="0"/>
+          <Request />
         </React.Fragment>}
       </Layout>
   );

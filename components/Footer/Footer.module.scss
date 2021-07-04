@@ -7,12 +7,16 @@
   bottom: 0px;
   left: 0px;
   padding: 22px 65px;
-
+  margin-top: -15px;
   background: linear-gradient(270deg, #060693 0%, #e5a14b 100%);
 
   &__info {
     display: grid;
     gap: 6px;
+  }
+
+  @media (min-width: 768px) {
+    margin-top: -85px;
   }
 }
 

@@ -1,10 +1,11 @@
+import PropTypes from 'prop-types';
 import Link from 'next/link';
-import styles from './Footer.module.scss';
 import Social from '@/components/Social/Social';
+import styles from './Footer.module.scss';
 
-const Footer = () => {
+const Footer = ({shift}) => {
   return (
-      <footer className={styles.footer}>
+      <footer style={{marginTop: shift}} className={styles.footer}>
         <div className={styles.info}>
           <div className={styles.footer__info}>
             <h4 className={styles.info__header}>О школе</h4>
@@ -31,9 +32,13 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-        <Social />
+        <Social/>
       </footer>
   );
+};
+
+Footer.propTypes = {
+  shift: PropTypes.string,
 };
 
 export default Footer;

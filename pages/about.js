@@ -23,7 +23,7 @@ const About = ({advantagesList, teachersList, subText}) => {
               imgPath="/static/new_img/greeting/robots.png"
               mobileImgTop={true}
           />
-          <Advantages {...advantagesList} showBtn={true} clip={CLIP_ORANGE}/>
+          <Advantages {...advantagesList} shift="0" showBtn={true} clip={CLIP_ORANGE}/>
           <Teachers {...teachersList} clip={CLIP_BLUE}/>
           <Footer/>
         </Layout>
