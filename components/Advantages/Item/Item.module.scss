@@ -24,6 +24,9 @@
   }
 
   &__img {
+    width: 45px;
+    height: 45px;
+
     @media (min-width: 768px) {
       height: 100%;
       width: 95px;

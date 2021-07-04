@@ -2,11 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23c62aac-87d1-4bbe-a2ed-c23d59aae260" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/components/LessonDescription/LessonDescription.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/LessonDescription/LessonDescription.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/LessonDescription/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/LessonPayCard/LessonPayCard.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/LessonPayCard/LessonPayCard.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/LessonPayCard/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/LessonWillLearn/LessonWillLearn.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/LessonWillLearn/LessonWillLeearn.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/LessonWillLearn/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/new_img/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/new_img/2.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Advantages/Item/Item.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Advantages/Item/Item.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Advantages/Item/Item.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/Advantages/Item/Item.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Buttons/ColorButton/ColorButton.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Buttons/ColorButton/ColorButton.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Buttons/ColorButton/ColorButton.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/Buttons/ColorButton/ColorButton.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Course/Logo/Logo..jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Course/Logo/Logo..jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/LessonDescription/LessonDescription.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/LessonDescription/LessonDescription.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/courses/[id]/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/courses/[id]/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/courses/[id]/index.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/courses/[id]/index.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/globalStyles.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/globalStyles.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +78,7 @@
       <workItem from="1625155191276" duration="8611000" />
       <workItem from="1625303408147" duration="10859000" />
       <workItem from="1625328271245" duration="10208000" />
-      <workItem from="1625342125829" duration="11515000" />
+      <workItem from="1625342125829" duration="15842000" />
     </task>
     <servers />
   </component>

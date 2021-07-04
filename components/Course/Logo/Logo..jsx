@@ -1,3 +1,4 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Logo.module.scss';
 
@@ -8,15 +9,15 @@ const Logo = ({logo}) => {
 
   if (logo.length === 2) {
     logos.push(
-        <>
+        <React.Fragment key={logo[1]}>
           <img src={logo[0]} alt=""/>
           <img className={styles.logo_plus} src={plusPath} alt=""/>
           <img src={logo[1]} alt=""/>
-        </>,
+        </React.Fragment>,
     );
   } else {
     logos.push(
-        <img src={logo[0]} alt=""/>,
+        <img key={logo[0]} src={logo[0]} alt=""/>,
     );
   }
 

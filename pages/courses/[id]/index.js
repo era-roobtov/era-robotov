@@ -1,11 +1,14 @@
+import {BLUE, CLIP_BLUE} from '@/utils/globalStyles';
 import React from 'react';
 import {useRouter} from 'next/router';
 import Logo from '@/components/Course/Logo';
 import Layout from '@/components/Layout';
 import ColorButton from '@/components/Buttons/ColorButton';
-import {BLUE, CLIP_BLUE} from '@/utils/globalStyles';
-import styles from './index.module.scss';
 import LessonDescription from '@/components/LessonDescription';
+import LessonWillLearn from '@/components/LessonWillLearn';
+import LessonPayCard from '@/components/LessonPayCard';
+import Footer from '@/components/Footer';
+import styles from './index.module.scss';
 
 const Course = () => {
   const courses = {
@@ -21,6 +24,24 @@ const Course = () => {
         'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
         'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
         'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. '],
+      willLearn: [
+        {
+          imgPath: '/static/new_img/2.png',
+          text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
+        },
+        {
+          imgPath: '/static/new_img/2.png',
+          text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
+        },
+        {
+          imgPath: '/static/new_img/2.png',
+          text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
+        },
+      ],
+      payCard: {
+        description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
+        cost: 4500,
+      },
     },
     1: {
       title: 'Arduino',
@@ -34,6 +55,24 @@ const Course = () => {
         'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
         'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
         'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. '],
+      willLearn: [
+        {
+          imgPath: '/static/new_img/2.png',
+          text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
+        },
+        {
+          imgPath: '/static/new_img/2.png',
+          text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
+        },
+        {
+          imgPath: '/static/new_img/2.png',
+          text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
+        },
+      ],
+      payCard: {
+        description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
+        cost: 4500,
+      },
     },
     2: {
       title: 'Lego WeDo',
@@ -47,6 +86,24 @@ const Course = () => {
         'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
         'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
         'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. '],
+      willLearn: [
+        {
+          imgPath: '/static/new_img/2.png',
+          text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
+        },
+        {
+          imgPath: '/static/new_img/2.png',
+          text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
+        },
+        {
+          imgPath: '/static/new_img/2.png',
+          text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
+        },
+      ],
+      payCard: {
+        description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
+        cost: 4500,
+      },
     },
     3: {
       title: 'Scratch и Arduino',
@@ -63,6 +120,24 @@ const Course = () => {
         'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
         'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
         'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. '],
+      willLearn: [
+        {
+          imgPath: '/static/new_img/2.png',
+          text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
+        },
+        {
+          imgPath: '/static/new_img/2.png',
+          text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
+        },
+        {
+          imgPath: '/static/new_img/2.png',
+          text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
+        },
+      ],
+      payCard: {
+        description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
+        cost: 4500,
+      },
     },
     4: {
       title: 'Python',
@@ -76,6 +151,24 @@ const Course = () => {
         'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
         'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
         'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. '],
+      willLearn: [
+        {
+          imgPath: '/static/new_img/2.png',
+          text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
+        },
+        {
+          imgPath: '/static/new_img/2.png',
+          text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
+        },
+        {
+          imgPath: '/static/new_img/2.png',
+          text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
+        },
+      ],
+      payCard: {
+        description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
+        cost: 4500,
+      },
     },
     5: {
       title: 'Mindstorms',
@@ -89,6 +182,24 @@ const Course = () => {
         'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
         'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
         'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. '],
+      willLearn: [
+        {
+          imgPath: '/static/new_img/2.png',
+          text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
+        },
+        {
+          imgPath: '/static/new_img/2.png',
+          text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
+        },
+        {
+          imgPath: '/static/new_img/2.png',
+          text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
+        },
+      ],
+      payCard: {
+        description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
+        cost: 4500,
+      },
     },
   };
 
@@ -98,12 +209,11 @@ const Course = () => {
   const handleClick = () => {
     return console.log('kek');
   };
-  console.log(courses[id]?.logo);
+
   return (
       <Layout>
         {id && <React.Fragment>
           <section id={`course${id}`} className={styles.course}>
-
             <div className={styles.course__logo}>
               <Logo logo={courses[id]?.logo}/>
             </div>
@@ -115,7 +225,14 @@ const Course = () => {
               <ColorButton text="Купить" color={BLUE} func={handleClick}/>
             </div>
           </section>
-          <LessonDescription descriptionList={courses[id]?.descriptionList} clip={CLIP_BLUE}/>
+          <LessonDescription
+              id={id}
+              descriptionList={courses[id]?.descriptionList}
+              clip={CLIP_BLUE}
+          />
+          <LessonWillLearn list={courses[id]?.willLearn}/>
+          <LessonPayCard {...courses[id]?.payCard}/>
+          <Footer />
         </React.Fragment>}
       </Layout>
   );

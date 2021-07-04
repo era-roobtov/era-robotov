@@ -11,6 +11,8 @@
   width: var(--btn-size-mobile);
   color: var(--txt-white);
   cursor: pointer;
+  border: none;
+  outline: none;
 
   @media (min-width: 768px) {
     font-size: 16px;
@@ -31,4 +33,10 @@
 .blue {
   @extend %btn;
   background-color: var(--bg-image-b);
+}
+
+.white {
+  @extend %btn;
+  background-color: var(--bg-main);
+  color: var(--bg-image-b);
 }

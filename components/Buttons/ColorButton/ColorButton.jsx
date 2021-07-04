@@ -1,7 +1,7 @@
 import {useEffect, useState} from 'react';
 import Link from 'next/link';
 import PropTypes from 'prop-types';
-import {ORANGE, BLUE} from '@/utils/globalStyles';
+import {ORANGE, BLUE, WHITE} from '@/utils/globalStyles';
 import styles from './ColorButton.module.scss';
 
 const ColorButton = ({path, text, color, func}) => {
@@ -15,6 +15,8 @@ const ColorButton = ({path, text, color, func}) => {
       case BLUE:
         setBtnColor(styles.blue);
         break;
+      case WHITE:
+        setBtnColor(styles.white)
       default:
         break;
     }
@@ -39,7 +41,7 @@ const ColorButton = ({path, text, color, func}) => {
 };
 
 ColorButton.propTypes = {
-  color: PropTypes.string.isRequired,
+  color: PropTypes.oneOf([WHITE, BLUE, ORANGE]),
   text: PropTypes.string.isRequired,
   path: PropTypes.string,
   func: PropTypes.func,
