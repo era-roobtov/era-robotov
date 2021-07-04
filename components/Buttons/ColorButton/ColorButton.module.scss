@@ -1,6 +1,7 @@
 %btn {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 10px 13px;
   font-family: "RobotoMedium", "Roboto", sans-serif;
   font-style: normal;
@@ -13,8 +14,10 @@
   cursor: pointer;
   border: none;
   outline: none;
+  max-height: 44px;
 
   @media (min-width: 768px) {
+    font-family: "RobotoBold", "Roboto", sans-serif;
     font-size: 16px;
     width: var(--btn-size-tablets);
   }

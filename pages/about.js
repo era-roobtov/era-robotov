@@ -38,23 +38,23 @@ export async function getStaticProps() {
         title: 'Наши преимущества',
         list: [
           {
-            img: '/static/new_img/advantages/1.png',
+            imgPath: 'static/new_img/1.png',
             text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 1',
           },
           {
-            img: '/static/new_img/advantages/1.png',
+            imgPath: '/static/new_img/advantages/1.png',
             text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.2',
           },
           {
-            img: '/static/new_img/advantages/1.png',
+            imgPath: '/static/new_img/advantages/1.png',
             text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.3',
           },
           {
-            img: '/static/new_img/advantages/1.png',
+            imgPath: '/static/new_img/advantages/1.png',
             text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.4',
           },
           {
-            img: '/static/new_img/advantages/1.png',
+            imgPath: '/static/new_img/advantages/1.png',
             text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.5',
           },
         ],

@@ -3,13 +3,64 @@
   padding: 0 16px;
   justify-content: center;
   align-content: center;
+  grid-template-areas:
+            "dc-logo"
+            "dc-header"
+            "dc-description"
+            "dc-btns";
+
+  @media (min-width: 768px) {
+    column-gap: 45px;
+    padding: 16px 82px 0px 82px;
+    grid-template-columns: 0.8fr 1fr;
+    grid-template-rows: repeat(auto-fill, auto);
+    grid-template-areas:
+            "dc-header dc-logo"
+            "dc-description dc-logo"
+            "dc-btns dc-logo";
+  }
+
+  @media (min-width: 992px) {
+    column-gap: 65px;
+    padding: 35px 104px 4px 104px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 53px 163px 4px 163px;
+    column-gap: 95px;
+  }
+
 
   &__logo {
-    text-align: center;
+    grid-area: dc-logo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 3px;
+
+    & > div,
+    & > div > img {
+
+      @media (min-width: 768px) {
+        max-width: 312px;
+      }
+
+      @media (min-width: 992px) {
+        max-width: 486px;
+      }
+
+      @media (min-width: 1440px) {
+        max-width: 586px;
+      }
+    }
+
+    @media (min-width: 768px) {
+      margin-bottom: 0;
+    }
   }
 
   &__header {
+    grid-area: dc-header;
     font-family: "RobotoBold", "Roboto", sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -18,9 +69,16 @@
     color: var(--txt-black);
     margin-bottom: 8px;
     text-align: center;
+
+    @media (min-width: 768px) {
+      margin-bottom: 20px;
+      text-align: start;
+      font-size: 64px;
+    }
   }
 
   &__description {
+    grid-area: dc-description;
     font-family: "RobotoLight", "Roboto", sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -28,12 +86,25 @@
     line-height: 120%;
     text-align: justify;
     color: var(--txt-sublack);
-    margin-bottom: 22px;
+    margin-bottom: 26px;
+
+    @media (min-width: 768px) {
+      font-family: "RobotoMedium", "Roboto", sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+    }
   }
 
   &__btn {
-    display: flex;
+    grid-area: dc-btns;
+    display: grid;
     justify-content: center;
     margin-bottom: 32px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 0;
+      align-items: flex-end;
+      justify-content: flex-end;
+    }
   }
 }

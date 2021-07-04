@@ -1,21 +1,25 @@
 .btn {
-    padding: 10px 32px;
-    width: var(--btn-size-mobile);
-    font-family: "RobotoMedium", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 120%;
-    display: flex;
-    align-items: center;
-    text-align: justify;
-    color: var(--txt-white);
-    background: linear-gradient(270deg, #060693 0%, #e5a14b 100%);
-    border-radius: 15px;
+  padding: 10px 32px;
+  width: var(--btn-size-mobile);
+  font-family: "RobotoMedium", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  color: var(--txt-white);
+  background: linear-gradient(270deg, #060693 0%, #e5a14b 100%);
+  border-radius: 15px;
 
-    @media (min-width: 768px) {
-      padding: 15px 46px;
-      width: var(--btn-size-tablets);
-      font-size: 22px;
-    }
+  @media (min-width: 768px) {
+    padding: 10px 46px;
+    width: var(--btn-size-tablets);
+    font-size: 22px;
+  }
+
+  @media (min-width: 992px) {
+    padding: 15px 46px;
+  }
 }

@@ -7,6 +7,18 @@
   padding: 32px 0;
   margin: 0 16px 32px 16px;
 
+  @media (min-width: 992px) {
+    margin: 0 95px 72px 95px;
+  }
+
+  @media (min-width: 1440px) {
+    margin: 0 260px 82px 260px;
+  }
+
+  @media (min-width: 1920px) {
+    margin: 0 360px 82px 360px
+  }
+
   &__info {
     display: grid;
     grid-template-rows: repeat(auto-fill, auto);
@@ -19,6 +31,12 @@
     gap: 12px;
     justify-content: center;
     align-items: center;
+
+    @media (min-width: 768px) {
+      gap: 30px;
+      grid-template-rows: unset;
+      grid-template-columns: repeat(2, auto);
+    }
   }
 }
 
@@ -31,6 +49,12 @@
     line-height: 120%;
     text-align: center;
     color: var(--txt-white);
+
+    @media (min-width: 768px) {
+      font-family: "RobotoBold", "Roboto", sans-serif;
+      font-weight: 700;
+      font-size: 24px;
+    }
   }
 
   &__description {
@@ -43,6 +67,14 @@
     align-items: center;
     text-align: center;
     color: var(--txt-white);
+
+    @media (min-width: 768px) {
+      font-family: "RobotoMedium", "Roboto", sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      text-align: center;
+      justify-self: center;
+    }
   }
 
   &__cost {
@@ -53,5 +85,10 @@
     line-height: 120%;
     text-align: center;
     color: var(--txt-white);
+
+    @media (min-width: 768px) {
+      font-size: 64px;
+      text-align: center;
+    }
   }
 }

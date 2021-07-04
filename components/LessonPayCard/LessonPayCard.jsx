@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
-import styles from './LessonPayCard.module.scss';
 import ColorButton from '@/components/Buttons/ColorButton';
 import {BLUE, WHITE} from '@/utils/globalStyles';
+import styles from './LessonPayCard.module.scss';
 
 const LessonPayCard = ({description, cost}) => {
 
@@ -16,7 +16,7 @@ const LessonPayCard = ({description, cost}) => {
   return (
       <section className={styles.payCard}>
         <div className={styles.payCard__info}>
-          <h4 className={styles.info__header}>Стоимость кура</h4>
+          <h4 className={styles.info__header}>Стоимость курса</h4>
           <p className={styles.info__description}>{description}</p>
           <p className={styles.info__cost}>{cost} р.</p>
         </div>

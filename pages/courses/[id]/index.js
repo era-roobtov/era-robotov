@@ -1,4 +1,4 @@
-import {BLUE, CLIP_BLUE} from '@/utils/globalStyles';
+import {BLUE, CLIP_BLUE, CLIP_BLUE_REVERSE} from '@/utils/globalStyles';
 import React from 'react';
 import {useRouter} from 'next/router';
 import Logo from '@/components/Course/Logo';
@@ -228,7 +228,7 @@ const Course = () => {
           <LessonDescription
               id={id}
               descriptionList={courses[id]?.descriptionList}
-              clip={CLIP_BLUE}
+              clip={CLIP_BLUE_REVERSE}
           />
           <LessonWillLearn list={courses[id]?.willLearn}/>
           <LessonPayCard {...courses[id]?.payCard}/>
