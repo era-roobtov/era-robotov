@@ -1,4 +1,4 @@
-.footer {
+%footerT {
   display: grid;
   grid-template-rows: repeat(2, auto);
   gap: 30px;
@@ -7,16 +7,44 @@
   bottom: 0px;
   left: 0px;
   padding: 22px 65px;
-  margin-top: -15px;
   background: linear-gradient(270deg, #060693 0%, #e5a14b 100%);
 
   &__info {
     display: grid;
     gap: 6px;
   }
+}
+
+.footer_zero {
+  @extend %footerT;
+}
+
+.footer_single {
+  @extend %footerT;
+
+  margin-top: -15px;
 
   @media (min-width: 768px) {
     margin-top: -85px;
+  }
+}
+
+.footer_double {
+  @extend %footerT;
+
+  margin-top: -30px;
+
+  @media (min-width: 768px) {
+    margin-top: -200px;
+  }
+}
+
+.footer_singleDouble {
+  @extend %footerT;
+
+  margin-top: -15px;
+  @media (min-width: 768px) {
+    margin-top: -200px;
   }
 }
 

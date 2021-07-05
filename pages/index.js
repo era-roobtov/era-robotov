@@ -5,14 +5,14 @@ import Greeting from '@/components/Greeting/Greeting';
 import TextList from '@/components/TextList/TextList';
 import Advantages from '@/components/Advantages/Advantages';
 import Footer from '@/components/Footer/Footer';
-import {CLIP_BLUE} from '@/utils/globalStyles';
+import {CLIP_BLUE, CLIP_ORANGE} from '@/utils/globalStyles';
 
-
-const Index = ({textList, advantagesList}) => {
+const Index = ({textList, advantagesList, aboutUsList}) => {
   const str = [
     'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
   ];
 
+  console.log('kek')
   return (
       <div className="app">
         <Head>
@@ -27,10 +27,17 @@ const Index = ({textList, advantagesList}) => {
               imgPath="/static/new_img/greeting/robots.png"
               mobileImgTop={false}
           />
+          <Advantages
+              {...aboutUsList}
+              showBtn={false}
+              clip={CLIP_BLUE}
+              shiftCount={0}
+              columnCount={2}
+          />
           <div className={styles.robots}/>
-          <TextList {...textList} />
-          <Advantages {...advantagesList} showBtn={false} clip={CLIP_BLUE} />
-          <Footer/>
+          <TextList shiftCount={1} {...textList} clip={CLIP_ORANGE} />
+          <Advantages columnCount={1} shiftCount={2} {...advantagesList} showBtn={false} clip={CLIP_BLUE}/>
+          <Footer shiftCount='mobileSingle-pcDouble'/>
         </Layout>
       </div>
   );
@@ -67,6 +74,35 @@ export async function getStaticProps() {
           {
             imgPath: '/static/new_img/1.png',
             text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.4',
+          },
+          {
+            imgPath: '/static/new_img/1.png',
+            text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.5',
+          },
+        ],
+      },
+      aboutUsList: {
+        title: 'О нас',
+        list: [
+          {
+            imgPath: '/static/new_img/1.png',
+            text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 1',
+          },
+          {
+            imgPath: '/static/new_img/1.png',
+            text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.2',
+          },
+          {
+            imgPath: '/static/new_img/1.png',
+            text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.3',
+          },
+          {
+            imgPath: '/static/new_img/1.png',
+            text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.4',
+          },
+          {
+            imgPath: '/static/new_img/1.png',
+            text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.5',
           },
           {
             imgPath: '/static/new_img/1.png',

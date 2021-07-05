@@ -1,19 +1,12 @@
-%btn {
-  justify-self: center;
-  margin-top: 16px;
-}
-
 .advantages {
   display: grid;
   gap: 16px;
   position: relative;
   z-index: 2;
-  top: -15px;
   padding: 41px 16px;
 
   @media (min-width: 768px) {
-    top: -100px;
-    gap: 42px;
+    gap: 45px;
     padding: 121px 32px 121px 32px;
   }
 
@@ -27,7 +20,6 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 120%;
-    text-align: center;
 
     color: var(--txt-white);
 
@@ -46,10 +38,20 @@
     gap: 19px;
     grid-template-rows: repeat(5, 1fr);
 
-    @media (min-width: 768px) {
-      grid-template-rows: unset;
-      grid-template-columns: repeat(5, 1fr);
+    &_single {
+      @media (min-width: 768px) {
+        grid-template-rows: unset;
+        grid-template-columns: repeat(5, 1fr);
+      }
     }
+
+    &_double {
+      @media (min-width: 768px) {
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
   }
 
   &__btn_unshow {
@@ -68,5 +70,27 @@
       display: block;
       margin-top: 29px;
     }
+  }
+}
+
+%btn {
+  justify-self: center;
+  margin-top: 16px;
+}
+
+
+.advantages_single {
+  top: -15px;
+
+  @media (min-width: 768px) {
+    top: -100px;
+  }
+}
+
+.advantages_double {
+  top: -30px;
+
+  @media (min-width: 768px) {
+    top: -200px;
   }
 }

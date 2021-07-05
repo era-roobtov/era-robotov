@@ -2,10 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23c62aac-87d1-4bbe-a2ed-c23d59aae260" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/components/AboutUs/AboutUs.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/AboutUs/AboutUs.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/AboutUs/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/index.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/index.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Forms/Request/Request.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/Forms/Request/Request.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Advantages/Advantages.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Advantages/Advantages.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Advantages/Advantages.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/Advantages/Advantages.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Advantages/Item/Item.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Advantages/Item/Item.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Advantages/Item/Item.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/Advantages/Item/Item.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Footer/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Footer/Footer.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/Footer/Footer.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Greeting/Greeting.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Greeting/Greeting.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Greeting/Greeting.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/Greeting/Greeting.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/TextList/TextList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/TextList/TextList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/TextList/TextList.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/TextList/TextList.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contact.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/courses/[id]/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/courses/[id]/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +28,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="SCSS File" />
         <option value="JavaScript File" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
@@ -66,7 +79,8 @@
       <workItem from="1625342125829" duration="15842000" />
       <workItem from="1625418547198" duration="6871000" />
       <workItem from="1625438667383" duration="7627000" />
-      <workItem from="1625476909106" duration="3496000" />
+      <workItem from="1625476909106" duration="3982000" />
+      <workItem from="1625498211236" duration="4352000" />
     </task>
     <servers />
   </component>

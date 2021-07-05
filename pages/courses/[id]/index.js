@@ -234,7 +234,7 @@ const Course = () => {
           />
           <LessonWillLearn list={courses[id]?.willLearn}/>
           <LessonPayCard requestFun={handleClick} {...courses[id]?.payCard}/>
-          <Footer shift="0"/>
+          <Footer shift={false}/>
           <Request
               isOpen={requestForm}
               fun={handleClick}

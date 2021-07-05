@@ -69,3 +69,19 @@
     }
   }
 }
+
+.list_single {
+  top: -15px;
+
+  @media (min-width: 768px) {
+    top: -100px;
+  }
+}
+
+.list_double {
+  top: -30px;
+
+  @media (min-width: 768px) {
+    top: -200px;
+  }
+}

@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import navPaths from '@/utils/paths';
 import RainbowButton from '@/components/Buttons/RainbowButton';
 import styles from './Greeting.module.scss';
-import Logo from '@/components/Course/Logo';
 
 const Greeting = ({btn, header, imgPath, subText, mobileImgTop}) => {
   let gridPos;

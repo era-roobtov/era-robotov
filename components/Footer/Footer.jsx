@@ -1,11 +1,30 @@
+import {useState, useEffect} from 'react';
 import PropTypes from 'prop-types';
 import Link from 'next/link';
 import Social from '@/components/Social/Social';
 import styles from './Footer.module.scss';
 
-const Footer = ({shift}) => {
+const Footer = ({shiftCount}) => {
+  const [footerClass, setFooterClass] = useState(styles.footer_zero);
+  useEffect(() => {
+    switch (shiftCount) {
+      case 1:
+        setFooterClass(styles.footer_single);
+        break;
+      case 2:
+        setFooterClass(styles.footer_double);
+        break;
+      case 'mobileSingle-pcDouble':
+        setFooterClass(styles.footer_singleDouble);
+        break;
+      default:
+        setFooterClass(styles.footer_zero);
+        break;
+    }
+  }, []);
+  {console.log(footerClass)}
   return (
-      <footer style={{marginTop: shift}} className={styles.footer}>
+      <footer className={footerClass}>
         <div className={styles.info}>
           <div className={styles.footer__info}>
             <h4 className={styles.info__header}>О школе</h4>
@@ -38,7 +57,7 @@ const Footer = ({shift}) => {
 };
 
 Footer.propTypes = {
-  shift: PropTypes.string,
+  shiftCount: PropTypes.any,
 };
 
 export default Footer;

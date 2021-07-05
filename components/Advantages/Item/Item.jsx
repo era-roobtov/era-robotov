@@ -3,10 +3,10 @@ import styles from "./Item.module.scss";
 
 const Item = ({ imgPath, text }) => {
   return (
-    <div className={styles.item}>
+    <li className={styles.item}>
       <img className={styles.item__img} src={imgPath} alt="_" />
       <p className={styles.item__text}>{text}</p>
-    </div>
+    </li>
   );
 };
 

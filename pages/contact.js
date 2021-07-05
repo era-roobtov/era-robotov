@@ -22,7 +22,7 @@ const Contact = ({contacts}) => {
                   clipSection={CLIP_BLUE}
                   clipMap={CLIP_MAP}
               />)}
-          <Footer shift="0"/>
+          <Footer shift={false}/>
         </Layout>
       </div>
   );
