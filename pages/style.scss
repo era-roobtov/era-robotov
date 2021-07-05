@@ -1,9 +1,10 @@
 :root {
   --bg-main: #fff;
   --bg-sub: #f3be92;
+  --bg-gray: #E4E4F2;
   --txt-main: #123eab;
   --txt-hover: #ff7100;
-  --txt-gray: #807b78;
+  --txt-gray: #828282;
   --gap-between: 16px;
   --bg-image-b: #060693;
   --bg-image-o: #e5a14b;
@@ -125,6 +126,15 @@ a {
 
 ul {
   list-style-type: none;
+}
+
+input {
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
 
 html,

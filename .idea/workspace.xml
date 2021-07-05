@@ -2,20 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23c62aac-87d1-4bbe-a2ed-c23d59aae260" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/components/Forms/Request/Request.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/Forms/Request/Request.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/Forms/Request/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/urls.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/svg/close.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Advantages/Advantages.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Advantages/Advantages.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Advantages/Advantages.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/Advantages/Advantages.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Footer/Footer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Footer/Footer.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/Footer/Footer.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/LessonPayCard/LessonPayCard.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/LessonPayCard/LessonPayCard.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/about.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/about.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contact.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Forms/Request/Request.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Forms/Request/Request.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Forms/Request/Request.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/Forms/Request/Request.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/LessonPayCard/LessonPayCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/LessonPayCard/LessonPayCard.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/courses/[id]/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/courses/[id]/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/svgPaths.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/svgPaths.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +69,7 @@
       <workItem from="1625328271245" duration="10208000" />
       <workItem from="1625342125829" duration="15842000" />
       <workItem from="1625418547198" duration="6871000" />
+      <workItem from="1625438667383" duration="7627000" />
     </task>
     <servers />
   </component>

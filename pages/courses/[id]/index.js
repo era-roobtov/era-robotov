@@ -1,4 +1,4 @@
-import {BLUE, CLIP_BLUE, CLIP_BLUE_REVERSE} from '@/utils/globalStyles';
+import {BLUE, CLIP_BLUE_REVERSE} from '@/utils/globalStyles';
 import React from 'react';
 import {useRouter} from 'next/router';
 import Logo from '@/components/Course/Logo';
@@ -12,6 +12,8 @@ import Request from '@/components/Forms/Request';
 import styles from './index.module.scss';
 
 const Course = () => {
+  const [requestForm, setRequestForm] = React.useState(false);
+
   const courses = {
     0: {
       title: 'Scratch',
@@ -208,7 +210,7 @@ const Course = () => {
   const {id} = router.query;
 
   const handleClick = () => {
-    return console.log('kek');
+    setRequestForm(!requestForm);
   };
 
   return (
@@ -232,9 +234,13 @@ const Course = () => {
               clip={CLIP_BLUE_REVERSE}
           />
           <LessonWillLearn list={courses[id]?.willLearn}/>
-          <LessonPayCard {...courses[id]?.payCard}/>
+          <LessonPayCard requestFun={handleClick} {...courses[id]?.payCard}/>
           <Footer shift="0"/>
-          <Request />
+          <Request
+              isOpen={requestForm}
+              fun={handleClick}
+              title={courses[id]?.title}
+          />
         </React.Fragment>}
       </Layout>
   );

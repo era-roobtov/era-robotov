@@ -6,6 +6,7 @@ const telegramSvg = '/static/new_img/social/Telegram.svg';
 const youtubeSvg = '/static/new_img/social/YouTube.svg';
 const whatsAppSvg = '/static/new_img/social/WhatsApp.svg';
 const instagramSvg = '/static/new_img/social/Instagram.svg';
+const closeSvg = '/static/svg/close.svg';
 
 export {
   callSvg,
@@ -16,4 +17,5 @@ export {
   youtubeSvg,
   whatsAppSvg,
   instagramSvg,
+  closeSvg,
 };
