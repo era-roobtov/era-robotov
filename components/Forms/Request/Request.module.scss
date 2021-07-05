@@ -92,7 +92,7 @@
 
     & > button {
       justify-self: center;
-      align-self: end;
+      align-self: flex-end;
 
       @media (min-width: 992px) {
         grid-column: 1/3;

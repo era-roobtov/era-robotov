@@ -193,8 +193,8 @@
     grid-area: h-btn;
 
     @media (min-width: 768px) {
-      justify-content: end;
-      align-self: end;
+      justify-content: flex-end;
+      align-self: flex-end;
     }
   }
 }
