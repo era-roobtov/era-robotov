@@ -7,17 +7,18 @@ import Advantages from '@/components/Advantages/Advantages';
 import Footer from '@/components/Footer/Footer';
 import {
   CLIP_BLUE,
-  CLIP_ORANGE,
+  CLIP_ORANGE, ORANGE_BOX_TOP, ORANGE_BOXES_TOP1,
   SHIFT_DOUBLE,
   SHIFT_SINGLE,
 } from '@/utils/globalStyles';
+import mergeStyles from '@/utils/mergeStyles';
 
 const Index = ({textList, advantagesList, aboutUsList}) => {
   const str = [
     'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
   ];
 
-  console.log('kek')
+  console.log('kek');
   return (
       <div className="app">
         <Head>
@@ -37,10 +38,15 @@ const Index = ({textList, advantagesList, aboutUsList}) => {
               showBtn={false}
               clip={CLIP_BLUE}
               columnCount={2}
+              boxesClass={mergeStyles(ORANGE_BOXES_TOP1, ORANGE_BOX_TOP)}
           />
           <div className={styles.robots}/>
-          <TextList shiftClass={SHIFT_SINGLE} {...textList} clip={CLIP_ORANGE} />
-          <Advantages columnCount={1} shiftClass={SHIFT_DOUBLE} {...advantagesList} showBtn={false} clip={CLIP_BLUE}/>
+          <TextList shiftClass={SHIFT_SINGLE} {...textList} clip={CLIP_ORANGE}/>
+          <Advantages
+              columnCount={1}
+              shiftClass={SHIFT_DOUBLE} {...advantagesList}
+              showBtn={false} clip={CLIP_BLUE}
+          />
           <Footer shiftCount='mobileSingle-pcDouble'/>
         </Layout>
       </div>

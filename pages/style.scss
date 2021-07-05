@@ -17,15 +17,6 @@
   --btn-size-tablets: 238px;
 }
 
-.gradient {
-  background: rgb(0, 0, 255);
-  background: linear-gradient(
-                  90deg,
-                  rgba(0, 0, 255, 1) 20%,
-                  rgba(229, 161, 75, 1) 80%
-  );
-}
-
 .clip-blue {
   clip-path: polygon(0px 0%, 100% 5%, 100% 100%, 0% 95%);
   background-color: var(--bg-image-b);
@@ -72,10 +63,51 @@
   }
 }
 
-
 .clip-map {
   clip-path: polygon(0px 0%, 100% 15%, 100% 100%, 0% 85%);
 }
+
+// Квадраты (комементы относительно пк верскти
+
+@mixin box($color, $size, $rotate) {
+  position: absolute;
+  content: '';
+  width: $size;
+  height: $size;
+  border-radius: 5px;
+  background-color: $color;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+  transform: rotate($rotate);
+  z-index: 20;
+}
+
+// Два оранжевых слева сверху
+.orange__boxes_top1 {
+  position: relative;
+  &::before {
+    @include box(var(--bg-image-o), 22px, -15deg);
+    top: -30px;
+    left: 5px;
+  }
+
+  &::after {
+    @include box(var(--bg-image-o), 22px, 15deg);
+    top: -7px;
+    left: 35px;
+  }
+}
+// Оранжевый сверху справа
+.orange__box_top {
+  position: relative;
+
+  &::after {
+    @include box(var(--bg-image-o), 55px, -25deg);
+    top: -7px;
+    right: -35px;
+  }
+}
+
+////////////
 
 @font-face {
   font-family: "Quicksand";

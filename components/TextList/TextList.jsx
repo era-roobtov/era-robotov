@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import Item from './Item/Item';
 import {
-  BLUE,
   CLIP_BLUE,
   CLIP_BLUE_REVERSE,
   CLIP_ORANGE, SHIFT_DOUBLE, SHIFT_SINGLE,
