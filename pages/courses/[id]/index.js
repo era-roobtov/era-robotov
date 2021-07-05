@@ -13,6 +13,9 @@ import styles from './index.module.scss';
 
 const Course = () => {
   const [requestForm, setRequestForm] = React.useState(false);
+  const handleClick = () => {
+    setRequestForm(!requestForm);
+  };
 
   const courses = {
     0: {
@@ -208,10 +211,6 @@ const Course = () => {
 
   const router = useRouter();
   const {id} = router.query;
-
-  const handleClick = () => {
-    setRequestForm(!requestForm);
-  };
 
   return (
       <Layout>
