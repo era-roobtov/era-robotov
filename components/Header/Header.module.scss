@@ -72,7 +72,7 @@ $duration: 400ms;
     &_open {
       animation: down 0.5s 1 forwards;
       @keyframes down {
-        from{
+        from {
           top: -50vh;
         }
         70% {
@@ -81,7 +81,7 @@ $duration: 400ms;
         85% {
           top: 6vh
         }
-        to{
+        to {
           top: 7vh;
         }
       }
@@ -92,7 +92,7 @@ $duration: 400ms;
         from {
           top: 7vh;
         }
-        to{
+        to {
           top: -50vh;
         }
       }
@@ -110,16 +110,19 @@ $duration: 400ms;
 
 .list {
   z-index: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: end;
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  justify-content: center;
+
 
   @media (min-width: 768px) {
-    flex-direction: row;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: unset;
+    justify-content: flex-end;
   }
 
   &__item {
+    width: var(--btn-size-mobile);
     cursor: pointer;
     background: linear-gradient(270deg, #060693 0%, #e5a14b 100%);
     border-radius: 15px;
@@ -131,18 +134,18 @@ $duration: 400ms;
       border-radius: unset;
       background: inherit;
       margin-right: 10px;
-
-      &:last-child {
-        margin-right: 10px;
-      }
+      //
+      //&:last-child {
+      //  margin-right: 10px;
+      //}
     }
 
     @media (min-width: 992px) {
       margin-right: 42px;
 
-      &:last-child {
-        margin-right: 100px;
-      }
+      //&:last-child {
+      //  margin-right: 100px;
+      //}
     }
 
     @media (min-width: 1440px) {
@@ -235,13 +238,13 @@ $duration: 400ms;
   &:before {
     top: 20px;
     transition: top ($duration/2) $ease ($duration/2),
-      transform $ease ($duration/2);
+    transform $ease ($duration/2);
   }
 
   &:after {
     bottom: 18px;
     transition: bottom ($duration/2) $ease ($duration/2),
-      transform $ease ($duration/2);
+    transform $ease ($duration/2);
   }
 
   &.close {
@@ -254,14 +257,14 @@ $duration: 400ms;
       top: 16px;
       transform: rotate(-45deg);
       transition: top $ease ($duration/2),
-        transform ($duration/2) $ease ($duration/2);
+      transform ($duration/2) $ease ($duration/2);
     }
 
     &:after {
       bottom: $sideStickShift;
       transform: rotate(45deg);
       transition: bottom $ease ($duration/2),
-        transform ($duration/2) $ease ($duration/2);
+      transform ($duration/2) $ease ($duration/2);
     }
   }
 }
