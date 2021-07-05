@@ -5,15 +5,15 @@ import navPaths from '@/utils/paths';
 import {
   BLUE,
   CLIP_ORANGE,
-  ORANGE,
+  ORANGE, SHIFT_DOUBLE, SHIFT_SINGLE,
 } from '@/utils/globalStyles';
 import Item from '@/components/Advantages/Item';
 import styles from './Advantages.module.scss';
 
-const Advantages = ({title, list, clip, showBtn, columnCount, shiftCount}) => {
+const Advantages = ({title, list, clip, showBtn, columnCount, shiftCount, shiftClass}) => {
   const [btnColor, setBtnColor] = useState(ORANGE);
   const [listClass, setListClass] = useState(styles.advantages__list_single);
-  const [shiftClass, setShiftClass] = useState(null)
+  // const [shiftClass, setShiftClass] = useState(null);
 
   useEffect(() => {
     if (clip === CLIP_ORANGE) {
@@ -31,17 +31,17 @@ const Advantages = ({title, list, clip, showBtn, columnCount, shiftCount}) => {
         break;
     }
 
-    switch (shiftCount) {
-      case 1:
-        setShiftClass(styles.advantages_single);
-        break;
-      case 2:
-        setShiftClass(styles.advantages_double);
-        break;
-      default:
-        setShiftClass(styles.advantages_zero);
-        break;
-    }
+    // switch (shiftCount) {
+    //   case 1:
+    //     setShiftClass(styles.advantages_single);
+    //     break;
+    //   case 2:
+    //     setShiftClass(styles.advantages_double);
+    //     break;
+    //   default:
+    //     setShiftClass(styles.advantages_zero);
+    //     break;
+    // }
   }, [clip]);
 
   return (
@@ -72,6 +72,7 @@ Advantages.propTypes = {
   showBtn: PropTypes.bool,
   columnCount: PropTypes.oneOf[1, 2],
   shiftCount: PropTypes.any,
+  shiftClass: PropTypes.oneOf[SHIFT_SINGLE, SHIFT_DOUBLE],
 };
 
 export default Advantages;

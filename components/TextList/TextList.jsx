@@ -1,29 +1,14 @@
-import {useState, useEffect} from 'react';
 import PropTypes from 'prop-types';
 import Item from './Item/Item';
 import {
   BLUE,
   CLIP_BLUE,
   CLIP_BLUE_REVERSE,
-  CLIP_ORANGE,
+  CLIP_ORANGE, SHIFT_DOUBLE, SHIFT_SINGLE,
 } from '@/utils/globalStyles';
 import styles from './TextList.module.scss';
 
-const TextList = ({title, list, clip, shiftCount}) => {
-  const [shiftClass, setShiftClass] = useState(null)
-
-  useEffect(() => {
-    switch (shiftCount) {
-      case 1:
-        setShiftClass(styles.list_single);
-        break;
-      case 2:
-        setShiftClass(styles.list_double);
-        break;
-      default:
-        break;
-    }
-  }, [clip]);
+const TextList = ({title, list, clip, shiftClass}) => {
 
   return (
       <section className={`${styles.list} ${shiftClass} ${clip}`}>
@@ -41,7 +26,7 @@ TextList.propTypes = {
   title: PropTypes.string,
   list: PropTypes.array,
   clip: PropTypes.oneOf[CLIP_BLUE, CLIP_ORANGE, CLIP_BLUE, CLIP_BLUE_REVERSE],
-  shiftCount: PropTypes.any,
+  shiftClass: PropTypes.oneOf[SHIFT_SINGLE, SHIFT_DOUBLE],
 };
 
 export default TextList;

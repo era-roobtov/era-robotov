@@ -22,7 +22,7 @@
 .footer_single {
   @extend %footerT;
 
-  margin-top: -15px;
+  margin-top: 0;
 
   @media (min-width: 768px) {
     margin-top: -85px;
@@ -32,17 +32,17 @@
 .footer_double {
   @extend %footerT;
 
-  margin-top: -30px;
+  margin-top: -15px;
 
   @media (min-width: 768px) {
-    margin-top: -200px;
+    margin-top: -85px;
   }
 }
 
 .footer_singleDouble {
   @extend %footerT;
 
-  margin-top: -15px;
+  margin-top: -30px;
   @media (min-width: 768px) {
     margin-top: -200px;
   }

@@ -3,7 +3,7 @@ import Header from '@/components/Header';
 import Layout from '@/components/Layout';
 import Greeting from '@/components/Greeting';
 import Advantages from '@/components/Advantages';
-import {CLIP_BLUE, CLIP_ORANGE} from '@/utils/globalStyles';
+import {CLIP_BLUE, CLIP_ORANGE, SHIFT_SINGLE} from '@/utils/globalStyles';
 import Footer from '@/components/Footer';
 import Teachers from '@/components/Teachers';
 
@@ -23,9 +23,9 @@ const About = ({advantagesList, teachersList, subText}) => {
               imgPath="/static/new_img/greeting/robots.png"
               mobileImgTop={true}
           />
-          <Advantages {...advantagesList} shift="0" showBtn={true} clip={CLIP_ORANGE}/>
-          <Teachers {...teachersList} clip={CLIP_BLUE}/>
-          <Footer/>
+          <Advantages {...advantagesList} shiftCount={0} columnCount={1} showBtn={true} clip={CLIP_ORANGE}/>
+          <Teachers {...teachersList} shiftClass={SHIFT_SINGLE} clip={CLIP_BLUE}/>
+          <Footer shiftCount={1}/>
         </Layout>
       </div>
   );

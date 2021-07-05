@@ -5,7 +5,12 @@ import Greeting from '@/components/Greeting/Greeting';
 import TextList from '@/components/TextList/TextList';
 import Advantages from '@/components/Advantages/Advantages';
 import Footer from '@/components/Footer/Footer';
-import {CLIP_BLUE, CLIP_ORANGE} from '@/utils/globalStyles';
+import {
+  CLIP_BLUE,
+  CLIP_ORANGE,
+  SHIFT_DOUBLE,
+  SHIFT_SINGLE,
+} from '@/utils/globalStyles';
 
 const Index = ({textList, advantagesList, aboutUsList}) => {
   const str = [
@@ -31,12 +36,11 @@ const Index = ({textList, advantagesList, aboutUsList}) => {
               {...aboutUsList}
               showBtn={false}
               clip={CLIP_BLUE}
-              shiftCount={0}
               columnCount={2}
           />
           <div className={styles.robots}/>
-          <TextList shiftCount={1} {...textList} clip={CLIP_ORANGE} />
-          <Advantages columnCount={1} shiftCount={2} {...advantagesList} showBtn={false} clip={CLIP_BLUE}/>
+          <TextList shiftClass={SHIFT_SINGLE} {...textList} clip={CLIP_ORANGE} />
+          <Advantages columnCount={1} shiftClass={SHIFT_DOUBLE} {...advantagesList} showBtn={false} clip={CLIP_BLUE}/>
           <Footer shiftCount='mobileSingle-pcDouble'/>
         </Layout>
       </div>

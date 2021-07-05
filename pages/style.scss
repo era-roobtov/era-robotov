@@ -56,6 +56,23 @@
   }
 }
 
+.shift_single {
+  top: -15px;
+
+  @media (min-width: 768px) {
+    top: -100px;
+  }
+}
+
+.shift_double {
+  top: -30px;
+
+  @media (min-width: 768px) {
+    top: -200px;
+  }
+}
+
+
 .clip-map {
   clip-path: polygon(0px 0%, 100% 15%, 100% 100%, 0% 85%);
 }
