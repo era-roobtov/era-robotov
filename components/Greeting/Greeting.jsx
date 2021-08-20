@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import navPaths from '@/utils/paths';
-import {bigLogo} from "@/utils/logoPaths";
+import {bigLogo, lightLogo, darkLogo} from "@/utils/logoPaths";
 import RainbowButton from '@/components/Buttons/RainbowButton';
 import styles from './Greeting.module.scss';
 
@@ -21,7 +21,7 @@ const Greeting = ({btn, header, imgPath, subText, mobileImgTop}) => {
           {subText.map((str) => <p key={str}>{str}</p>)}
         </div>
         <div className={styles.sub__img}>
-          <img src={bigLogo} alt=""/>
+          <img src={darkLogo} alt="Эра Роботов"/>
         </div>
         {btn.show && <div className={styles.sub__btn}>
           <RainbowButton path={navPaths.courses} text={'Выбрать курс'}/>

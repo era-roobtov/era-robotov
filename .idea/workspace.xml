@@ -5,16 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="23c62aac-87d1-4bbe-a2ed-c23d59aae260" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/logo/big_logo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/logo/logo_dark.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/logo/logo_light.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/logoPaths.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/logo/big_logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Greeting/Greeting.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Greeting/Greeting.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Greeting/Greeting.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/Greeting/Greeting.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Header/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Header/Header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/Header/Header.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Layout/Layout.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/Layout.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/svgPaths.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/svgPaths.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/logoPaths.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/logoPaths.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +82,7 @@
       <workItem from="1625476909106" duration="3982000" />
       <workItem from="1625498211236" duration="8781000" />
       <workItem from="1629484284928" duration="4191000" />
-      <workItem from="1629492831257" duration="2767000" />
+      <workItem from="1629492831257" duration="4100000" />
     </task>
     <servers />
   </component>
