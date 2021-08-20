@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import Link from "next/link";
 import navPaths from "@/utils/paths";
+import {lightLogo} from "@/utils/logoPaths";
 import styles from "./Header.module.scss";
 
 const Header = ({ burger, handler }) => {
@@ -23,7 +24,9 @@ const Header = ({ burger, handler }) => {
 
   return (
     <header className={styles.header}>
-      <div className={styles.header__logo}></div>
+      <div className={styles.header__logo}>
+        <img src={lightLogo} alt=""/>
+      </div>
       <div onClick={() => handler()} className={`${styles.burgerContainer} `}>
         <div
           className={`${styles.hamburgerToClose} ${burger === "open" ? styles.close : ""}`}
