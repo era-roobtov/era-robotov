@@ -1,10 +1,14 @@
 import PropTypes from "prop-types";
 import Link from "next/link";
 import navPaths from "@/utils/paths";
+import {lightLogo} from "@/utils/logoPaths";
+import { useRouter } from 'next/router'
+
 import styles from "./Header.module.scss";
 
 const Header = ({ burger, handler }) => {
   const { about, contact, courses, home } = navPaths;
+  const location = useRouter();
   let burgerStyle = "";
 
   switch (burger) {
@@ -23,7 +27,11 @@ const Header = ({ burger, handler }) => {
 
   return (
     <header className={styles.header}>
-      <div className={styles.header__logo}></div>
+      <div className={styles.header__logo}>
+        {
+          location.pathname !== '/' ? <img src={lightLogo} alt="Эра Роботов"/> : ''
+        }
+      </div>
       <div onClick={() => handler()} className={`${styles.burgerContainer} `}>
         <div
           className={`${styles.hamburgerToClose} ${burger === "open" ? styles.close : ""}`}

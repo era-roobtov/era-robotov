@@ -14,16 +14,11 @@ $duration: 400ms;
   z-index: 10;
   min-height: 45px;
 
-  @media (min-width: 768px) {
-    min-height: 100px;
-  }
-
   @media (min-width: 992px) {
-    min-height: 140px;
+    min-height: 200px;
   }
 
   @media (min-width: 1440px) {
-    min-height: 160px;
   }
 
   &::after {
@@ -34,7 +29,7 @@ $duration: 400ms;
     top: 0;
     left: 0;
     background-color: var(--bg-image-o);
-    clip-path: polygon(0px 25%, 25% 35%, 35% 65%, 0% 85%);;
+    clip-path: polygon(0px 10.13%, 44.23% 22.75%, 68.34% 67.5%, 0px 94.75%);
   }
 
   &::before {
@@ -46,7 +41,7 @@ $duration: 400ms;
     height: 100%;
     background-color: var(--bg-image-b);
     background-position: top right;
-    clip-path: polygon(0px 22%, 100% 0%, 99.95% 78%, 11.05% 53%);
+    clip-path: polygon(312px 17.07%, 100% 0%, 99.71% 67.47%, 31.40% 42.96%);
   }
 
   &__nav {
@@ -56,10 +51,6 @@ $duration: 400ms;
     right: 0;
     top: -50vh;
     z-index: 2;
-
-    @media (min-width: 768px) {
-      top: 25%;
-    }
 
     @media (min-width: 992px) {
       top: 20%;
@@ -105,6 +96,31 @@ $duration: 400ms;
     position: absolute;
     height: 100%;
     z-index: 1;
+
+    & > img {
+      display: none;
+      position: relative;
+      top: 55px;
+
+      @media (min-width: 992px) {
+        display: unset;
+        top: 55px;
+        width: 311px;
+        height: 92px;
+      }
+
+      @media (min-width: 1440px) {
+        top: 45px;
+        width: 452px;
+        height: 120px;
+      }
+
+      @media (min-width: 1920px) {
+        top: 40px;
+        width: 494px;
+        height: 131px;
+      }
+    }
   }
 }
 
@@ -115,7 +131,7 @@ $duration: 400ms;
   justify-content: center;
 
 
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     grid-template-columns: repeat(4, auto);
     grid-template-rows: unset;
     justify-content: flex-end;
@@ -129,27 +145,26 @@ $duration: 400ms;
     align-items: center;
     margin-bottom: 4px;
 
-    @media (min-width: 768px) {
+    //@media (min-width: 768px) {
+    //  width: unset;
+    //  border-radius: unset;
+    //  background: inherit;
+    //  margin-right: 10px;
+    //}
+
+    @media (min-width: 992px) {
       width: unset;
       border-radius: unset;
       background: inherit;
-      margin-right: 10px;
-      //
-      //&:last-child {
-      //  margin-right: 10px;
-      //}
-    }
-
-    @media (min-width: 992px) {
-      margin-right: 42px;
-
-      //&:last-child {
-      //  margin-right: 100px;
-      //}
+      margin-right: 0px;
     }
 
     @media (min-width: 1440px) {
-      margin-right: 120px;
+      margin-right: 35px;
+    }
+
+    @media (min-width: 1920px) {
+      margin-right: 70px;
     }
 
     & > a {
@@ -164,12 +179,10 @@ $duration: 400ms;
       font-weight: 500;
       color: var(--bg-main);
 
-      @media (min-width: 768px) {
-        display: unset;
-        padding: 10px 52px;
-      }
 
       @media (min-width: 992px) {
+        display: unset;
+        padding: 10px 42px;
         font-size: 16px;
         &::after {
           content: "";
@@ -194,7 +207,7 @@ $duration: 400ms;
 }
 
 .burgerContainer {
-  @media (min-width: 767px) {
+  @media (min-width: 992px) {
     display: none;
   }
 
