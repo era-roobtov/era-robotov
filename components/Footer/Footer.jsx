@@ -2,6 +2,7 @@ import {useState, useEffect} from 'react';
 import PropTypes from 'prop-types';
 import Link from 'next/link';
 import Social from '@/components/Social/Social';
+import {callSvg, locationSvg, mailSvg} from '@/utils/svgPaths';
 import styles from './Footer.module.scss';
 
 const Footer = ({shiftCount}) => {
@@ -26,28 +27,37 @@ const Footer = ({shiftCount}) => {
   return (
       <footer className={footerClass}>
         <div className={styles.info}>
-          <div className={styles.footer__info}>
-            <h4 className={styles.info__header}>О школе</h4>
+          <div className={styles.contact}>
+            <h4 className={styles.info__header}>О нас</h4>
             <p className={styles.info__text}>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+              Школа Эра Роботов осуществляет системную подготовку детей по различным направлениям программирования и робототехники по уникальным программам
             </p>
           </div>
-          <div className={styles.footer__info}>
+          <div className={styles.contact}>
             <h4 className={styles.info__header}>Инфо</h4>
             <p className={styles.info__text}>
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
             </p>
           </div>
-          <div className={styles.footer__info}>
+          <div className={styles.contact}>
             <h4 className={styles.info__header}>Контакты</h4>
             <Link href="tel:+7(495)343-44-66">
-              <a className={styles.info__text}>+7 (495) 343-44-66</a>
+              <a className={styles.info__text}>
+                <img src={callSvg} alt="Звонок"/>
+                <span>+7 (495) 343-44-66</span>
+              </a>
             </  Link>
-            <Link href="mailto:222222@gmal.com">
-              <a className={styles.info__text}>222222@gmal.com</a>
+            <Link href="mailto:erarobotov@yandex.ru">
+              <a className={styles.info__text}>
+                <img src={mailSvg} alt="Email"/>
+                <span>erarobotov@yandex.ru</span>
+              </a>
             </Link>
             <Link href="yandex.ru">
-              <a className={styles.info__text}>г. Пушкино, ул. </a>
+              <a className={styles.info__text}>
+                <img src={locationSvg} alt="Локация"/>
+                <span>г. Пушкино, 3-й Некрасовский проезд, 3к3</span>
+              </a>
             </Link>
           </div>
         </div>

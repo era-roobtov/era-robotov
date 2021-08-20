@@ -18,10 +18,12 @@
     line-height: 120%;
     display: flex;
     align-items: center;
-    text-align: justify;
+    align-self: end;
 
     @media (min-width: 768px) {
       font-size: 16px;
+      text-align: center;
+      align-self: unset;
     }
   }
 

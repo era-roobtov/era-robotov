@@ -33,13 +33,19 @@ const Index = ({textList, advantagesList, aboutUsList}) => {
                     imgPath="/static/new_img/greeting/robots.png"
                     mobileImgTop={false}
                 />
-                <Advantages
-                    {...aboutUsList}
-                    showBtn={false}
-                    clip={CLIP_BLUE}
-                    columnCount={2}
-                    boxesClass={mergeStyles(ORANGE_BOXES_TOP1, ORANGE_BOX_TOP)}
-                />
+                <section className={`${styles.aboutUs} ${CLIP_BLUE}`}>
+                    <h3>О нас</h3>
+                    <p>
+                        Наша Школа "ЭраРоботов" собрала единомышленников, замечательных преподавателей в области робототехники и программирования. Наши сотрудники имеют высшее техническое образование и уже немалый опыт работы со слушателями разных возрастов, умеют доступно и интересно преподнести информацию. В процессе обучения мы используем новейшее оборудование, качественные наборы для сборки роботов и современное программное обеспечение.
+                    </p>
+                </section>
+                {/*<Advantages*/}
+                {/*    {...aboutUsList}*/}
+                {/*    showBtn={false}*/}
+                {/*    clip={CLIP_BLUE}*/}
+                {/*    columnCount={2}*/}
+                {/*    boxesClass={mergeStyles(ORANGE_BOXES_TOP1, ORANGE_BOX_TOP)}*/}
+                {/*/>*/}
                 <div className={styles.robots}/>
                 <TextList shiftClass={SHIFT_SINGLE} {...textList} clip={CLIP_ORANGE}/>
                 <Advantages
@@ -59,35 +65,36 @@ export async function getStaticProps() {
             textList: {
                 title: 'Чему научится наш слушатель',
                 list: [
-                    'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 1',
-                    'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 2',
-                    'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 3',
-                    'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 4',
-                    'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 5',
+                    'Программирование',
+                    'Создание игр и анимаций',
+                    'Создание игр и анимаций',
+                    'Создание Android приложений',
+                    'Инженерные навыки',
+                    'Разработка нейросетей'
                 ],
             },
             advantagesList: {
                 title: 'Наши преимущества',
                 list: [
                     {
-                        imgPath: '/static/new_img/1.png',
-                        text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 1',
+                        imgPath: '/static/imgs/book.png',
+                        text: 'Уникальная учебная программа',
                     },
                     {
-                        imgPath: '/static/new_img/1.png',
-                        text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.2',
+                        imgPath: '/static/imgs/cap.png',
+                        text: 'Коллектив опытных преподавателей - практиков',
                     },
                     {
-                        imgPath: '/static/new_img/1.png',
-                        text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.3',
+                        imgPath: '/static/imgs/screen.png',
+                        text: 'Новейшее оборудование',
                     },
                     {
-                        imgPath: '/static/new_img/1.png',
-                        text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.4',
+                        imgPath: '/static/imgs/reward.png',
+                        text: 'Опыт в подготовке и участия в соревнованиях',
                     },
                     {
-                        imgPath: '/static/new_img/1.png',
-                        text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.5',
+                        imgPath: '/static/imgs/puzzle.png',
+                        text: 'Множество направлений обучения',
                     },
                 ],
             },

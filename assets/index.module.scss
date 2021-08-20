@@ -133,3 +133,61 @@ $animDur: 0.5s;
     display: none;
   }
 }
+
+.aboutUs {
+  display: grid;
+  gap: 16px;
+  position: relative;
+  z-index: 2;
+  padding: 41px 53px;
+  color: var(--txt-white);
+
+  @media (min-width: 768px) {
+    gap: 45px;
+    padding: 121px 32px 121px 32px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 203px 285px 280px 285px;
+  }
+
+  & > h3 {
+    font-family: "RobotoMedium", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+
+    @media (min-width: 768px) {
+      font-family: "RobotoBold", sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 120%;
+    }
+
+    text-align: center;
+  }
+
+  & > p {
+
+    font-family: "RobotoLight", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+
+    @media (min-width: 768px) {
+      font-family: "RobotoBold", sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 120%;
+      display: unset;
+    }
+
+    text-align: justify;
+  }
+}

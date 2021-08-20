@@ -1,7 +1,7 @@
 import {YMaps, Map} from 'react-yandex-maps';
 import Link from 'next/link';
 import PropTypes from 'prop-types';
-import {callSvg, locationSvg, mailSvg, social} from '@/utils/svgPaths';
+import {callSvg, locationSvg, mailSvg} from '@/utils/svgPaths';
 import styles from './ContactSchool.module.scss';
 import Social from '@/components/Social';
 
