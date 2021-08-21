@@ -6,8 +6,8 @@
   align-items: center;
 
   @media (min-width: 768px) {
-    grid-template-columns: unset;
-    grid-template-rows: 95px 1fr;
+    grid-template-columns: 120px 1fr;
+    //grid-template-rows: 95px 1fr;
   }
 
   &__text {
@@ -18,10 +18,18 @@
     line-height: 120%;
     display: flex;
     align-items: center;
-    text-align: justify;
+    align-self: center;
 
     @media (min-width: 768px) {
+      font-family: "RobotoMedium", "Roboto", sans-serif;
+      font-weight: 500;
       font-size: 16px;
+      line-height: 120%;
+      display: flex;
+      align-items: center;
+      color: #000000;
+      font-size: 16px;
+      align-self: unset;
     }
   }
 
@@ -30,9 +38,15 @@
     height: 45px;
 
     @media (min-width: 768px) {
-      height: 100%;
+      //height: 100%;
+      height: 95px;
       width: 95px;
       justify-self: center;
+    }
+
+    @media (min-width: 1440px) {
+      width: 120px;
+      height: 120px;
     }
   }
 }

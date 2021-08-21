@@ -30,6 +30,7 @@
     }
 
     & > img {
+      max-height: 95px;
       @extend %imgSize
     }
 

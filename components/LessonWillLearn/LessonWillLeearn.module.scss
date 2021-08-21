@@ -24,6 +24,12 @@
     line-height: 120%;
     text-align: center;
     color: var(--txt-black);
+    
+    @media (min-width: 768px) {
+      font-family: "RobotoBold", "Roboto", sans-serif;
+      font-weight: 700;
+      font-size: 24px;
+    }
   }
 
   &__list {
@@ -38,7 +44,7 @@
     }
 
     @media (min-width: 992px) {
-      gap: 45px;
+      gap: unset;
       grid-template-rows: unset;
       grid-template-columns: repeat(3, 1fr);
 
@@ -47,5 +53,10 @@
         grid-template-columns: 95px auto;
       }
     }
+
+    @media (min-width: 1100px) {
+      gap: 45px;
+    }
+
   }
 }
