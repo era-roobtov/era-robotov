@@ -140,7 +140,7 @@ const Course = () => {
             ],
             payCard: {
                 description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
-                cost: 4500,
+                cost: 600,
             },
         },
         3: {
@@ -174,7 +174,7 @@ const Course = () => {
             ],
             payCard: {
                 description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
-                cost: 4500,
+                cost: 500,
             },
         },
         4: {
@@ -208,7 +208,7 @@ const Course = () => {
             ],
             payCard: {
                 description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
-                cost: 4500,
+                cost: 800,
             },
         },
         5: {
@@ -240,7 +240,7 @@ const Course = () => {
             ],
             payCard: {
                 description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
-                cost: 4500,
+                cost: 500,
             },
         },
         6: {
@@ -271,7 +271,7 @@ const Course = () => {
             ],
             payCard: {
                 description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
-                cost: 4500,
+                cost: 500,
             },
         },
     };
