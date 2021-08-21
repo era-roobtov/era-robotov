@@ -48,7 +48,8 @@ export async function getStaticProps() {
           asPath: 'Scratch',
           logo: ['/static/new_img/courses/scratch.png'],
           description:
-              'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate',
+          'Scratch это визуальная среда разработки, предназначенная специально для детей и подростоков желающих погрузиться в мир программирования, а так же научиться создавать игры и анимацию любой сложности.\n' +
+              'Изучение этого языка поможет развить, или укрепить творческие таланты совмещая их с изучением программирования.'
         },
         {
           id: 1,
@@ -56,7 +57,8 @@ export async function getStaticProps() {
           asPath: 'Arduino',
           logo: ['/static/new_img/courses/arduino.png'],
           description:
-              'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate',
+          'Ардуино это аппартно-программный комплекс позволяющий изучать множество направлений одновременно таких как программирование, схемотехника, электротехника, робототехника и IoT.\n' +
+              'Изучив Ардуино можно создавать проекты и прототипы разного уровня, начиная от метеостанции, заканчивая системой умного дома.'
         },
         {
           id: 2,
@@ -64,7 +66,7 @@ export async function getStaticProps() {
           asPath: 'LegoWeDo',
           logo: ['/static/new_img/courses/lego_white.png'],
           description:
-              'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate',
+          'Lego WeDo представляет собой специальный курс для самых юных инженеров и программистов. Ученики познакомятся с робототехникой и концепцией программирования, а так же узнают много интересного об устройстве окружающего мира через создание механизмов и проведение опытов.'
         },
         {
           id: 3,
@@ -75,7 +77,7 @@ export async function getStaticProps() {
             '/static/new_img/courses/arduino.png',
           ],
           description:
-              'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate',
+          'Курс предназначен для тех кто уже владеет навыками программирования в Scratch и хочет подняться на уровень выше. Ученики познакомятся с аппаратной платформой Arduino и языком программирования Си (англ. С), изучат основы схемотехники, научатся  создавать различные устройства и погрузятся в мир робототехники и IoT и всё это на простой и знакомой платформе Scratch.'
         },
         {
           id: 4,
@@ -83,7 +85,8 @@ export async function getStaticProps() {
           asPath: 'Python',
           logo: ['/static/new_img/courses/python.png'],
           description:
-              'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate',
+          'Этот курс отлично подойдет тем кто решил стать программистом, но не знает с чего начать. Благодаря простому синтаксису и богатой экосистеме он прост в освоении и является одним из самых популярных яп в мире.\n' +
+              'Python очень гибкий и универсальный инструмент широко использующийся в разработке игр, IoT, машинном обучении и Web разработке, что выделяет его на фоне других, узконаправленных языков программирования'
         },
         {
           id: 5,
@@ -91,7 +94,7 @@ export async function getStaticProps() {
           asPath: 'Mindstorms',
           logo: ['/static/new_img/courses/mindstorms.png'],
           description:
-              'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate',
+          'Курс Lego Mindstorm предназначен для погружение в мир робототехники и программирования учащихся младшего и среднего возраста. Ученики познакомятся с основами механики и физики, научаться строить алгоритмы движения и управления роботами, а так же проектировать своих роботов для выполнения различных задач.'
         },
       ],
     },

@@ -29,11 +29,11 @@ const Course = ({index, id, title, logo, description, clip, asPath}) => {
               text={'Подробнее о курсе'}
               as={`/courses/${id}`}
           />
-          <ColorButton
-              color={isOdd ? ORANGE : BLUE}
-              path={anchor}
-              text={'Записаться на курс'}
-          />
+          {/*<ColorButton*/}
+          {/*    color={isOdd ? ORANGE : BLUE}*/}
+          {/*    path={anchor}*/}
+          {/*    text={'Записаться на курс'}*/}
+          {/*/>*/}
         </div>
       </section>
   );

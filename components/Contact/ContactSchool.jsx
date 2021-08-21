@@ -1,4 +1,4 @@
-import {YMaps, Map} from 'react-yandex-maps';
+import {YMaps, Map, Placemark} from 'react-yandex-maps';
 import Link from 'next/link';
 import PropTypes from 'prop-types';
 import {callSvg, locationSvg, mailSvg} from '@/utils/svgPaths';
@@ -45,7 +45,10 @@ const ContactSchool = ({
         </div>
         <YMaps>
           <Map className={`${styles.contact__map} ${clipMap}`}
-               defaultState={{center: mapCord, zoom: 15}}/>
+               defaultState={{center: mapCord, zoom: 17}}
+          >
+              <Placemark geometry={mapCord} />
+          </Map>
         </YMaps>
       </section>
   );

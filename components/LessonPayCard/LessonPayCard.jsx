@@ -18,7 +18,7 @@ const LessonPayCard = ({description, cost, requestFun}) => {
         </div>
         <div className={styles.payCard__btns}>
           <ColorButton text="Забронировать" color={WHITE} func={requestFun}/>
-          <ColorButton text="Купить" color={BLUE} func={handleBuy}/>
+          {/*<ColorButton text="Купить" color={BLUE} func={handleBuy}/>*/}
         </div>
       </section>
   );
