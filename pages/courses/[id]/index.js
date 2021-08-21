@@ -60,45 +60,60 @@ const Course = () => {
                 },
             ],
             payCard: {
-                description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
-                cost: 4500,
+                description: 'Продолжительность курса 72 часа (2 часа в неделю)',
+                cost: 500,
             },
         },
         1: {
             title: 'Arduino',
             logo: ['/static/new_img/courses/arduino.png'],
-            description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate',
+            description: 'Ардуино это аппартно-программный комплекс позволяющий изучать множество направлений одновременно таких как программирование, схемотехника, электротехника, робототехника и IoT.\n' +
+                'Изучив Ардуино можно создавать проекты и прототипы разного уровня, начиная от метеостанции, заканчивая системой умного дома.',
 
             descriptionList: [
-                'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
-                'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
-                'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
-                'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
-                'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
-                'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. '],
+                'Знакомство со средой программирования Arduino',
+                'Изучение основ программирования',
+                'Изучение основ алгоритмики',
+                'Сборка простейших электросхем',
+                'Работа с датчиками',
+                'Функциональное программирование',
+                'Изучение базовых алгоритмов движения',
+                'Контрольные работы',
+                'Работа со сложными датчиками',
+                'Фильтрация данных',
+                'Работа с массивами данных',
+                'Датчики определения положения в пространстве',
+                'Продвинутые алгоритмы движения',
+                'Автоматизация (IOT)',
+                'Работа со средствами ввода информации',
+                'Проектные работы'
+            ],
             willLearn: [
                 {
-                    imgPath: '/static/new_img/2.png',
-                    text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
+                    imgPath: '/static/imgs/bg_screen.png',
+                    text: 'Базовые навыки \n' +
+                        'программирования на \n' +
+                        'высокоуровневом яп',
                 },
                 {
-                    imgPath: '/static/new_img/2.png',
-                    text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
+                    imgPath: '/static/imgs/bg_multiSelect.png',
+                    text: 'Понимание принципов работы\n' +
+                        'микроконтроллеров и переферии',
                 },
                 {
-                    imgPath: '/static/new_img/2.png',
-                    text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
+                    imgPath: '/static/imgs/bg_settings.png',
+                    text: 'Создание собственных устройств используя знания схемотехники, механики и электротехники',
                 },
             ],
             payCard: {
-                description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
-                cost: 4500,
+                description: 'Продолжительность курса 108 часов (3 часа в неделю)',
+                cost: 800,
             },
         },
         2: {
             title: 'Lego WeDo',
             logo: ['/static/new_img/courses/lego.png'],
-            description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate',
+            description: 'Lego WeDo представляет собой специальный курс для самых юных инженеров и программистов. Ученики познакомятся с робототехникой и концепцией программирования, а так же узнают много интересного об устройстве окружающего мира через создание механизмов и проведение опытов.',
 
             descriptionList: [
                 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
@@ -109,16 +124,18 @@ const Course = () => {
                 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. '],
             willLearn: [
                 {
-                    imgPath: '/static/new_img/2.png',
-                    text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
+                    imgPath: '/static/imgs/bg_settings.png',
+                    text: 'Познакомится с миром\n' +
+                        'робототехники',
                 },
                 {
-                    imgPath: '/static/new_img/2.png',
-                    text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
+                    imgPath: '/static/imgs/bg_research.png',
+                    text: 'Научится создавать алгоритмы\n' +
+                        'и понимать как их применять',
                 },
                 {
-                    imgPath: '/static/new_img/2.png',
-                    text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
+                    imgPath: '/static/imgs/bg_screen.png',
+                    text: 'Получит базовые знания о программировании ',
                 },
             ],
             payCard: {
@@ -127,12 +144,12 @@ const Course = () => {
             },
         },
         3: {
-            title: 'Scratch и Arduino',
+            title: 'Scratch + Arduino',
             logo: [
                 '/static/new_img/courses/scratch.png',
                 '/static/new_img/courses/arduino.png',
             ],
-            description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate',
+            description: 'Курс предназначен для тех кто уже владеет навыками программирования в Scratch и хочет подняться на уровень выше. Ученики познакомятся с аппаратной платформой Arduino и языком программирования Си (англ. С), изучат основы схемотехники, научатся  создавать различные устройства и погрузятся в мир робототехники и IoT и всё это на простой и знакомой платформе Scratch.',
 
             descriptionList: [
                 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
@@ -143,16 +160,16 @@ const Course = () => {
                 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. '],
             willLearn: [
                 {
-                    imgPath: '/static/new_img/2.png',
-                    text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
+                    imgPath: '/static/imgs/bg_screen.png',
+                    text: 'Легкое введение в высокоуровневое программирование',
                 },
                 {
-                    imgPath: '/static/new_img/2.png',
-                    text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
+                    imgPath: '/static/imgs/bg_multiSelect.png',
+                    text: 'Понимание базовых принципов работы микроконтроллеров и переферии',
                 },
                 {
-                    imgPath: '/static/new_img/2.png',
-                    text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
+                    imgPath: '/static/imgs/bg_settings.png',
+                    text: 'Создание собственных проектов используя базовые знания схемотехники, механики и электротехники',
                 },
             ],
             payCard: {
@@ -163,7 +180,8 @@ const Course = () => {
         4: {
             title: 'Python',
             logo: ['/static/new_img/courses/python.png'],
-            description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate',
+            description: 'Этот курс отлично подойдет тем кто решил стать программистом, но не знает с чего начать. Благодаря простому синтаксису и богатой экосистеме он прост в освоении и является одним из самых популярных яп в мире.\n' +
+                'Python очень гибкий и универсальный инструмент широко использующийся в разработке игр, IoT, машинном обучении и Web разработке, что выделяет его на фоне других, узконаправленных языков программирования',
 
             descriptionList: [
                 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
@@ -174,16 +192,18 @@ const Course = () => {
                 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. '],
             willLearn: [
                 {
-                    imgPath: '/static/new_img/2.png',
-                    text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
+                    imgPath: '/static/imgs/bg_screen.png',
+                    text: 'Базовые навыки \n' +
+                        'программирования на \n' +
+                        'высокоуровневом яп',
                 },
                 {
-                    imgPath: '/static/new_img/2.png',
-                    text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
+                    imgPath: '/static/imgs/bg_brain.png',
+                    text: 'Основные навыки для создания нейросетей',
                 },
                 {
-                    imgPath: '/static/new_img/2.png',
-                    text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
+                    imgPath: '/static/imgs/bg_research.png',
+                    text: 'Создание программ для обработки данных и управления переферией ',
                 },
             ],
             payCard: {
@@ -192,7 +212,7 @@ const Course = () => {
             },
         },
         5: {
-            title: 'Mindstorms',
+            title: 'Lego',
             logo: ['/static/new_img/courses/mindstorms.png'],
             description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate',
 
@@ -205,16 +225,48 @@ const Course = () => {
                 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. '],
             willLearn: [
                 {
-                    imgPath: '/static/new_img/2.png',
-                    text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
+                    imgPath: '/static/imgs/bg_brick.png',
+                    text: 'Проектировать и создавать собственные роботизированные конструкции',
                 },
                 {
-                    imgPath: '/static/new_img/2.png',
-                    text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
+                    imgPath: '/static/imgs/bg_screen.png',
+                    text: 'Базовые навыки программирования позволят в дальнейшем изучать высокоуровневые ЯП',
                 },
                 {
-                    imgPath: '/static/new_img/2.png',
-                    text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
+                    imgPath: '/static/imgs/bg_student.png',
+                    text: 'Развитие пространственного\n' +
+                        'мышления поможет в изучении новых направлений для развития в будущем',
+                },
+            ],
+            payCard: {
+                description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
+                cost: 4500,
+            },
+        },
+        6: {
+            title: 'App Inventor',
+            logo: ['/static/new_img/courses/appInventor_logo.png'],
+            description: 'Курс App Inventor предназначен для тех кто уже знаком с визуальными языкам программирования и хочет попробовать себя в чем то новом. Здесь ученики изучат основы создания приложений и программ для Andriod  устройств, улучшат свои навыки программирования и узнают много нового о мобильных технологиях',
+
+            descriptionList: [
+                'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
+                'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
+                'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
+                'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
+                'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
+                'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. '],
+            willLearn: [
+                {
+                    imgPath: '/static/imgs/bg_screen.png',
+                    text: 'Базовые навыки программирования',
+                },
+                {
+                    imgPath: '/static/imgs/bg_android.png',
+                    text: 'Создание приложений для Andriod устройств',
+                },
+                {
+                    imgPath: '/static/imgs/bg_phone.png',
+                    text: 'Необходимые знания для развития в области программирования для мобильных устройств',
                 },
             ],
             payCard: {

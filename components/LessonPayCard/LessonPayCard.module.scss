@@ -59,6 +59,9 @@
   }
 
   &__description {
+    display: flex;
+    justify-content: center;
+
     font-family: "RobotoLight", "Roboto", sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -70,6 +73,8 @@
     color: var(--txt-white);
 
     @media (min-width: 768px) {
+      display: unset;
+      justify-content: unset;
       font-family: "RobotoMedium", "Roboto", sans-serif;
       font-weight: 500;
       font-size: 16px;

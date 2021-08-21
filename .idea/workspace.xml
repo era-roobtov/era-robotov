@@ -5,17 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="23c62aac-87d1-4bbe-a2ed-c23d59aae260" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/imgs/bg_chat.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/imgs/bg_pika.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/imgs/bg_screen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/imgs/bg_android.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/imgs/bg_brain.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/imgs/bg_brick.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/imgs/bg_multiSelect.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/imgs/bg_phone.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/imgs/bg_research.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/imgs/bg_settings.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/imgs/bg_student.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/new_img/courses/appInventor_logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Contact/ContactSchool.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Contact/ContactSchool.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Course/Course.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Course/Course.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Course/Course.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/Course/Course.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Advantages/Item/Item.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/Advantages/Item/Item.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Course/Logo/Logo.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/Course/Logo/Logo.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/LessonPayCard/LessonPayCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/LessonPayCard/LessonPayCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contact.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/LessonPayCard/LessonPayCard.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/LessonPayCard/LessonPayCard.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/LessonWillLearn/LessonWillLeearn.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/LessonWillLearn/LessonWillLeearn.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/courses.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/courses.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/courses/[id]/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/courses/[id]/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/courses/[id]/index.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/courses/[id]/index.module.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +103,7 @@
       <workItem from="1625498211236" duration="8781000" />
       <workItem from="1629484284928" duration="4191000" />
       <workItem from="1629492831257" duration="4100000" />
+      <workItem from="1629529152704" duration="3469000" />
     </task>
     <servers />
   </component>

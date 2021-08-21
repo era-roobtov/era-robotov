@@ -14,7 +14,7 @@ const LessonPayCard = ({description, cost, requestFun}) => {
         <div className={styles.payCard__info}>
           <h4 className={styles.info__header}>Стоимость курса</h4>
           <p className={styles.info__description}>{description}</p>
-          <p className={styles.info__cost}>{cost} р.</p>
+          <p className={styles.info__cost}>{cost} р/час</p>
         </div>
         <div className={styles.payCard__btns}>
           <ColorButton text="Забронировать" color={WHITE} func={requestFun}/>
