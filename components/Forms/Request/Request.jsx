@@ -32,26 +32,32 @@ const Request = ({title, isOpen, fun}) => {
 
   const handleSumbit = (e) => {
     const {name, email, tel, age, sex} = data;
-    console.log('sended');
+    const NumberAge = Number(age);
     e.preventDefault();
-    const json = {
-      name,
-      email,
-      telephoneNumber: tel,
-      course: {title},
-      sex,
-      age,
-      'aos': '',
-    };
+    
+    if (isNaN(NumberAge)) {
+      alert("Введите возраст не используя буквы!");
+    } else {
+      const json = {
+        name,
+        email,
+        telephoneNumber: tel,
+        course: {title},
+        sex,
+        age: NumberAge,
+        'aos': '',
+      };
 
-    fetch(URL.mailRequest, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json;charset=utf-8',
-        'origin': URL.home,
-      },
-      body: JSON.stringify(json),
-    }).then((r) => console.log(r)).catch((e) => console.error(e));
+      fetch(URL.mailRequest, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json;charset=utf-8',
+          'origin': URL.home,
+        },
+        body: JSON.stringify(json),
+      }).then((r) => console.log(r)).catch((e) => console.error(e));
+    }
+
   };
 
   const handleChange = (event) => {
