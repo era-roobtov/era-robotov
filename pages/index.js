@@ -49,7 +49,13 @@ const Index = ({textList, advantagesList, aboutUsList}) => {
                     </div>
                 </div>
                 <div className={styles.robots}/>
-                <TextList shiftClass={SHIFT_SINGLE} {...textList} clip={CLIP_ORANGE}/>
+                <div className='blue__boxes_main2'>
+                    <div className='blue__boxes_main2_1'>
+                        <div className='blue__boxes_main2_2'>
+                            <TextList shiftClass={SHIFT_SINGLE} {...textList} clip={CLIP_ORANGE}/>
+                        </div>
+                    </div>
+                </div>
                 <Advantages
                     columnCount={1}
                     shiftClass={SHIFT_DOUBLE} {...advantagesList}
