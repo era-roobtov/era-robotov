@@ -34,7 +34,7 @@ const Request = ({title, isOpen, fun}) => {
     const {name, email, tel, age, sex} = data;
     const NumberAge = Number(age);
     e.preventDefault();
-    
+
     if (isNaN(NumberAge)) {
       alert("Введите возраст не используя буквы!");
     } else {
@@ -45,7 +45,6 @@ const Request = ({title, isOpen, fun}) => {
         course: {title},
         sex,
         age: NumberAge,
-        'aos': '',
       };
 
       fetch(URL.mailRequest, {

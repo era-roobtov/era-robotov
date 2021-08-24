@@ -17,7 +17,6 @@ const Form = () => {
             email,
             telephoneNumber: tel,
             courses,
-            "aos": ""
         };
 
         await fetch(URL, {
