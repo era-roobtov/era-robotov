@@ -1297,7 +1297,6 @@ h2 {
 
 .app {
   background-color: var(--bg-main);
-  overflow-x: hidden;
 }
 
 a {
@@ -1330,6 +1329,8 @@ body,
 
 #__next,
 body,
-html {
+html,
+.app {
   height: 100%;
+  overflow-x: hidden;
 }
