@@ -74,7 +74,7 @@ export async function getStaticProps() {
     return {
         props: {
             textList: {
-                title: 'Чему научится наш слушатель',
+                title: 'Чему научится ваш ребенок',
                 list: [
                     'Программирование',
                     'Создание игр и анимаций',

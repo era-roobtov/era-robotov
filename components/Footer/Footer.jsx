@@ -34,10 +34,7 @@ const Footer = ({shiftCount}) => {
             </p>
           </div>
           <div className={styles.contact}>
-            <h4 className={styles.info__header}>Инфо</h4>
-            <p className={styles.info__text}>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-            </p>
+            
           </div>
           <div className={styles.contact}>
             <h4 className={styles.info__header}>Контакты</h4>
