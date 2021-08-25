@@ -67,13 +67,13 @@ $duration: 400ms;
           top: -50vh;
         }
         70% {
-          top: 7vh;
+          top: 3vh;
         }
         85% {
-          top: 6vh
+          top: 2vh
         }
         to {
-          top: 7vh;
+          top: 3vh;
         }
       }
     }
@@ -81,7 +81,7 @@ $duration: 400ms;
     &_closed {
       @keyframes up {
         from {
-          top: 7vh;
+          top: 3vh;
         }
         to {
           top: -50vh;

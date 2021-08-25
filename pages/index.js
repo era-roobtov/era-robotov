@@ -56,11 +56,13 @@ const Index = ({textList, advantagesList, aboutUsList}) => {
                         </div>
                     </div>
                 </div>
-                <Advantages
-                    columnCount={1}
-                    shiftClass={SHIFT_DOUBLE} {...advantagesList}
-                    showBtn={false} clip={CLIP_BLUE}
-                />
+                <div className='orange__boxes_main3'>
+                    <Advantages
+                        columnCount={1}
+                        shiftClass={SHIFT_DOUBLE} {...advantagesList}
+                        showBtn={false} clip={CLIP_BLUE}
+                    />
+                </div>
                 <Footer shiftCount='mobileSingle-pcDouble'/>
             </Layout>
         </div>

@@ -11,8 +11,8 @@
   }
 
   @media (min-width: 1440px) {
-    padding-top: 220px;
-    padding-bottom: 220px;
+    padding-top: 300px;
+    padding-bottom: 300px;
   }
 
   &__header {
@@ -41,14 +41,14 @@
     grid-template-rows: repeat(5, 1fr);
 
     &_single {
-      @media (min-width: 768px) {
+      @media (min-width: 1440px) {
         grid-template-rows: unset;
         grid-template-columns: repeat(5, 1fr);
       }
     }
 
     &_double {
-      @media (min-width: 768px) {
+      @media (min-width: 1440px) {
         grid-template-rows: auto;
         grid-template-columns: 1fr 1fr;
       }

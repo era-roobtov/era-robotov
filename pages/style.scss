@@ -78,7 +78,7 @@
   content: '';
   width: $size;
   height: $size;
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: $color;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
   transform: rotate($rotate);
@@ -339,6 +339,74 @@
       }
     }
   }
+}
+
+// Главная секция 3
+
+.orange__boxes_main3 {
+  position: relative;
+
+  &:before {
+    @include box(var(--bg-image-o), 22.3px, 20deg);
+    bottom: 50px;
+    right: 45px;
+
+
+    @media (min-width: 1920px) {
+      @include box(var(--bg-image-o), 110px, -20deg);
+      bottom: 280px;
+      right: 170px;
+    }
+
+    @media (min-width: 1440px) and (max-width: 1919px) {
+      @include box(var(--bg-image-o), 45.29px, -20deg);
+      bottom: 280px;
+      right: 130px;
+    }
+
+    @media (min-width: 992px) and (max-width: 1440px) {
+      @include box(var(--bg-image-o), 32px, -20deg);
+      bottom: 280px;
+      right: 130px;
+    }
+
+    @media (min-width: 768px) and (max-width: 992px) {
+      @include box(var(--bg-image-o), 24px, -20deg);
+      bottom: 280px;
+      right: 130px;
+    }
+  }
+
+  &:after {
+    @include box(var(--bg-image-o), 43.2px, 20deg);
+    bottom: 10px;
+    right: -5px;
+
+    @media (min-width: 1920px) {
+      @include box(var(--bg-image-o), 100px, 20deg);
+      bottom: 240px;
+      right: 20px;
+    }
+
+    @media (min-width: 1440px) and (max-width: 1919px) {
+      @include box(var(--bg-image-o), 64.5px, 20deg);
+      bottom: 240px;
+      right: 20px;
+    }
+
+    @media (min-width: 992px) and (max-width: 1440px) {
+      @include box(var(--bg-image-o), 52px, 20deg);
+      bottom: 240px;
+      right: 20px;
+    }
+
+    @media (min-width: 768px) and (max-width: 992px) {
+      @include box(var(--bg-image-o), 48px, 20deg);
+      bottom: 240px;
+      right: 20px;
+    }
+  }
+
 }
 
 ////////////
