@@ -54,7 +54,13 @@ const Request = ({title, isOpen, fun}) => {
           'origin': URL.home,
         },
         body: JSON.stringify(json),
-      }).then((r) => console.log(r)).catch((e) => console.error(e));
+      })
+          .then((r) => console.log(r))
+          .catch((e) => alert("Произошла ошибка"))
+          .then(() => {
+            alert("Заявка успешно отправлена");
+            fun();
+          });
     }
 
   };
