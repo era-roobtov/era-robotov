@@ -294,13 +294,21 @@ const Course = () => {
                     {/*  <ColorButton text="Купить" color={BLUE} func={handleClick}/>*/}
                     {/*</div>*/}
                 </section>
-                <LessonDescription
-                    id={id}
-                    descriptionList={courses[id]?.descriptionList}
-                    clip={CLIP_BLUE_REVERSE}
-                />
+                <div className='orange__boxes_course'>
+                    <div className='orange__boxes_course_1'>
+                        <LessonDescription
+                            id={id}
+                            descriptionList={courses[id]?.descriptionList}
+                            clip={CLIP_BLUE_REVERSE}
+                        />
+                    </div>
+                </div>
                 <LessonWillLearn list={courses[id]?.willLearn}/>
-                <LessonPayCard requestFun={handleClick} {...courses[id]?.payCard}/>
+                <div className='blue__boxes_course'>
+                    <div className='blue__boxes_course_1'>
+                        <LessonPayCard requestFun={handleClick} {...courses[id]?.payCard}/>
+                    </div>
+                </div>
                 <Footer shift={false}/>
                 <Request
                     isOpen={requestForm}
