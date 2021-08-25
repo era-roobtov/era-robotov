@@ -25,11 +25,15 @@ const Courses = ({courses}) => {
                             reverseClip = !reverseClip;
                         }
 
-                        return <Course
-                            clip={reverseClip ? CLIP_BLUE_REVERSE : CLIP_BLUE}
-                            index={index}
-                            key={course.id} {...course}
-                        />;
+                        return <div className={course.cubes[0]}>
+                            <div className={course.cubes[1]}>
+                                <Course
+                                    clip={reverseClip ? CLIP_BLUE_REVERSE : CLIP_BLUE}
+                                    index={index}
+                                    key={course.id} {...course}
+                                />
+                            </div>
+                        </div>;
                     },
                 )}
                 <Footer/>
@@ -44,6 +48,7 @@ export async function getStaticProps() {
             courses: [
                 {
                     id: 0,
+                    cubes: ['orange__boxes_coursesT1','orange__boxes_coursesT1_1'],
                     title: 'Scratch',
                     asPath: 'Scratch',
                     logo: ['/static/new_img/courses/scratch.png'],
@@ -53,6 +58,7 @@ export async function getStaticProps() {
                 },
                 {
                     id: 1,
+                    cubes: ['blue__boxes_coursesT1','blue__boxes_coursesT1_1'],
                     title: 'Arduino',
                     asPath: 'Arduino',
                     logo: ['/static/new_img/courses/arduino.png'],
@@ -62,6 +68,7 @@ export async function getStaticProps() {
                 },
                 {
                     id: 2,
+                    cubes: ['orange__boxes_coursesT2','orange__boxes_coursesT2_1'],
                     title: 'Lego WeDo',
                     asPath: 'LegoWeDo',
                     logo: ['/static/new_img/courses/lego_white.png'],
@@ -70,6 +77,7 @@ export async function getStaticProps() {
                 },
                 {
                     id: 3,
+                    cubes: ['blue__boxes_coursesT2','blue__boxes_coursesT2_1'],
                     title: 'Scratch и Arduino',
                     asPath: 'ScratchArduino',
                     logo: [
@@ -81,6 +89,7 @@ export async function getStaticProps() {
                 },
                 {
                     id: 4,
+                    cubes: ['orange__boxes_coursesT1','orange__boxes_coursesT1_1'],
                     title: 'Python',
                     asPath: 'Python',
                     logo: ['/static/new_img/courses/python.png'],
@@ -90,6 +99,7 @@ export async function getStaticProps() {
                 },
                 {
                     id: 5,
+                    cubes: ['blue__boxes_coursesT1','blue__boxes_coursesT1_1'],
                     title: 'Mindstorms',
                     asPath: 'Mindstorms',
                     logo: ['/static/new_img/courses/mindstorms.png'],
@@ -98,6 +108,7 @@ export async function getStaticProps() {
                 },
                 {
                     id: 6,
+                    cubes: ['orange__boxes_coursesT2','orange__boxes_coursesT2_1'],
                     title: 'App Inventor',
                     asPath: 'AppInventor',
                     logo: ['/static/new_img/courses/appInventor_logo.png'],

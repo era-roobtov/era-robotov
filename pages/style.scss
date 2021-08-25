@@ -82,11 +82,18 @@
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
   transform: rotate($rotate);
   z-index: 20;
-  border-radius: 5px;
 
-  @media (min-width: 992px) {
-    border-radius: 15px;
+  border-radius: 5px;
+  @if ($size < 30px) {
+    @media (min-width: 768px) {
+      border-radius: 6px;
+    }
+  } @else {
+    @media (min-width: 768px) {
+      border-radius: 15px;
+    }
   }
+
 }
 
 // Главная 1-ая секция
@@ -912,10 +919,283 @@
   }
 }
 
+// Страница всех Курсов
+
+.orange__boxes_coursesT1 {
+  position: relative;
+
+  &:before {
+    @include box(var(--bg-image-o), 22.3px, 20deg);
+    bottom: 10px;
+    left: 70px;
+
+    @media (min-width: 992px) and (max-width: 1919px) {
+      @include box(var(--bg-image-o), 64.5px, -20deg);
+      left: unset;
+      bottom: unset;
+      right: 60px;
+      top: 160px;
+    }
+
+    @media (min-width: 768px) and (max-width: 992px)  {
+      @include box(var(--bg-image-o), 52px, -20deg);
+      left: unset;
+      bottom: unset;
+      right: 30px;
+      top: 100px;
+    }
+
+    @media (min-width: 1920px) {
+      @include box(var(--bg-image-o), 84px, -20deg);
+      left: unset;
+      bottom: unset;
+      right: 60px;
+      top: 160px;
+    }
+  }
+
+  &:after {
+    @media (min-width: 768px) {
+      display: none;
+    }
+
+    @include box(var(--bg-image-o), 55.8px, -20deg);
+    bottom: -5px;
+    left: -10px;
+  }
+
+  &_1 {
+
+    &:before {
+      @media (min-width: 768px) {
+        display: none;
+      }
+
+      @include box(var(--bg-image-o), 22.3px, 20deg);
+      bottom: 30px;
+      right: -5px;
+    }
+  }
+
+}
+
+.blue__boxes_coursesT1 {
+  position: relative;
+
+  &:before {
+    @include box(var(--bg-image-b), 22.3px, -20deg);
+    top: 5px;
+    right: 35px;
+
+    @media (min-width: 1440px) and (max-width: 1919px) {
+      @include box(var(--bg-image-b), 60.54px, 20deg);
+      top: 15px;
+      right: 55px;
+    }
+
+    @media (min-width: 1920px) {
+      @include box(var(--bg-image-b), 72px, 20deg);
+      top: 70px;
+      right: 55px;
+    }
+  }
+
+  &:after {
+    @include box(var(--bg-image-b), 43.22px, 20deg);
+    top: 30px;
+    right: -15px;
+
+    @media (min-width: 1440px) and (max-width: 1919px) {
+      @include box(var(--bg-image-b), 124.99px, 20deg);
+      top: 125px;
+      right: 25px;
+    }
+
+    @media (min-width: 1920px) {
+      @include box(var(--bg-image-b), 148px, 20deg);
+      top: 200px;
+      right: 25px;
+    }
+  }
+
+  &_1 {
+    &:before {
+      @include box(var(--bg-image-b), 22.3px, -20deg);
+      bottom: 10px;
+      left: 10px;
+
+      @media (min-width: 1440px) and (max-width: 1919px) {
+        @include box(var(--bg-image-b), 44.55px, -20deg);
+        bottom: 80px;
+        left: 30px;
+      }
+      
+      @media (min-width: 1920px) {
+        @include box(var(--bg-image-b), 72px, -20deg);
+        bottom: 200px;
+        left: 50px;
+      }
+    }
+
+    &:after {
+      @include box(var(--bg-image-b), 22.3px, 20deg);
+      bottom: 45px;
+      left: 30px;
+
+      @media (min-width: 1440px) and (max-width: 1919px) {
+        @include box(var(--bg-image-b), 64.5px, -20deg);
+        bottom: 190px;
+        left: 30px;
+      }
+
+      @media (min-width: 1920px) {
+        @include box(var(--bg-image-b), 72px, -20deg);
+        bottom: 40px;
+        left: 50px;
+      }
+    }
+  }
+}
+
+.orange__boxes_coursesT2 {
+  position: relative;
+
+  &:before {
+    @include box(var(--bg-image-o), 55.88px, -20deg);
+    bottom: -20px;
+    right: -20px;
+
+    @media (min-width: 768px) and (max-width: 992px) {
+      @include box(var(--bg-image-o), 72px, 20deg);
+      bottom: 350px;
+      right: -20px;
+    }
+
+    @media (min-width: 992px) and (max-width: 1919px) {
+      @include box(var(--bg-image-o), 124.88px, 20deg);
+      bottom: 230px;
+      right: -20px;
+    }
+
+    @media (min-width: 1920px) {
+      @include box(var(--bg-image-o), 148px, 20deg);
+      bottom: 230px;
+      right: -20px;
+    }
+  }
+
+  &:after {
+    @include box(var(--bg-image-o), 22.33px, 20deg);
+    bottom: 50px;
+    right: 20px;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  &_1 {
+    &:before {
+      @include box(var(--bg-image-o), 22.33px, -20deg);
+      left: 20px;
+      bottom: 7px;
+
+      @media (min-width: 768px) and (max-width: 992px) {
+        @include box(var(--bg-image-o), 42px, -20deg);
+        left: 40px;
+        bottom: 60px;
+      }
+
+      @media (min-width: 992px) and (max-width: 1919px) {
+        @include box(var(--bg-image-o), 64.5px, -20deg);
+        left: 40px;
+        bottom: 60px;
+      }
+
+      @media (min-width: 1920px) {
+        @include box(var(--bg-image-o), 84px, -20deg);
+        left: 40px;
+        bottom: 60px;
+      }
+    }
+  }
+}
+
+.blue__boxes_coursesT2 {
+  position: relative;
+
+  &:before {
+    @include box(var(--bg-image-b), 45.29px, 20deg);
+    bottom: 0px;
+    right: -15px;
+
+    @media (min-width: 1440px) and (max-width: 1919px) {
+      @include box(var(--bg-image-b), 64.45px, -20deg);
+      bottom: 250px;
+      right: 50px;
+    }
+
+    @media (min-width: 992px) and (max-width: 1440px) {
+      @include box(var(--bg-image-b), 64.45px, -20deg);
+      bottom: 250px;
+      right: 15px;
+    }
+  }
+
+  &:after {
+    @include box(var(--bg-image-b), 22.33px, -20deg);
+    bottom: 30px;
+    right: 45px;
+
+    @media (min-width: 1440px) and (max-width: 1919px) {
+      @include box(var(--bg-image-b), 45.29px, -20deg);
+      bottom: 30px;
+      right: 150px;
+    }
+
+    @media (min-width: 992px) and (max-width: 1440px) {
+      @include box(var(--bg-image-b), 32px, -20deg);
+      bottom: 30px;
+      right: 90px;
+    }
+  }
+
+  &_1 {
+    &:before {
+      @include box(var(--bg-image-b), 22.33px, -20deg);
+      bottom: 25px;
+      left: 30px;
+
+      @media (min-width: 1440px) and (max-width: 1919px) {
+        @include box(var(--bg-image-b), 60.54px, 20deg);
+        bottom: 140px;
+        left: 100px;
+      }
+
+      @media (min-width: 992px) and (max-width: 1440px) {
+        @include box(var(--bg-image-b), 60.54px, 20deg);
+        bottom: 140px;
+        left: 40px;
+      }
+    }
+
+    &:after {
+      @media (min-width: 1440px) and (max-width: 1919px) {
+        @include box(var(--bg-image-b), 125.54px, 20deg);
+        bottom: 300px;
+        left: -35px;
+      }
+
+      @media (min-width: 992px) and (max-width: 1440px) {
+        @include box(var(--bg-image-b), 125.54px, 20deg);
+        bottom: 300px;
+        left: -35px;
+      }
+    }
+  }
+}
+
 ////////////
-
-
-
 
 
 @font-face {
