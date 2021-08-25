@@ -15,7 +15,7 @@
   }
 
   &__text {
-    text-align: center;
+    text-align: start;
     font-family: "RobotoLight", "Roboto", sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -25,7 +25,7 @@
     align-self: center;
 
     @media (min-width: 768px) {
-      text-align: start;
+      text-align: center;
       font-family: "RobotoMedium", "Roboto", sans-serif;
       font-weight: 500;
       font-size: 16px;

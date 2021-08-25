@@ -40,7 +40,7 @@
 .clip-orange {
   clip-path: polygon(0px 5%, 100% 0%, 100% 95%, 0% 100%);
   background-color: var(--bg-image-o);
-  color: var(--txt-black);
+  color: var(--txt-white);
 
   @media (min-width: 768px) {
     clip-path: polygon(0px 15%, 100% 0%, 100% 85%, 0% 100%);
