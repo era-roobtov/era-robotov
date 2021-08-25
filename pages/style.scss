@@ -611,7 +611,7 @@
     @media (min-width: 1440px) and (max-width: 1919px) {
       @include box(var(--bg-image-b), 125px, 20deg);
       top: unset;
-      bottom: 185px;
+      bottom: 140px;
       right: -10px;
     }
 
@@ -914,6 +914,22 @@
         @include box(var(--bg-image-b), 84px, -20deg);
         bottom: -15px;
         left: 334px;
+      }
+    }
+  }
+
+  &_2 {
+    &:before {
+      @media (min-width: 1440px) and (max-width: 1919px) {
+        @include box(var(--bg-image-b), 124.99px, 20deg);
+        bottom: 0px;
+        left: 25px;
+      }
+
+      @media (min-width: 1920px) {
+        @include box(var(--bg-image-b), 152px, 20deg);
+        bottom: 0px;
+        left: 25px;
       }
     }
   }

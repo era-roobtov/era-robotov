@@ -139,7 +139,7 @@ const Course = () => {
                 },
             ],
             payCard: {
-                description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
+                description: 'Продолжительность курса 72 часа (2 часа в неделю)',
                 cost: 600,
             },
         },
@@ -207,22 +207,33 @@ const Course = () => {
                 },
             ],
             payCard: {
-                description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
+                description: 'Продолжительность курса 72 часа (2 часа в неделю)',
                 cost: 800,
             },
         },
         5: {
             title: 'Lego',
             logo: ['/static/new_img/courses/mindstorms.png'],
-            description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate',
+            description: 'Курс Lego Mindstorm предназначен для погружение в мир робототехники и программирования учащихся младшего и среднего возраста. Ученики познакомятся с основами механики и физики, научаться строить алгоритмы движения и управления роботами, а так же проектировать своих роботов для выполнения различных задач.',
 
             descriptionList: [
-                'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
-                'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
-                'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
-                'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
-                'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
-                'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. '],
+                'Знакомство с робототехникой',
+                'Простые алгоритмы движения',
+                'Работа с датчиками',
+                'Простая механика',
+                'Изучение управляющих операторов',
+                'Алгоритмы движения с использованием датчиков',
+                'ТРИЗ',
+                'Разбор и решение олимпиадных задач',
+                'Способы хранения и передачи данных. Переменные',
+                'Изучения логических операторов',
+                'Сложные алгоритмы движения',
+                'Функциональное программирование',
+                'Сложная механика',
+                'Большие объемы данных. Массивы',
+                'Дистанционное управление роботом',
+                'Решение олимпиадных задач WRO'
+            ],
             willLearn: [
                 {
                     imgPath: '/static/imgs/bg_brick.png',
@@ -239,7 +250,7 @@ const Course = () => {
                 },
             ],
             payCard: {
-                description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
+                description: 'Продолжительность курса 72 часа (2 часа в неделю)',
                 cost: 500,
             },
         },
@@ -270,7 +281,7 @@ const Course = () => {
                 },
             ],
             payCard: {
-                description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
+                description: 'Продолжительность курса 72 часа (2 часа в неделю)',
                 cost: 500,
             },
         },
@@ -306,7 +317,9 @@ const Course = () => {
                 <LessonWillLearn list={courses[id]?.willLearn}/>
                 <div className='blue__boxes_course'>
                     <div className='blue__boxes_course_1'>
-                        <LessonPayCard requestFun={handleClick} {...courses[id]?.payCard}/>
+                        <div className='blue__boxes_course_2'>
+                            <LessonPayCard requestFun={handleClick} {...courses[id]?.payCard}/>
+                        </div>
                     </div>
                 </div>
                 <Footer shift={false}/>
