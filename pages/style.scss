@@ -550,6 +550,172 @@
   }
 }
 
+// Страница "О нас"
+
+.blue__boxes_about {
+  position: relative;
+
+  &:before {
+    @include box(var(--bg-image-b), 22.3px, 20deg);
+    top: -5px;
+    right: 60px;
+
+    @media (min-width: 1920px) {
+      @include box(var(--bg-image-b), 200px, -20deg);
+      top: -65px;
+      right: 30px;
+    }
+
+    @media (min-width: 1440px) and (max-width: 1919px) {
+      @include box(var(--bg-image-b), 161px, -20deg);
+      top: -65px;
+      right: 30px;
+    }
+
+    @media (min-width: 992px) and (max-width: 1440px) {
+      @include box(var(--bg-image-b), 84px, -20deg);
+      top: -70px;
+      right: 30px;
+    }
+
+    @media (min-width: 768px) and (max-width: 992px) {
+      @include box(var(--bg-image-b), 64px, -20deg);
+      top: -20px;
+      right: 30px;
+    }
+  }
+
+  &:after {
+    @include box(var(--bg-image-b), 55px, -20deg);
+    top: -25px;
+    right: -10px;
+
+    @media (min-width: 1920px) {
+      @include box(var(--bg-image-b), 161px, 20deg);
+      top: unset;
+      bottom: 80px;
+      right: -10px;
+    }
+
+    @media (min-width: 1440px) and (max-width: 1919px) {
+      @include box(var(--bg-image-b), 125px, 20deg);
+      top: unset;
+      bottom: 185px;
+      right: -10px;
+    }
+
+    @media (min-width: 992px) and (max-width: 1440px) {
+      @include box(var(--bg-image-b), 72px, 20deg);
+      top: unset;
+      bottom: 200px;
+      right: -10px;
+    }
+
+    @media (min-width: 768px) and (max-width: 992px) {
+      @include box(var(--bg-image-b), 48px, 20deg);
+      top: unset;
+      bottom: 210px;
+      right: -10px;
+    }
+  }
+
+  &_1 {
+    &:before {
+      @include box(var(--bg-image-b), 43.22px, 20deg);
+      bottom: 20px;
+      right: -5px;
+
+      @media (min-width: 1920px) {
+        @include box(var(--bg-image-b), 90px, -20deg);
+        bottom: 165px;
+        right: 200px;
+      }
+
+      @media (min-width: 1440px) and (max-width: 1919px) {
+        @include box(var(--bg-image-b), 64.5px, -20deg);
+        bottom: 165px;
+        right: 200px;
+      }
+
+      @media (min-width: 992px) and (max-width: 1440px) {
+        @include box(var(--bg-image-b), 30px, -20deg);
+        bottom: 185px;
+        right: 100px;
+      }
+
+      @media (min-width: 768px) and (max-width: 992px) {
+        @include box(var(--bg-image-b), 24px, -20deg);
+        bottom: 190px;
+        right: 100px;
+      }
+    }
+
+    &:after {
+      @include box(var(--bg-image-b), 20.94px, 20deg);
+      bottom: 23px;
+      right: 55px;
+
+      @media (min-width: 1920px) {
+        @include box(var(--bg-image-b), 72px, -20deg);
+        bottom: 100px;
+        left: 50px;
+      }
+
+      @media (min-width: 1440px) and (max-width: 1919px) {
+        @include box(var(--bg-image-b), 45.26px, -20deg);
+        bottom: 180px;
+        left: 50px;
+      }
+
+      @media (min-width: 992px) and (max-width: 1440px) {
+        @include box(var(--bg-image-b), 32px, -20deg);
+        bottom: 180px;
+        left: 20px;
+      }
+
+      @media (min-width: 768px) and (max-width: 992px) {
+        @include box(var(--bg-image-b), 24px, -20deg);
+        right: unset;
+        bottom: 180px;
+        left: 20px;
+      }
+    }
+  }
+
+  &_2 {
+    &:before {
+      @include box(var(--bg-image-b), 15.66px, -20deg);
+      bottom: 25px;
+      left: 10px;
+
+      @media (min-width: 768px) and (max-width: 992px) {
+        @include box(var(--bg-image-b), 44px, 20deg);
+        right: unset;
+        bottom: 220px;
+        left: 65px;
+      }
+
+      @media (min-width: 992px) and (max-width: 1440px) {
+        @include box(var(--bg-image-b), 52px, 20deg);
+        bottom: 220px;
+        left: 65px;
+      }
+
+      @media (min-width: 1440px) and (max-width: 1919px) {
+        @include box(var(--bg-image-b), 60.54px, 20deg);
+        bottom: 220px;
+        left: 150px;
+      }
+
+      @media (min-width: 1920px) {
+        @include box(var(--bg-image-b), 120px, 20deg);
+        bottom: 140px;
+        left: 150px;
+      }
+    }
+  }
+}
+
 ////////////
 
 

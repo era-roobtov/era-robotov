@@ -23,12 +23,18 @@ const About = ({advantagesList, teachersList, subText}) => {
               imgPath="/static/new_img/greeting/robots.png"
               mobileImgTop={true}
           />
-          <Advantages
-              shiftCount={0}
-              columnCount={1}
-               {...advantagesList}
-              showBtn={false} clip={CLIP_ORANGE}
-          />
+          <div className='blue__boxes_about'>
+            <div className='blue__boxes_about_1'>
+              <div className='blue__boxes_about_2'>
+                <Advantages
+                    shiftCount={0}
+                    columnCount={1}
+                    {...advantagesList}
+                    showBtn={false} clip={CLIP_ORANGE}
+                />
+              </div>
+            </div>
+          </div>
           {/*<Advantages {...advantagesList} shiftCount={0} columnCount={1} showBtn={true} clip={CLIP_ORANGE}/>*/}
           {/*<Teachers {...teachersList} shiftClass={SHIFT_SINGLE} clip={CLIP_BLUE}/>*/}
           <Footer shiftCount={0}/>
