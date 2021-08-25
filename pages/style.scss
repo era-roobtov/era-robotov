@@ -409,7 +409,151 @@
 
 }
 
+// Страница контактов
+
+.orange__boxes_contact {
+  position: relative;
+
+  &:before {
+    @include box(var(--bg-image-o), 22.3px, 20deg);
+    bottom: -30px;
+    right: 45px;
+
+    @media (min-width: 1920px) {
+      @include box(var(--bg-image-o), 84px, -20deg);
+      right: unset;
+      bottom: 35px;
+      left: 450px;
+    }
+
+    @media (min-width: 1440px) and (max-width: 1920px) {
+      @include box(var(--bg-image-o), 64.5px, -20deg);
+      right: unset;
+      bottom: 35px;
+      left: 400px;
+    }
+
+    @media (min-width: 992px) and (max-width: 1439px) {
+      @include box(var(--bg-image-o), 42px, -20deg);
+      right: unset;
+      bottom: 35px;
+      left: 370px;
+    }
+
+    @media (min-width: 768px) and (max-width: 992px) {
+      @include box(var(--bg-image-o), 22.3px, 20deg);
+      right: unset;
+      bottom: 35px;
+      left: 340px;
+    }
+  }
+
+  &:after {
+    @include box(var(--bg-image-o), 55.68px, 20deg);
+    bottom: -20px;
+    right: -25px;
+
+    @media (min-width: 1920px) {
+      @include box(var(--bg-image-o), 142px, 20deg);
+      right: unset;
+      bottom: 50px;
+      left: 250px;
+    }
+
+    @media (min-width: 992px) and (max-width: 1439px){
+      @include box(var(--bg-image-o), 124.99px, 20deg);
+      right: unset;
+      bottom: 50px;
+      left: 250px;
+    }
+
+    @media (min-width: 992px) and (max-width: 1440px) {
+      @include box(var(--bg-image-o), 84px, 20deg);
+      right: unset;
+      bottom: 50px;
+      left: 200px;
+    }
+
+    @media (min-width: 768px) and (max-width: 992px) {
+      @include box(var(--bg-image-o), 84px, 20deg);
+      right: unset;
+      bottom: 50px;
+      left: 200px;
+    }
+  }
+
+  &_1 {
+
+    &:before {
+      display: none;
+
+      @media (min-width: 1920px) {
+        display: unset;
+        @include box(var(--bg-image-o), 84px, 20deg);
+        right: 20px;
+        top: 50px;
+      }
+
+      @media (min-width: 1440px) and (max-width: 1920px) {
+        display: unset;
+        @include box(var(--bg-image-o), 64.99px, 20deg);
+        right: 20px;
+        top: 50px;
+      }
+
+      @media (min-width: 992px) and (max-width: 1439px) {
+        display: unset;
+        @include box(var(--bg-image-o), 64.99px, 20deg);
+        right: 20px;
+        top: 50px;
+      }
+
+      @media (min-width: 768px) and (max-width: 992px) {
+        display: unset;
+        @include box(var(--bg-image-o), 42px, 20deg);
+        right: 20px;
+        top: 50px;
+      }
+    }
+
+    &:after {
+      display: none;
+
+      @media (min-width: 1920px) {
+        display: unset;
+        @include box(var(--bg-image-o), 182px, -20deg);
+        left: 5px;
+        bottom: 20px;
+      }
+
+      @media (min-width: 1440px) and (max-width: 1920px) {
+        display: unset;
+        @include box(var(--bg-image-o), 161px, -20deg);
+        left: 5px;
+        bottom: 20px;
+      }
+
+      @media (min-width: 992px) and (max-width: 1439px) {
+        display: unset;
+        @include box(var(--bg-image-o), 64.99px, 20deg);
+        right: 20px;
+        top: 50px;
+      }
+
+      @media (min-width: 768px) and (max-width: 992px) {
+        display: unset;
+        @include box(var(--bg-image-o), 42px, 20deg);
+        right: 20px;
+        top: 50px;
+      }
+    }
+  }
+}
+
 ////////////
+
+
+
 
 
 @font-face {

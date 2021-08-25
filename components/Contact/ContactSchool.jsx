@@ -16,41 +16,45 @@ const ContactSchool = ({
                          mapCord,
                        }) => {
   return (
-      <section className={`${styles.contact} ${clipSection}`}>
-        <h1 className={styles.contact__header}>
-          {title}
-        </h1>
-        <div className={styles.contact__info}>
-          <Link href={`tel:${tel}`}>
-            <a>
-              <img src={callSvg} alt=""/>
-              <span>{tel}</span>
-            </a>
-          </Link>
-          <Link href={`mailto:${email}`}>
-            <a>
-              <img src={mailSvg} alt=""/>
-              <span>{email}</span>
-            </a>
-          </Link>
-          <Link href="#">
-            <a>
-              <img src={locationSvg} alt=""/>
-              <span>{adress}</span>
-            </a>
-          </Link>
-        </div>
-        <div className={styles.contact__social}>
-          <Social/>
-        </div>
-        <YMaps>
-          <Map className={`${styles.contact__map} ${clipMap}`}
-               defaultState={{center: mapCord, zoom: 17}}
-          >
-              <Placemark geometry={mapCord} />
-          </Map>
-        </YMaps>
-      </section>
+      <div className='orange__boxes_contact'>
+          <div className='orange__boxes_contact_1'>
+              <section className={`${styles.contact} ${clipSection}`}>
+                  <h1 className={styles.contact__header}>
+                      {title}
+                  </h1>
+                  <div className={styles.contact__info}>
+                      <Link href={`tel:${tel}`}>
+                          <a>
+                              <img src={callSvg} alt=""/>
+                              <span>{tel}</span>
+                          </a>
+                      </Link>
+                      <Link href={`mailto:${email}`}>
+                          <a>
+                              <img src={mailSvg} alt=""/>
+                              <span>{email}</span>
+                          </a>
+                      </Link>
+                      <Link href="#">
+                          <a>
+                              <img src={locationSvg} alt=""/>
+                              <span>{adress}</span>
+                          </a>
+                      </Link>
+                  </div>
+                  <div className={styles.contact__social}>
+                      <Social/>
+                  </div>
+                  <YMaps>
+                      <Map className={`${styles.contact__map} ${clipMap}`}
+                           defaultState={{center: mapCord, zoom: 17}}
+                      >
+                          <Placemark geometry={mapCord} />
+                      </Map>
+                  </YMaps>
+              </section>
+          </div>
+      </div>
   );
 };
 
