@@ -11,7 +11,7 @@
 
   @media (min-width: 768px) {
     column-gap: 45px;
-    padding: 16px 82px 0px 82px;
+    padding: 16px 82px 16px 82px;
     grid-template-columns: 0.8fr 1fr;
     grid-template-rows: repeat(auto-fill, auto);
     grid-template-areas:
@@ -22,11 +22,16 @@
 
   @media (min-width: 992px) {
     column-gap: 65px;
-    padding: 35px 104px 4px 104px;
+    padding: 35px 104px 35px 104px;
   }
 
   @media (min-width: 1440px) {
-    padding: 53px 163px 4px 163px;
+    padding: 53px 163px 53px 163px;
+    column-gap: 95px;
+  }
+
+  @media (min-width: 1920px) {
+    padding: 53px 380px 53px 380px;
     column-gap: 95px;
   }
 

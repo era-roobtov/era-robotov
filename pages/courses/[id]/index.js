@@ -116,12 +116,15 @@ const Course = () => {
             description: 'Lego WeDo представляет собой специальный курс для самых юных инженеров и программистов. Ученики познакомятся с робототехникой и концепцией программирования, а так же узнают много интересного об устройстве окружающего мира через создание механизмов и проведение опытов.',
 
             descriptionList: [
-                'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
-                'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
-                'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
-                'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
-                'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
-                'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. '],
+                'Знакомство с робототехникой',
+                'Знакомство со средой разработки',
+                'Простые алгоритмы движения',
+                'Работа с датчиками',
+                'Простая механика',
+                'Сборка роботов простого уровня',
+                'Механика среднего уровня',
+                'Сборка робоов среднего уровня'
+            ],
             willLearn: [
                 {
                     imgPath: '/static/imgs/bg_settings.png',
@@ -152,12 +155,23 @@ const Course = () => {
             description: 'Курс предназначен для тех кто уже владеет навыками программирования в Scratch и хочет подняться на уровень выше. Ученики познакомятся с аппаратной платформой Arduino и языком программирования Си (англ. С), изучат основы схемотехники, научатся  создавать различные устройства и погрузятся в мир робототехники и IoT и всё это на простой и знакомой платформе Scratch.',
 
             descriptionList: [
-                'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
-                'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
-                'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
-                'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
-                'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
-                'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. '],
+                'Знакомство со средой программирования Arduino в Scratch',
+                'Изучение основ программирования',
+                'Изучение основ алгоритмики',
+                'Сборка простейших электросхем',
+                'Работа с датчиками',
+                'Функциональное программирование',
+                'Изучение принципов работы с моторами и сервоприводами',
+                'Контрольные работы',
+                'Переход на язык Arduino C',
+                'Знакомство со сложными датчиками',
+                'Работа с массивами данных',
+                'Датчики определения положения в пространстве',
+                'Простые алгоритмы движения',
+                'Простая автоматизация (IOT)',
+                'Работа со средствами вывода информации',
+                'Проектные работы'
+            ],
             willLearn: [
                 {
                     imgPath: '/static/imgs/bg_screen.png',
@@ -184,12 +198,23 @@ const Course = () => {
                 'Python очень гибкий и универсальный инструмент широко использующийся в разработке игр, IoT, машинном обучении и Web разработке, что выделяет его на фоне других, узконаправленных языков программирования',
 
             descriptionList: [
-                'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
-                'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
-                'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
-                'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
-                'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
-                'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. '],
+                'Знакомство с языком программирования Python',
+                'Переменные и простые операции с числами',
+                'Строки и ветвление',
+                'Циклы while и for',
+                'Списки и кортежи',
+                'Словари и сортровка',
+                'Функции',
+                'Библиотеки и их применение',
+                'Создание Telegramm бота',
+                'Работа с файлами',
+                'Работа с датой и временем',
+                'Знакомство с нейросетями. Пишем перцептрон',
+                'OpenCV в Python и робототехнике',
+                'Объектно-ориентированное программирование',
+                'Программы для обработки и анализа данных',
+                'Проектные работы',
+            ],
             willLearn: [
                 {
                     imgPath: '/static/imgs/bg_screen.png',
@@ -260,12 +285,23 @@ const Course = () => {
             description: 'Курс App Inventor предназначен для тех кто уже знаком с визуальными языкам программирования и хочет попробовать себя в чем то новом. Здесь ученики изучат основы создания приложений и программ для Andriod  устройств, улучшат свои навыки программирования и узнают много нового о мобильных технологиях',
 
             descriptionList: [
-                'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
-                'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
-                'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
-                'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
-                'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ',
-                'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. '],
+                'Знакомство со средой программирования App Inventor',
+                'Описание работы Android-приложений',
+                'Типы данных',
+                'Понятие алгоритма',
+                'Ветвление',
+                'Циклы',
+                'Обработка действий пользователя',
+                'Функции',
+                'Слои',
+                'Медиа',
+                'Сенсоры телефона',
+                'Хранение данных приложения',
+                'Рисование',
+                'Создание элементарных анимация',
+                'Проектирование приложения',
+                'Проектные работы'
+            ],
             willLearn: [
                 {
                     imgPath: '/static/imgs/bg_screen.png',

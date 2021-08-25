@@ -1145,6 +1145,12 @@
     bottom: 0px;
     right: -15px;
 
+    @media (min-width: 1920px) {
+      @include box(var(--bg-image-b), 84.45px, -20deg);
+      bottom: 250px;
+      right: 50px;
+    }
+
     @media (min-width: 1440px) and (max-width: 1919px) {
       @include box(var(--bg-image-b), 64.45px, -20deg);
       bottom: 250px;
@@ -1162,6 +1168,12 @@
     @include box(var(--bg-image-b), 22.33px, -20deg);
     bottom: 30px;
     right: 45px;
+
+    @media (min-width: 1920px) {
+      @include box(var(--bg-image-b), 64px, -20deg);
+      bottom: 30px;
+      right: 150px;
+    }
 
     @media (min-width: 1440px) and (max-width: 1919px) {
       @include box(var(--bg-image-b), 45.29px, -20deg);
@@ -1182,6 +1194,12 @@
       bottom: 25px;
       left: 30px;
 
+      @media (min-width: 1920px) {
+        @include box(var(--bg-image-b), 84px, 20deg);
+        bottom: 140px;
+        left: 100px;
+      }
+
       @media (min-width: 1440px) and (max-width: 1919px) {
         @include box(var(--bg-image-b), 60.54px, 20deg);
         bottom: 140px;
@@ -1196,6 +1214,13 @@
     }
 
     &:after {
+
+      @media (min-width: 1920px) {
+        @include box(var(--bg-image-b), 160px, 20deg);
+        bottom: 260px;
+        left: -35px;
+      }
+
       @media (min-width: 1440px) and (max-width: 1919px) {
         @include box(var(--bg-image-b), 125.54px, 20deg);
         bottom: 300px;
