@@ -13,6 +13,16 @@
   @media (min-width: 1440px) {
     padding: 169px 265px 241px 265px;
   }
+  &__lists {
+    display: grid;
+    row-gap: 29px;
+    @media (min-width: 992px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: unset;
+      column-gap: 29px;
+    }
+  }
 
   &__header {
     font-family: "RobotoMedium", "Roboto", sans-serif;
@@ -40,8 +50,7 @@
     gap: 29px;
 
     @media (min-width: 992px) {
-      grid-template-columns: repeat(2, auto);
-      column-gap: 61px;
+      row-gap: 0;
     }
 
     & > li {

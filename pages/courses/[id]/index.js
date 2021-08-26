@@ -51,8 +51,8 @@ const Course = () => {
                 },
                 {
                     imgPath: '/static/imgs/bg_pika.png',
-                    text: 'Базовые навыки в \n' +
-                        'программировании',
+                    text: 'Создавать анимации\n' +
+                        'и игры различной сложности'
                 },
                 {
                     imgPath: '/static/imgs/bg_chat.png',
