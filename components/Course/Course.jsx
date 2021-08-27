@@ -10,7 +10,6 @@ const Course = ({index, id, title, logo, description, clip, asPath}) => {
   const isOdd = index % 2 === 0;
   const anchor = '#' + title + id;
 
-  console.log(clip);
   return (
       <section id={anchor}
                className={`${styles.course} ${isOdd ? clip : ''}`}
