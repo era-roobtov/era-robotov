@@ -55,6 +55,18 @@
   background-color: var(--bg-image-b);
 }
 
+.align__self_start {
+  @media (min-width: 992px) {
+    align-self: start;
+  }
+}
+
+.align__self_end {
+  @media (min-width: 992px) {
+    align-self: end;
+  }
+}
+
 .shift_single {
   top: -15px;
 
@@ -876,13 +888,13 @@
     right: -5px;
 
     @media (min-width: 1440px) and (max-width: 1919px) {
-      @include box(var(--bg-image-b), 43.2px, 20deg);
+      @include box(var(--bg-image-o), 43.2px, 20deg);
       top: 150px;
       right: 240px;
     }
 
     @media (min-width: 1920px) {
-      @include box(var(--bg-image-b), 64px, 20deg);
+      @include box(var(--bg-image-o), 64px, 20deg);
       top: 150px;
       right: 330px;
     }
@@ -896,13 +908,13 @@
 
       @media (min-width: 1440px) and (max-width: 1919px) {
         @include box(var(--bg-image-b), 45.29px, -20deg);
-        bottom: 80px;
+        bottom: 130px;
         left: 300px;
       }
 
       @media (min-width: 1920px) {
         @include box(var(--bg-image-b), 64.5px, -20deg);
-        bottom: 120px;
+        bottom: 150px;
         left: 400px;
       }
     }
