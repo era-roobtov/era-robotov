@@ -66,14 +66,14 @@ $duration: 400ms;
         from {
           top: -50vh;
         }
-        70% {
-          top: 3vh;
+        40% {
+          top: 7vh;
         }
-        85% {
-          top: 2vh
+        65% {
+          top: 5vh
         }
         to {
-          top: 3vh;
+          top: 7vh;
         }
       }
     }
@@ -81,7 +81,7 @@ $duration: 400ms;
     &_closed {
       @keyframes up {
         from {
-          top: 3vh;
+          top: 5vh;
         }
         to {
           top: -50vh;

@@ -3,7 +3,6 @@ import styles from './Course.module.scss';
 import Logo from '@/components/Course/Logo';
 import {ORANGE, BLUE} from '@/utils/globalStyles';
 import OutlineButton from '@/components/Buttons/OutlineButton';
-import ColorButton from '@/components/Buttons/ColorButton';
 import navPaths from '@/utils/paths';
 
 const Course = ({index, id, title, logo, description, clip, asPath}) => {
