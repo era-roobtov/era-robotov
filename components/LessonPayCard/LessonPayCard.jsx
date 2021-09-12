@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import ColorButton from '@/components/Buttons/ColorButton';
 import {BLUE, WHITE} from '@/utils/globalStyles';
 import styles from './LessonPayCard.module.scss';
+import Information from "@/components/LessonPayCard/Information";
 
 const LessonPayCard = ({description, cost, requestFun}) => {
 
@@ -11,15 +12,7 @@ const LessonPayCard = ({description, cost, requestFun}) => {
 
   return (
       <section className={styles.payCard}>
-        <div className={styles.payCard__info}>
-          <h4 className={styles.info__header}>Стоимость курса</h4>
-          <p className={styles.info__description}>{description}</p>
-          <p className={styles.info__cost}>{cost} р/час</p>
-        </div>
-        <div className={styles.payCard__btns}>
-          <ColorButton text="Забронировать" color={WHITE} func={requestFun}/>
-          {/*<ColorButton text="Купить" color={BLUE} func={handleBuy}/>*/}
-        </div>
+        <Information cost={cost} description={description} requestFun={requestFun}/>
       </section>
   );
 };
