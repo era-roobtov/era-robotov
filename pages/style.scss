@@ -47,6 +47,14 @@
   }
 }
 
+.bg_orange {
+  background-color: var(--bg-image-o);
+}
+
+.bg_blue {
+  background-color: var(--bg-image-b);
+}
+
 .shift_single {
   top: -15px;
 
@@ -882,7 +890,7 @@
 
   &_1 {
     &:before {
-      @include box(var(--bg-image-b), 22.3px, 20deg);
+      @include box(var(--bg-image-o), 22.3px, 20deg);
       bottom: 25px;
       left: 25px;
 
@@ -900,7 +908,7 @@
     }
 
     &:after {
-      @include box(var(--bg-image-b), 22.3px, -20deg);
+      @include box(var(--bg-image-o), 22.3px, -20deg);
       bottom: -15px;
       left: 10px;
 
