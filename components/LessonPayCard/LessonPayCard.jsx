@@ -8,32 +8,33 @@ const LessonPayCard = ({description, cost, requestFun}) => {
     return (
         <section className={styles.fullCard}>
             <div className={styles.info}>
-                <h4 className={styles.info__header}>Стоимость курса</h4>
+                <h4 className={styles.info__header}>Стоимость курса*</h4>
                 <p className={styles.info__description}>{description}</p>
             </div>
             <div className={styles.payCard}>
                 <Information
-                    additionalInfo={'При покупке одного занятия'}
+                    subscription={false}
+                    additionalInfo={'При покупке разового занятия'}
                     align={ALIGN_SELF_START}
-                    cost={cost}
-                    description={description}
+                    cost={cost[0]}
                     requestFun={requestFun}
                 />
                 <Information
-                    additionalInfo={'При покупке абонемента занитий'}
+                    subscription={true}
+                    additionalInfo={'При покупке месячного абонемента занятий со скидкой 10%'}
                     align={ALIGN_SELF_END}
-                    cost={cost}
-                    description={description}
+                    cost={cost[1]}
                     requestFun={requestFun}
                 />
             </div>
+            <h5 className={styles.info__description}>* - Не является публичной офертой</h5>
         </section>
     );
 };
 
 LessonPayCard.propTypes = {
     description: PropTypes.string,
-    cost: PropTypes.number,
+    cost: PropTypes.array,
     requestFun: PropTypes.func
 };
 

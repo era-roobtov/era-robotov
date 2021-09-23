@@ -35,7 +35,7 @@ export async function getStaticProps() {
         {
           id: 0,
           title: 'Контакты',
-          tel: '+7(977)261-22-48',
+          tel: '+7(499)229-40-52',
           email: 'erarobotov@yandex.ru',
           adress: 'г. Пушкино, 3-й Некрасовский проезд, 3к3',
           mapCord: [56.015933, 37.851125],

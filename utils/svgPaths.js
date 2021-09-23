@@ -5,17 +5,19 @@ const facebookSvg = '/static/new_img/social/Facebook.svg';
 const telegramSvg = '/static/new_img/social/Telegram.svg';
 const youtubeSvg = '/static/new_img/social/YouTube.svg';
 const whatsAppSvg = '/static/new_img/social/WhatsApp.svg';
+const vkSVG = '/static/new_img/social/vk.svg'
 const instagramSvg = '/static/new_img/social/Instagram.svg';
 const closeSvg = '/static/svg/close.svg';
 
 export {
-  callSvg,
-  locationSvg,
-  mailSvg,
-  facebookSvg,
-  telegramSvg,
-  youtubeSvg,
-  whatsAppSvg,
-  instagramSvg,
-  closeSvg,
+    callSvg,
+    locationSvg,
+    mailSvg,
+    facebookSvg,
+    telegramSvg,
+    youtubeSvg,
+    whatsAppSvg,
+    instagramSvg,
+    closeSvg,
+    vkSVG
 };

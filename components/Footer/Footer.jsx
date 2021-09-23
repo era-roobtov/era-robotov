@@ -38,10 +38,10 @@ const Footer = ({shiftCount}) => {
           </div>
           <div className={styles.contact}>
             <h4 className={styles.info__header}>Контакты</h4>
-            <Link href="tel:+7(977)261-22-48">
+            <Link href="tel:+7(499)229-40-52">
               <a className={styles.info__text}>
                 <img src={callSvg} alt="Звонок"/>
-                <span>+7 (977) 261-22-48</span>
+                <span>+7(499)229-40-52</span>
               </a>
             </  Link>
             <Link href="mailto:erarobotov@yandex.ru">

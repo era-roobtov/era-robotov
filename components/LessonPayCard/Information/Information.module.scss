@@ -1,8 +1,16 @@
 .information {
   display: grid;
   grid-template-rows: repeat(auto-fill, auto);
+  grid-template-areas: 'i-descr'
+'i-cost';
   gap: 19px;
   padding: 0 32px;
+
+  @media (min-width: 992px) {
+    padding: 0;
+    grid-template-areas: 'i-cost'
+  'i-descr';
+  }
 
   &__header {
     font-family: "RobotoMedium", "Roboto", sans-serif;
@@ -24,16 +32,15 @@
     }
   }
 
-  &__description {
+  &__description_additional {
+    grid-area: i-descr;
     display: flex;
     justify-content: center;
-
     font-family: "RobotoLight", "Roboto", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
     line-height: 120%;
-    display: flex;
     align-items: center;
     text-align: center;
     color: var(--txt-white);
@@ -49,14 +56,6 @@
     }
 
     @media (min-width: 992px) {
-      display: none;
-    }
-  }
-
-  &__description_additional {
-    display: none;
-
-    @media (min-width: 992px) {
       color: var(--txt-white);
       display: unset;
       justify-content: unset;
@@ -69,6 +68,7 @@
   }
 
   &__cost {
+    grid-area: i-cost;
     font-family: "RobotoBold", "Roboto", sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -78,10 +78,15 @@
     color: var(--txt-white);
 
     @media (min-width: 768px) {
-      font-size: 64px;
+      font-size: 48px;
       text-align: center;
     }
+
+    @media (min-width: 992px) {
+      font-size: 54px;
+    }
   }
+
 }
 
 .btns {
