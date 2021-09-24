@@ -3,7 +3,7 @@ import styles from './LessonPayCard.module.scss';
 import Information from "@/components/LessonPayCard/Information";
 import {ALIGN_SELF_END, ALIGN_SELF_START} from "@/utils/globalStyles";
 
-const LessonPayCard = ({description, cost, requestFun}) => {
+const LessonPayCard = ({description, cost, requestFun, hours}) => {
 
     return (
         <section className={styles.fullCard}>
@@ -13,6 +13,7 @@ const LessonPayCard = ({description, cost, requestFun}) => {
             </div>
             <div className={styles.payCard}>
                 <Information
+                    hours={hours}
                     subscription={false}
                     additionalInfo={'При покупке разового занятия'}
                     align={ALIGN_SELF_START}
@@ -35,7 +36,8 @@ const LessonPayCard = ({description, cost, requestFun}) => {
 LessonPayCard.propTypes = {
     description: PropTypes.string,
     cost: PropTypes.array,
-    requestFun: PropTypes.func
+    requestFun: PropTypes.func,
+    hours: PropTypes.string
 };
 
 export default LessonPayCard;

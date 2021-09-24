@@ -108,7 +108,8 @@ const Course = () => {
             payCard: {
                 description: 'Продолжительность курса 108 часов (3 часа в неделю)',
                 cost: [800, calcThree(800)],
-            },
+                hours: 'р / 1.5 часа'
+            }
         },
         2: {
             title: 'Lego WeDo',
@@ -234,6 +235,7 @@ const Course = () => {
             payCard: {
                 description: 'Продолжительность курса 108 часа (3 часа в неделю)',
                 cost: [800, calcThree(800)],
+                hours: 'р / 1.5 часа'
             },
         },
         5: {
