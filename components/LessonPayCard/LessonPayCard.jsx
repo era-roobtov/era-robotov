@@ -21,7 +21,7 @@ const LessonPayCard = ({description, cost, requestFun}) => {
                 />
                 <Information
                     subscription={true}
-                    additionalInfo={'При покупке месячного абонемента занятий со скидкой 10%'}
+                    additionalInfo={'При покупке четырёх занятий скидка 10%'}
                     align={ALIGN_SELF_END}
                     cost={cost[1]}
                     requestFun={requestFun}
