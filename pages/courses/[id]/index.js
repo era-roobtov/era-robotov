@@ -10,6 +10,7 @@ import LessonPayCard from '@/components/LessonPayCard';
 import Footer from '@/components/Footer';
 import Request from '@/components/Forms/Request';
 import styles from './index.module.scss';
+import {calcThree, calcTwo} from "@/utils/calcPrices";
 
 const Course = () => {
     const [requestForm, setRequestForm] = React.useState(false);
@@ -60,7 +61,7 @@ const Course = () => {
             ],
             payCard: {
                 description: 'Продолжительность курса 72 часа (2 часа в неделю)',
-                cost: [500, 2700],
+                cost: [500, calcTwo(500)],
             },
         },
         1: {
@@ -106,7 +107,7 @@ const Course = () => {
             ],
             payCard: {
                 description: 'Продолжительность курса 108 часов (3 часа в неделю)',
-                cost: [800, 4320],
+                cost: [800, calcThree(800)],
             },
         },
         2: {
@@ -142,7 +143,7 @@ const Course = () => {
             ],
             payCard: {
                 description: 'Продолжительность курса 72 часа (2 часа в неделю)',
-                cost: [600, 3240],
+                cost: [600, calcTwo(600)],
             },
         },
         3: {
@@ -187,7 +188,7 @@ const Course = () => {
             ],
             payCard: {
                 description: 'Продолжительность курса 72 часа (2 часа в неделю)',
-                cost: [500, 2700],
+                cost: [500, calcTwo(500)],
             },
         },
         4: {
@@ -231,8 +232,8 @@ const Course = () => {
                 },
             ],
             payCard: {
-                description: 'Продолжительность курса 72 часа (2 часа в неделю)',
-                cost: [800, 4320],
+                description: 'Продолжительность курса 108 часа (3 часа в неделю)',
+                cost: [800, calcThree(800)],
             },
         },
         5: {
@@ -275,7 +276,7 @@ const Course = () => {
             ],
             payCard: {
                 description: 'Продолжительность курса 72 часа (2 часа в неделю)',
-                cost: [500, 2700],
+                cost: [500, calcTwo(500)],
             },
         },
         6: {
@@ -317,7 +318,7 @@ const Course = () => {
             ],
             payCard: {
                 description: 'Продолжительность курса 72 часа (2 часа в неделю)',
-                cost: [600, 3240],
+                cost: [600, calcTwo(600)],
             },
         },
     };
