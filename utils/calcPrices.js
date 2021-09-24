@@ -3,7 +3,7 @@ const calcTwo = (cost) => {
 };
 
 const calcThree = (cost) => {
-    return (cost * 12) - ((cost * 12) * 0.1);
+    return (cost * 2 * 4) - ((cost * 2 * 4) * 0.1);
 }
 
 export {
