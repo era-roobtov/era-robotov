@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="23c62aac-87d1-4bbe-a2ed-c23d59aae260" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/static/favicon.ico" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/LessonPayCard/Information/Information.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/LessonPayCard/Information/Information.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/LessonPayCard/LessonPayCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/LessonPayCard/LessonPayCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/courses/[id]/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/courses/[id]/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Footer/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contact.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +52,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mfrsap" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -59,7 +60,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -99,7 +100,8 @@
       <workItem from="1631468016204" duration="6873000" />
       <workItem from="1631693323007" duration="9000" />
       <workItem from="1632433041757" duration="4936000" />
-      <workItem from="1632465542254" duration="1187000" />
+      <workItem from="1632465542254" duration="1375000" />
+      <workItem from="1632750560624" duration="730000" />
     </task>
     <servers />
   </component>

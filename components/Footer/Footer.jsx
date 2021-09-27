@@ -44,10 +44,10 @@ const Footer = ({shiftCount}) => {
                 <span>+7(499)229-40-52</span>
               </a>
             </  Link>
-            <Link href="mailto:erarobotov@yandex.ru">
+            <Link href="mailto:info@era-robotov.ru">
               <a className={styles.info__text}>
                 <img src={mailSvg} alt="Email"/>
-                <span>erarobotov@yandex.ru</span>
+                <span>info@era-robotov.ru</span>
               </a>
             </Link>
             <Link href="yandex.ru">
