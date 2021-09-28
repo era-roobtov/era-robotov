@@ -23,7 +23,7 @@ const Footer = ({shiftCount}) => {
         break;
     }
   }, []);
-  {console.log(footerClass)}
+
   return (
       <footer className={footerClass}>
         <div className={styles.info}>
@@ -34,7 +34,8 @@ const Footer = ({shiftCount}) => {
             </p>
           </div>
           <div className={styles.contact}>
-            
+            <h4 className={styles.info__header}>Мы в социальных сетях</h4>
+            <Social/>
           </div>
           <div className={styles.contact}>
             <h4 className={styles.info__header}>Контакты</h4>
@@ -58,7 +59,6 @@ const Footer = ({shiftCount}) => {
             </Link>
           </div>
         </div>
-        <Social/>
       </footer>
   );
 };
