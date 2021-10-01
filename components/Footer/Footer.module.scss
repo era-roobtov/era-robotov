@@ -119,5 +119,6 @@
 
   @media (min-width: 768px) {
     gap: 16px;
+    grid-template-rows: auto 1fr;
   }
 }
