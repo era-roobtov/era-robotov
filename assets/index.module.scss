@@ -148,8 +148,12 @@ $animDur: 0.5s;
   }
 
   @media (min-width: 1440px) {
-    padding: 203px 285px 280px 285px;
+    padding: 100px 285px 160px 285px;
   }
+
+  //@media (min-width: 1920px) {
+  //  padding: 100px 285px 160px 285px;
+  //}
 
   & > h3 {
     font-family: "RobotoMedium", sans-serif;

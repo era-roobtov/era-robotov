@@ -622,23 +622,23 @@
     right: -10px;
 
     @media (min-width: 1920px) {
-      @include box(var(--bg-image-b), 161px, 20deg);
+      @include box(var(--bg-image-b), 100px, 20deg);
       top: unset;
-      bottom: 80px;
+      bottom: 40px;
       right: -10px;
     }
 
     @media (min-width: 1440px) and (max-width: 1919px) {
-      @include box(var(--bg-image-b), 125px, 20deg);
+      @include box(var(--bg-image-b), 84px, 20deg);
       top: unset;
-      bottom: 140px;
+      bottom: 80px;
       right: -10px;
     }
 
     @media (min-width: 992px) and (max-width: 1440px) {
       @include box(var(--bg-image-b), 72px, 20deg);
       top: unset;
-      bottom: 200px;
+      bottom: 100px;
       right: -10px;
     }
 
@@ -658,19 +658,19 @@
 
       @media (min-width: 1920px) {
         @include box(var(--bg-image-b), 90px, -20deg);
-        bottom: 165px;
+        bottom: 100px;
         right: 200px;
       }
 
       @media (min-width: 1440px) and (max-width: 1919px) {
         @include box(var(--bg-image-b), 64.5px, -20deg);
-        bottom: 165px;
+        bottom: 100px;
         right: 200px;
       }
 
       @media (min-width: 992px) and (max-width: 1440px) {
         @include box(var(--bg-image-b), 30px, -20deg);
-        bottom: 185px;
+        bottom: 120px;
         right: 100px;
       }
 
@@ -694,13 +694,13 @@
 
       @media (min-width: 1440px) and (max-width: 1919px) {
         @include box(var(--bg-image-b), 45.26px, -20deg);
-        bottom: 180px;
+        bottom: 140px;
         left: 50px;
       }
 
       @media (min-width: 992px) and (max-width: 1440px) {
         @include box(var(--bg-image-b), 32px, -20deg);
-        bottom: 180px;
+        bottom: 80px;
         left: 20px;
       }
 
@@ -734,13 +734,13 @@
 
       @media (min-width: 1440px) and (max-width: 1919px) {
         @include box(var(--bg-image-b), 60.54px, 20deg);
-        bottom: 220px;
+        bottom: 30px;
         left: 150px;
       }
 
       @media (min-width: 1920px) {
         @include box(var(--bg-image-b), 120px, 20deg);
-        bottom: 140px;
+        bottom: 20px;
         left: 150px;
       }
     }

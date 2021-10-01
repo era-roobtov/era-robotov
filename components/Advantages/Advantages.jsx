@@ -17,7 +17,6 @@ const Advantages = ({
                       showBtn,
                       columnCount,
                       shiftClass,
-                      boxesClass,
                     }) => {
   const [btnColor, setBtnColor] = useState(ORANGE);
   const [listClass, setListClass] = useState(styles.advantages__list_single);
