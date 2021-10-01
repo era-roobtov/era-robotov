@@ -8,10 +8,11 @@ import navPaths from '@/utils/paths';
 const Course = ({index, id, title, logo, description, clip, asPath}) => {
   const isOdd = index % 2 === 0;
   const anchor = '#' + title + id;
+  const addClasses = isOdd ? clip + ' ' + styles.colored : styles.uncolored;
 
   return (
       <section id={anchor}
-               className={`${styles.course} ${isOdd ? clip : ''}`}
+               className={`${styles.course} ${addClasses}`}
       >
         <div className={styles.course__logo}><Logo logo={logo}/></div>
         <h2 className={`${styles.course__header} ${isOdd ?

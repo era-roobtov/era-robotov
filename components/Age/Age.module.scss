@@ -1,0 +1,24 @@
+.age {
+  justify-self: center;
+  grid-area: dc-age;
+  padding: 11px 15px;
+  background-color: var(--bg-image-o);
+  min-width: 60px;
+  max-width: 100px;
+  border-radius: 20px;
+  margin-bottom: 11px;
+
+  @media (min-width: 768px) {
+    justify-self: start;
+  }
+
+  &__text {
+    font-family: "RobotoMedium", "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    text-align: center;
+    color: var(--txt-white);
+  }
+}

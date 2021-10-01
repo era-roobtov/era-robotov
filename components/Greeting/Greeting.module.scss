@@ -35,7 +35,7 @@
 .helloWithBtn {
   @extend %helloTDoubleColumns;
 
-  grid-template-rows: 1fr 64px auto;
+  grid-template-rows: 1fr 168px auto;
   grid-template-areas:
     "h-head h-head"
     "h-text h-img"

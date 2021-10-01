@@ -1031,7 +1031,7 @@
 
     @media (min-width: 1920px) {
       @include box(var(--bg-image-b), 72px, 20deg);
-      top: 70px;
+      top: 20px;
       right: 55px;
     }
   }
@@ -1042,14 +1042,16 @@
     right: -15px;
 
     @media (min-width: 1440px) and (max-width: 1919px) {
-      @include box(var(--bg-image-b), 124.99px, 20deg);
-      top: 125px;
+      @include box(var(--bg-image-b), 100px, 20deg);
+      top: unset;
+      bottom: 10px;
       right: 25px;
     }
 
     @media (min-width: 1920px) {
-      @include box(var(--bg-image-b), 148px, 20deg);
-      top: 200px;
+      @include box(var(--bg-image-b), 110px, 20deg);
+      top: unset;
+      bottom: 10px;
       right: 25px;
     }
   }
@@ -1068,7 +1070,8 @@
       
       @media (min-width: 1920px) {
         @include box(var(--bg-image-b), 72px, -20deg);
-        bottom: 200px;
+        bottom: unset;
+        top: 15px;
         left: 50px;
       }
     }
@@ -1086,7 +1089,7 @@
 
       @media (min-width: 1920px) {
         @include box(var(--bg-image-b), 72px, -20deg);
-        bottom: 40px;
+        bottom: 0px;
         left: 50px;
       }
     }
@@ -1180,7 +1183,7 @@
     @media (min-width: 992px) and (max-width: 1440px) {
       @include box(var(--bg-image-b), 64.45px, -20deg);
       bottom: 250px;
-      right: 15px;
+      right: -10px;
     }
   }
 
@@ -1228,7 +1231,7 @@
 
       @media (min-width: 992px) and (max-width: 1440px) {
         @include box(var(--bg-image-b), 60.54px, 20deg);
-        bottom: 140px;
+        bottom: 80px;
         left: 40px;
       }
     }
@@ -1236,20 +1239,21 @@
     &:after {
 
       @media (min-width: 1920px) {
-        @include box(var(--bg-image-b), 160px, 20deg);
-        bottom: 260px;
+        @include box(var(--bg-image-b), 140px, 20deg);
+        bottom: unset;
+        top: 20px;
         left: -35px;
       }
 
       @media (min-width: 1440px) and (max-width: 1919px) {
         @include box(var(--bg-image-b), 125.54px, 20deg);
-        bottom: 300px;
+        bottom: 200px;
         left: -35px;
       }
 
       @media (min-width: 992px) and (max-width: 1440px) {
         @include box(var(--bg-image-b), 125.54px, 20deg);
-        bottom: 300px;
+        bottom: 180px;
         left: -35px;
       }
     }

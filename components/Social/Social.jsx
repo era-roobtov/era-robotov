@@ -24,8 +24,8 @@ const Social = () => {
     return (
         <div className={styles.social}>
             {socialItems.map((socialItem) => (
-                <Link target='_blank' href={socialItem.link}>
-                    <a>
+                <Link href={socialItem.link}>
+                    <a target='_blank'>
                         <img
                             className={styles.social__item}
                             src={socialItem.img}

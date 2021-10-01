@@ -29,7 +29,7 @@ const Header = ({ burger, handler }) => {
     <header className={styles.header}>
       <div className={styles.header__logo}>
         {
-          location.pathname !== '/' ? <img src={lightLogo} alt="Эра Роботов"/> : ''
+          location.pathname !== navPaths.home ? <img src={lightLogo} alt="Эра Роботов"/> : ''
         }
       </div>
       <div onClick={() => handler()} className={`${styles.burgerContainer} `}>

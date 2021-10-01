@@ -6,6 +6,7 @@
   grid-template-areas:
             "dc-logo"
             "dc-header"
+            "dc-age"
             "dc-description"
             "dc-btns";
 
@@ -16,6 +17,7 @@
     grid-template-rows: repeat(auto-fill, auto);
     grid-template-areas:
             "dc-header dc-logo"
+            "dc-age dc-logo"
             "dc-description dc-logo"
             "dc-btns dc-logo";
   }
@@ -76,7 +78,7 @@
     text-align: center;
 
     @media (min-width: 768px) {
-      margin-bottom: 39px;
+      //margin-bottom: 39px;
       text-align: start;
       font-size: 48px;
     }
@@ -95,7 +97,7 @@
 
     @media (min-width: 768px) {
       font-family: "RobotoMedium", "Roboto", sans-serif;
-      font-weight: 500;
+      font-weight: 300;
       font-size: 16px;
     }
   }

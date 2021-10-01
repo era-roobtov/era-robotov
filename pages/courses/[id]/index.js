@@ -11,6 +11,7 @@ import Footer from '@/components/Footer';
 import Request from '@/components/Forms/Request';
 import styles from './index.module.scss';
 import {calcThree, calcTwo} from "@/utils/calcPrices";
+import Age from "@/components/Age";
 
 const Course = () => {
     const [requestForm, setRequestForm] = React.useState(false);
@@ -63,6 +64,7 @@ const Course = () => {
                 description: 'Продолжительность курса 72 часа (2 часа в неделю)',
                 cost: [500, calcTwo(500)],
             },
+            age: '7-9'
         },
         1: {
             title: 'Arduino',
@@ -109,7 +111,8 @@ const Course = () => {
                 description: 'Продолжительность курса 108 часов (3 часа в неделю)',
                 cost: [800, calcThree(800)],
                 hours: 'р / 1.5 часа'
-            }
+            },
+            age: '10+'
         },
         2: {
             title: 'Lego WeDo',
@@ -146,6 +149,7 @@ const Course = () => {
                 description: 'Продолжительность курса 72 часа (2 часа в неделю)',
                 cost: [600, calcTwo(600)],
             },
+            age: '6-7'
         },
         3: {
             title: 'Scratch + Arduino',
@@ -191,6 +195,7 @@ const Course = () => {
                 description: 'Продолжительность курса 72 часа (2 часа в неделю)',
                 cost: [500, calcTwo(500)],
             },
+            age: '9-10'
         },
         4: {
             title: 'Python',
@@ -237,6 +242,7 @@ const Course = () => {
                 cost: [800, calcThree(800)],
                 hours: 'р / 1.5 часа'
             },
+            age: '10+'
         },
         5: {
             title: 'Lego',
@@ -280,6 +286,7 @@ const Course = () => {
                 description: 'Продолжительность курса 72 часа (2 часа в неделю)',
                 cost: [500, calcTwo(500)],
             },
+            age: '7-9'
         },
         6: {
             title: 'App Inventor',
@@ -322,6 +329,7 @@ const Course = () => {
                 description: 'Продолжительность курса 72 часа (2 часа в неделю)',
                 cost: [600, calcTwo(600)],
             },
+            age: '9-10'
         },
     };
 
@@ -336,6 +344,7 @@ const Course = () => {
                         <Logo logo={courses[id]?.logo}/>
                     </div>
                     <h1 className={styles.course__header}>{courses[id]?.title}</h1>
+                    <Age text={courses[id]?.age}/>
                     <p className={styles.course__description}>
                         {courses[id]?.description}
                     </p>

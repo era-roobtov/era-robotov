@@ -97,6 +97,14 @@ export async function getStaticProps() {
                     {
                         text: 'Разработка нейросетей',
                         link: navPaths.getDynamicCourse(4)
+                    },
+                    {
+                        text: 'Программирование микроконтроллеров',
+                        link: navPaths.getDynamicCourse(3)
+                    },
+                    {
+                        text: 'Робототехника для начинающих',
+                        link: navPaths.getDynamicCourse(2)
                     }
                 ],
             },

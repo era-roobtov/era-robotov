@@ -1,5 +1,5 @@
 .course {
-  padding: 30px 16px 64px 16px;
+  //padding: 30px 16px 64px 16px;
   display: grid;
   align-items: center;
   justify-content: center;
@@ -14,7 +14,7 @@
   }
 
   @media (min-width: 768px) {
-    padding: 120px 64px 133px 64px;
+    //padding: 120px 64px 133px 64px;
 
     grid-template-areas:
     "c-logo c-header"
@@ -25,13 +25,13 @@
   }
 
   @media (min-width: 992px) {
-    padding: 116px 260px 133px 116px;
+    //padding: 116px 260px 133px 116px;
     grid-template-columns: 380px auto;
     column-gap: 8px;
   }
 
   @media (min-width: 1440px) {
-    padding: 146px 260px 133px 146px;
+    //padding: 146px 260px 133px 146px;
     grid-template-columns: 462px auto;
     column-gap: 15px;
   }
@@ -94,4 +94,28 @@
 
 .white {
   color: var(--txt-white)
+}
+
+.colored {
+  padding: 30px 16px 64px 16px;
+
+  @media (min-width: 768px) {
+    padding: 120px 64px 133px 64px;
+  }
+
+  @media (min-width: 992px) {
+    padding: 116px 260px 133px 116px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 146px 260px 133px 146px;
+  }
+}
+
+.uncolored {
+  padding: 30px 16px 64px 16px;
+
+  @media (min-width: 768px) {
+    padding: 60px 64px 60px 64px;
+  }
 }
