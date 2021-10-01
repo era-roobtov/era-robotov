@@ -14,7 +14,7 @@ const TextList = ({title, list, clip, shiftClass}) => {
         <div className={styles.list__robots}/>
         <h2 className={styles.list__header}>{title}</h2>
         <ul className={`${styles.list__items}`}>
-          {list.map((item) => <Item key={item} text={item}/>)}
+          {list.map((item) => <Item key={item.text} {...item}/>)}
         </ul>
 
       </section>

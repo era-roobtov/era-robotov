@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="23c62aac-87d1-4bbe-a2ed-c23d59aae260" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/bluefav.ico" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/static/ofavicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/TextList/Item/Item.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/TextList/Item/Item.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/TextList/Item/Item.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/TextList/Item/Item.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/TextList/TextList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/TextList/TextList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/paths.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/paths.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +53,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mfrsap" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../re-store" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -102,6 +104,8 @@
       <workItem from="1632465542254" duration="1375000" />
       <workItem from="1632750560624" duration="730000" />
       <workItem from="1632754679335" duration="377000" />
+      <workItem from="1632763771828" duration="16000" />
+      <workItem from="1633069563569" duration="1323000" />
     </task>
     <servers />
   </component>

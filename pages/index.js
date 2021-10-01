@@ -5,17 +5,15 @@ import Greeting from '@/components/Greeting/Greeting';
 import TextList from '@/components/TextList/TextList';
 import Advantages from '@/components/Advantages/Advantages';
 import Footer from '@/components/Footer/Footer';
-import {bigLogo} from "@/utils/logoPaths";
 import {
     CLIP_BLUE,
     CLIP_ORANGE, ORANGE_BOX_TOP, ORANGE_BOXES_TOP1,
     SHIFT_DOUBLE,
     SHIFT_SINGLE,
 } from '@/utils/globalStyles';
-import mergeStyles from '@/utils/mergeStyles';
-import {useEffect, useState} from "react";
+import navPaths from "@/utils/paths";
 
-const Index = ({textList, advantagesList, aboutUsList}) => {
+const Index = ({textList, advantagesList}) => {
     const str = [
         'Место погружения в мир инновационных технологий и развития потенциала вашего ребенка',
     ];
@@ -76,12 +74,30 @@ export async function getStaticProps() {
             textList: {
                 title: 'Чему научится ваш ребенок',
                 list: [
-                    'Программирование',
-                    'Создание игр и анимаций',
-                    'Робототехника и IoT',
-                    'Создание Android приложений',
-                    'Инженерные навыки',
-                    'Разработка нейросетей'
+                    {
+                        text: 'Программирование',
+                        link: navPaths.courses
+                    },
+                    {
+                        text: 'Создание игр и анимаций',
+                        link: navPaths.getDynamicCourse(0)
+                    },
+                    {
+                        text: 'Робототехника и IoT',
+                        link: navPaths.getDynamicCourse(1)
+                    },
+                    {
+                        text: 'Создание Android приложений',
+                        link: navPaths.getDynamicCourse(6)
+                    },
+                    {
+                        text: 'Инженерные навыки',
+                        link: navPaths.getDynamicCourse(5)
+                    },
+                    {
+                        text: 'Разработка нейросетей',
+                        link: navPaths.getDynamicCourse(4)
+                    }
                 ],
             },
             advantagesList: {
@@ -143,58 +159,3 @@ export async function getStaticProps() {
 }
 
 export default Index;
-
-// timer page
-// const date = new Date();
-// const openDate = new Date(2021, 8, 1, 0, 0, 0);
-// const openObj = {
-//     h: openDate.getHours(),
-//
-// }
-// console.log(openDate)
-//
-// let endT = {
-//     day: 0,
-//     hours: 0,
-//     minutes: 0,
-//     seconds: 0
-// }
-//
-// function timer() {
-//     var nowDate = new Date();
-//     var achiveDate = new Date(2021, 8, 1, 0, 0, 0); //Задаем дату, к которой будет осуществляться обратный отсчет
-//     var result = (achiveDate - nowDate) + 1000;
-//     if (result < 0) {
-//         var elmnt = document.getElementById('timer');
-//         elmnt.innerHTML = ' - : - - : - - : - - ';
-//         return undefined;
-//     }
-//     endT = {
-//         day: Math.floor(result / 1000 / 60 / 60 / 24),
-//         hours: Math.floor((result / 1000 / 60 / 60) % 24),
-//         minutes: Math.floor((result / 1000 / 60) % 60),
-//         seconds: Math.floor((result / 1000) % 60)
-//     }
-//     // var seconds = Math.floor((result/1000)%60);
-//     // var minutes = Math.floor((result/1000/60)%60);
-//     // var hours = Math.floor((result/1000/60/60)%24);
-//     // var days = Math.floor(result/1000/60/60/24);
-//     if (endT.seconds < 10) endT.seconds = '0' + endT.seconds;
-//     if (endT.minutes < 10) endT.minutes = '0' + endT.minutes;
-//     if (endT.hours < 10) endT.hours = '0' + endT.hours;
-//     console.log('timer >>> ', endT)
-//     // elmnt.innerHTML = days + ':' + hours + ':' + minutes + ':' + seconds;
-//     setTimeout(timer, 1000);
-// }
-//
-// timer();
-
-// return (
-//     <section className={styles.temp}>
-//         <img src={bigLogo} alt="Эра роботов"/>
-//         <div>
-//             <p>Сайт откроется через: </p>
-//             <p>{endT.day} Дней {endT.hours} часов {endT.minutes} минут {endT.seconds} секунд</p>
-//         </div>
-//     </section>
-// )
