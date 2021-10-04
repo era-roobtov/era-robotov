@@ -5,7 +5,7 @@ import styles from '@/assets/courses.module.scss';
 import Layout from '@/components/Layout/Layout';
 import Footer from '@/components/Footer';
 import {CLIP_BLUE, CLIP_BLUE_REVERSE} from '@/utils/globalStyles';
-import {ScrollContext} from "../Context/ScrollContext";
+import {SCROLL_NODE, ScrollContext} from "../Context/ScrollContext";
 import navPaths from "@/utils/paths";
 
 const Courses = ({courses}) => {
@@ -19,10 +19,19 @@ const Courses = ({courses}) => {
                 behavior: 'smooth'
             });
 
-            setScroll({
+            return setScroll({
                 isScroll: '',
                 cords: null
             });
+        }
+
+        const node = localStorage.getItem(SCROLL_NODE);
+        if (node) {
+            document.getElementById(node).scrollIntoView({
+                behavior: "smooth"
+            });
+
+            localStorage.removeItem(SCROLL_NODE);
         }
 
 

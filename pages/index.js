@@ -6,15 +6,9 @@ import Greeting from '@/components/Greeting/Greeting';
 import TextList from '@/components/TextList/TextList';
 import Advantages from '@/components/Advantages/Advantages';
 import Footer from '@/components/Footer/Footer';
-import {
-    CLIP_BLUE,
-    CLIP_ORANGE,
-    SHIFT_DOUBLE,
-    SHIFT_SINGLE,
-} from '@/utils/globalStyles';
+import {CLIP_BLUE, CLIP_ORANGE, SHIFT_DOUBLE, SHIFT_SINGLE,} from '@/utils/globalStyles';
 import navPaths from "@/utils/paths";
-import {ScrollContext} from "../Context/ScrollContext";
-import {useRouter} from "next/router";
+import {SCROLL_NODE, ScrollContext} from "../Context/ScrollContext";
 
 const Index = ({textList, advantagesList}) => {
     const {scroll, setScroll} = useContext(ScrollContext);
@@ -34,6 +28,10 @@ const Index = ({textList, advantagesList}) => {
                 isScroll: '',
                 cords: null
             })
+        }
+
+        if (localStorage.getItem(SCROLL_NODE)) {
+            localStorage.removeItem(SCROLL_NODE);
         }
 
 
@@ -59,9 +57,12 @@ const Index = ({textList, advantagesList}) => {
                             <h3>О нас</h3>
                             <p>
                                 Наша Школа "ЭраРоботов" собрала единомышленников, замечательных преподавателей в области
-                                робототехники и программирования. Наши сотрудники имеют высшее техническое образование и уже
-                                немалый опыт работы со слушателями разных возрастов, умеют доступно и интересно преподнести
-                                информацию. В процессе обучения мы используем новейшее оборудование, качественные наборы для
+                                робототехники и программирования. Наши сотрудники имеют высшее техническое образование и
+                                уже
+                                немалый опыт работы со слушателями разных возрастов, умеют доступно и интересно
+                                преподнести
+                                информацию. В процессе обучения мы используем новейшее оборудование, качественные наборы
+                                для
                                 сборки роботов и современное программное обеспечение.
                             </p>
                         </section>

@@ -5,7 +5,7 @@ import {ORANGE, BLUE} from '@/utils/globalStyles';
 import OutlineButton from '@/components/Buttons/OutlineButton';
 import navPaths from '@/utils/paths';
 import {useContext} from "react";
-import {ScrollContext} from "../../Context/ScrollContext";
+import {SCROLL_NODE, ScrollContext} from "../../Context/ScrollContext";
 
 const Course = ({index, id, title, logo, description, clip, asPath}) => {
   const {setScroll} = useContext(ScrollContext);
@@ -29,7 +29,9 @@ const Course = ({index, id, title, logo, description, clip, asPath}) => {
         cur = cur.parentNode;
       }
     }
-    console.log('COURSE')
+    console.log('COURSE');
+    localStorage.setItem(SCROLL_NODE, cur.id);
+
     setScroll({
       isScroll: navPaths.courses,
       cords: res.offsetTop

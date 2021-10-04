@@ -2,13 +2,14 @@ import Link from "next/link";
 import styles from "./Item.module.scss";
 import PropTypes from "prop-types";
 import {useContext} from "react";
-import {ScrollContext} from "../../../Context/ScrollContext";
+import {SCROLL_NODE, ScrollContext} from "../../../Context/ScrollContext";
 import navPaths from "@/utils/paths";
 
 const Item = ({text, link}) => {
     const {setScroll} = useContext(ScrollContext);
 
     const handleClick = (e) => {
+        localStorage.setItem(SCROLL_NODE, e.target.id);
         setScroll({
             isScroll: navPaths.home,
             cords: null
