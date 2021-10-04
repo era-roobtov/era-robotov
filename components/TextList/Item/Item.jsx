@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 const Item = ({text, link}) => {
 
     return <Link href={link}>
-        <a classaName={styles.link}>
+        <a>
             <li className={styles.item}>
                 {text}
             </li>

@@ -2,7 +2,7 @@
 %helloT {
   padding: 24px 16px 0 16px;
   display: grid;
-
+  row-gap: 1.5rem;
   @media (min-width: 768px) {
     padding: 0 64px;
     row-gap: 12px;
@@ -35,10 +35,10 @@
 .helloWithBtn {
   @extend %helloTDoubleColumns;
 
-  grid-template-rows: 1fr 168px auto;
+  grid-template-rows: auto auto auto;
   grid-template-areas:
     "h-head h-head"
-    "h-text h-img"
+    "h-text h-text"
     "h-btn h-btn";
 
   @media (min-width: 768px) {
@@ -46,9 +46,10 @@
     grid-template-rows: repeat(auto-fill, auto);
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-      "h-head h-img"
-      "h-text h-img"
+      "h-head h-head"
+      "h-text h-text"
       "h-btn h-btn";
+    gap: 40px;
   }
 }
 
@@ -57,14 +58,14 @@
 
   grid-template-areas:
     "h-head h-head"
-    "h-text h-img";
+    "h-text h-text";
 
   @media (min-width: 768px) {
     grid-template-rows: auto 0.8fr;
 
     grid-template-areas:
-      "h-head h-img"
-      "h-text h-img";
+      "h-head h-head"
+      "h-text h-text";
   }
 }
 
@@ -73,7 +74,6 @@
   row-gap: 8px;
   grid-template-rows: repeat(3, auto);
   grid-template-areas:
-    "h-img"
     "h-head"
     "h-text";
 
@@ -83,8 +83,8 @@
     row-gap: 26px;
     column-gap: 111px;
     grid-template-areas:
-      "h-head h-img"
-      "h-text h-img";
+      "h-head h-head"
+      "h-text h-text";
   }
 }
 
@@ -105,7 +105,6 @@
 
     @media (min-width: 768px) {
       padding: 0;
-      text-align: start;
       font-size: 42px;
     }
 
@@ -114,7 +113,7 @@
     }
 
     @media (min-width: 1440px) {
-      font-size: 64px;
+      font-size: 58px;
     }
   }
 }
@@ -152,7 +151,7 @@
       & > p {
         font-family: "RobotoMedium", "Roboto", sans-serif;
         font-weight: 500;
-        font-size: 16px;
+        font-size: 24px;
         //margin-top: 29px;
         justify-self: flex-start;
         align-self: flex-start;

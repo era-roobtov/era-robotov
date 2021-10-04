@@ -7,7 +7,7 @@ import Advantages from '@/components/Advantages/Advantages';
 import Footer from '@/components/Footer/Footer';
 import {
     CLIP_BLUE,
-    CLIP_ORANGE, ORANGE_BOX_TOP, ORANGE_BOXES_TOP1,
+    CLIP_ORANGE,
     SHIFT_DOUBLE,
     SHIFT_SINGLE,
 } from '@/utils/globalStyles';
@@ -15,8 +15,11 @@ import navPaths from "@/utils/paths";
 
 const Index = ({textList, advantagesList}) => {
     const str = [
-        'Место погружения в мир инновационных технологий и развития потенциала вашего ребенка',
-    ];
+        <span className={styles.sub}>
+            <p className={styles.sub__paragraph_main}>Место погружения в мир инновационных технологий</p>
+            <p className={styles.sub__paragraph_secondary}>и развития потенциала вашего ребенка</p>
+        </span>
+    ]
 
     return (
         <div className="app">
@@ -26,7 +29,7 @@ const Index = ({textList, advantagesList}) => {
             </Head>
             <Layout>
                 <Greeting
-                    header="Школа программирования и робототехники Эра Роботов"
+                    header={<span><p>Школа</p> программирования и робототехники</span>}
                     btn={{show: true, btnText: 'Выбрать курс'}}
                     subText={str}
                     imgPath="/static/new_img/greeting/robots.png"

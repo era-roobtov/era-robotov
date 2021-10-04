@@ -1,11 +1,14 @@
 .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: "RobotoLight";
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
   line-height: 120%;
+  height: 64px;
   text-align: center;
-
   color: var(--txt-white);
   background-color: var(--bg-image-b);
   border-radius: 20px;

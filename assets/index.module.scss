@@ -38,6 +38,7 @@ $animDur: 0.5s;
       text-align: start;
       font-weight: 500;
     }
+
     font-size: 2rem;
     font-weight: 700;
     text-align: center;
@@ -108,6 +109,7 @@ $animDur: 0.5s;
   &__text {
     position: relative;
     padding-left: $svgWidth + 8px;
+
     &::before {
       position: absolute;
       left: 0;
@@ -196,45 +198,27 @@ $animDur: 0.5s;
   }
 }
 
-// temp page
-
-
-.temp {
+.sub {
   width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 
-  & > img {
-    width: 400px;
-    height: 300px;
-
-    @media (min-width: 768px) {
-      width: 640px;
-      height: 540px;
-    }
+  %paragraph {
+    display: inline;
+    text-align: center;
 
     @media (min-width: 992px) {
-      width: 720px;
-      height: 620px;
-    }
-
-
-    @media (min-width: 1440px) {
-      width: 860px;
-      height: 700px;
+      display: block;
+      text-align: end;
     }
   }
 
-  & > div {
-    padding: 0 30px;
-
-    & > p {
-      text-align: center;
+  &__paragraph_main {
+    @extend %paragraph;
+    @media (min-width: 992px) {
+      margin-right: 5rem;
     }
   }
 
-
+  &__paragraph_secondary {
+    @extend %paragraph;
+  }
 }

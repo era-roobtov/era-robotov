@@ -18,11 +18,11 @@ const Greeting = ({btn, header, imgPath, subText, mobileImgTop}) => {
           {header}
         </h1>
         <div className={styles.sub__text}>
-          {subText.map((str) => <p key={str}>{str}</p>)}
+          {subText.map((str) => <p style={{width: '100%'}} key={str}>{str}</p>)}
         </div>
-        <div className={styles.sub__img}>
-          <img src={darkLogo} alt="Эра Роботов"/>
-        </div>
+        {/*<div className={styles.sub__img}>*/}
+        {/*  <img src={darkLogo} alt="Эра Роботов"/>*/}
+        {/*</div>*/}
         {btn.show && <div className={styles.sub__btn}>
           <RainbowButton path={navPaths.courses} text={'Выбрать курс'}/>
         </div>}
@@ -31,7 +31,7 @@ const Greeting = ({btn, header, imgPath, subText, mobileImgTop}) => {
 };
 
 Greeting.propTypes = {
-  header: PropTypes.string,
+  header: PropTypes.string || PropTypes.element,
   subText: PropTypes.array,
   imgPath: PropTypes.string,
   mobileImgTop: PropTypes.bool,
