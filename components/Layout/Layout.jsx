@@ -30,6 +30,7 @@ const Layout = ({ children }) => {
         handler={handleClickBurger}
       />
       <div
+          id='layout'
         className={`${styles.layout} ${
           burgerStatus === "open" ? styles.layout__open : ""
         }`}

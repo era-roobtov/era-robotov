@@ -5,14 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="23c62aac-87d1-4bbe-a2ed-c23d59aae260" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Context/ScrollContext.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/index.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/index.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Advantages/Item/Item.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/Advantages/Item/Item.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Greeting/Greeting.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Greeting/Greeting.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Greeting/Greeting.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/Greeting/Greeting.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Course/Course.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Course/Course.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Layout/Layout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/Layout.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/TextList/Item/Item.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/TextList/Item/Item.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/TextList/Item/Item.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/TextList/Item/Item.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/TextList/TextList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/TextList/TextList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/courses.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/courses.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,8 +23,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="SCSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>

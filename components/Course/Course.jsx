@@ -4,11 +4,37 @@ import Logo from '@/components/Course/Logo';
 import {ORANGE, BLUE} from '@/utils/globalStyles';
 import OutlineButton from '@/components/Buttons/OutlineButton';
 import navPaths from '@/utils/paths';
+import {useContext} from "react";
+import {ScrollContext} from "../../Context/ScrollContext";
 
 const Course = ({index, id, title, logo, description, clip, asPath}) => {
+  const {setScroll} = useContext(ScrollContext);
   const isOdd = index % 2 === 0;
   const anchor = '#' + title + id;
   const addClasses = isOdd ? clip + ' ' + styles.colored : styles.uncolored;
+
+  const handleClick = (e) => {
+    let cur = e.target;
+    let res = null;
+    let final = false;
+    while(!final) {
+      cur.classList.forEach((classItem) => {
+        if (classItem.toLowerCase().includes('layout')) {
+          final = true;
+        }
+      })
+
+      if (!final) {
+        res = cur;
+        cur = cur.parentNode;
+      }
+    }
+    console.log('COURSE')
+    setScroll({
+      isScroll: navPaths.courses,
+      cords: res.offsetTop
+    })
+  }
 
   return (
       <section id={anchor}
@@ -21,7 +47,7 @@ const Course = ({index, id, title, logo, description, clip, asPath}) => {
         <p className={styles.course__description}>
           {description}
         </p>
-        <div className={styles.course__buttons}>
+        <div onClick={handleClick} className={styles.course__buttons}>
           <OutlineButton
               color={isOdd ? ORANGE : BLUE}
               path={navPaths.dynamicCourses}

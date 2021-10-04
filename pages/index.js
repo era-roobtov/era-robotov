@@ -1,3 +1,4 @@
+import {useContext, useEffect} from "react";
 import Head from 'next/head';
 import Layout from '@/components/Layout/Layout';
 import styles from '@/assets/index.module.scss';
@@ -12,14 +13,31 @@ import {
     SHIFT_SINGLE,
 } from '@/utils/globalStyles';
 import navPaths from "@/utils/paths";
+import {ScrollContext} from "../Context/ScrollContext";
+import {useRouter} from "next/router";
 
 const Index = ({textList, advantagesList}) => {
+    const {scroll, setScroll} = useContext(ScrollContext);
     const str = [
         <span className={styles.sub}>
             <p className={styles.sub__paragraph_main}>Место погружения в мир инновационных технологий</p>
             <p className={styles.sub__paragraph_secondary}>и развития потенциала вашего ребенка</p>
         </span>
     ]
+
+    useEffect(() => {
+        if (scroll.isScroll === navPaths.home) {
+            document.getElementById('anchor').scrollIntoView({
+                behavior: "smooth"
+            })
+            setScroll({
+                isScroll: '',
+                cords: null
+            })
+        }
+
+
+    }, [])
 
     return (
         <div className="app">
@@ -50,7 +68,7 @@ const Index = ({textList, advantagesList}) => {
                     </div>
                 </div>
                 <div className={styles.robots}/>
-                <div className='blue__boxes_main2'>
+                <div id='anchor' className='blue__boxes_main2'>
                     <div className='blue__boxes_main2_1'>
                         <div className='blue__boxes_main2_2'>
                             <TextList shiftClass={SHIFT_SINGLE} {...textList} clip={CLIP_ORANGE}/>

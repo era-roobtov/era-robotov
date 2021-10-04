@@ -1,13 +1,32 @@
 import Head from 'next/head';
-import React from 'react';
+import React, {useContext, useEffect} from 'react';
 import Course from '@/components/Course';
 import styles from '@/assets/courses.module.scss';
 import Layout from '@/components/Layout/Layout';
 import Footer from '@/components/Footer';
 import {CLIP_BLUE, CLIP_BLUE_REVERSE} from '@/utils/globalStyles';
+import {ScrollContext} from "../Context/ScrollContext";
+import navPaths from "@/utils/paths";
 
 const Courses = ({courses}) => {
+    const {scroll, setScroll} = useContext(ScrollContext);
     let reverseClip = true;
+
+    useEffect(() => {
+        if (scroll.isScroll === navPaths.courses) {
+            window.scrollTo({
+                top: scroll.cords,
+                behavior: 'smooth'
+            });
+
+            setScroll({
+                isScroll: '',
+                cords: null
+            });
+        }
+
+
+    }, [])
 
     return (
         <div className={styles.courses}>
