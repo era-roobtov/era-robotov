@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="23c62aac-87d1-4bbe-a2ed-c23d59aae260" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/components/InstaPosts/InstaPosts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/InstaPosts/InstaPosts.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/InstaPosts/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/instaConverter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Header/Header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/Header/Header.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/about.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/about.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="SCSS File" />
         <option value="JavaScript File" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
@@ -63,6 +67,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/components/InstaPosts" />
       <recent name="$PROJECT_DIR$/sections" />
       <recent name="$PROJECT_DIR$/pages/courses/[id]" />
     </key>
@@ -105,7 +110,10 @@
       <workItem from="1633083254060" duration="5699000" />
       <workItem from="1633094849004" duration="15000" />
       <workItem from="1633379043273" duration="59000" />
-      <workItem from="1633427657552" duration="3284000" />
+      <workItem from="1633427657552" duration="3884000" />
+      <workItem from="1633445388492" duration="1392000" />
+      <workItem from="1633459451842" duration="326000" />
+      <workItem from="1633459811803" duration="715000" />
     </task>
     <servers />
   </component>
