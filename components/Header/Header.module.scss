@@ -21,16 +21,16 @@ $duration: 400ms;
   @media (min-width: 1440px) {
   }
 
-  &::after {
-    width: 60%;
-    height: 100%;
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: var(--bg-image-o);
-    clip-path: polygon(0px 10.13%, 44.23% 22.75%, 68.34% 67.5%, 0px 94.75%);
-  }
+  //&::after {
+  //  width: 60%;
+  //  height: 100%;
+  //  content: "";
+  //  position: absolute;
+  //  top: 0;
+  //  left: 0;
+  //  background-color: var(--bg-image-o);
+  //  clip-path: polygon(0px 10.13%, 44.23% 22.75%, 68.34% 67.5%, 0px 94.75%);
+  //}
 
   &::before {
     content: "";
@@ -104,19 +104,19 @@ $duration: 400ms;
 
       @media (min-width: 992px) {
         display: unset;
-        top: 55px;
+        top: 15px;
         width: 311px;
         height: 92px;
       }
 
       @media (min-width: 1440px) {
-        top: 45px;
+        top: 10px;
         width: 452px;
         height: 120px;
       }
 
       @media (min-width: 1920px) {
-        top: 40px;
+        top: 5px;
         width: 494px;
         height: 131px;
       }
