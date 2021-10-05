@@ -8,10 +8,36 @@
   @media (min-width: 632px) {
     grid-template-rows: repeat(3, 1fr);
   }
-  
+
   @media (min-width: 964px) {
     grid-template-rows: unset;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     column-gap: 32px;
+  }
+}
+
+.header {
+  font-family: "RobotoMedium", "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 120%;
+  text-align: center;
+  color: var(--txt-black);
+
+  @media (min-width: 768px) {
+    font-family: "RobotoBold", "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+  }
+  
+  text-align: center;
+  margin-bottom: 16px;
+  margin-top: 12px;
+
+  @media (min-width: 992px) {
+    margin-bottom: 24px;
   }
 }

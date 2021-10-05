@@ -9,9 +9,12 @@ const InstaPosts = ({posts}) => {
     }
 
     return (
-        <div className={styles.posts}>
-            {createMarkup()}
-        </div>
+        <section>
+            <h3 className={styles.header}>Наши новости</h3>
+            <div className={styles.posts}>
+                {createMarkup()}
+            </div>
+        </section>
     )
 };
 
