@@ -21,21 +21,14 @@ const Index = ({textList, advantagesList}) => {
 
     useEffect(() => {
         if (scroll.isScroll === navPaths.home) {
-            document.getElementById('anchor').scrollIntoView({
-                behavior: "smooth"
+            window.scrollTo({
+                top: scroll.cords,
+                behavior: 'smooth'
             })
             setScroll({
                 isScroll: '',
                 cords: null
             })
-        }
-
-        const node = localStorage.getItem(SCROLL_NODE);
-        if (node) {
-            document.getElementById(node).scrollIntoView({
-                behavior: "smooth"
-            });
-            localStorage.removeItem(SCROLL_NODE);
         }
 
 

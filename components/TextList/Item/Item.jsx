@@ -9,10 +9,9 @@ const Item = ({text, link}) => {
     const {setScroll} = useContext(ScrollContext);
 
     const handleClick = (e) => {
-        localStorage.setItem(SCROLL_NODE, e.target.id);
         setScroll({
             isScroll: navPaths.home,
-            cords: null
+            cords: window.scrollY
         })
     }
 

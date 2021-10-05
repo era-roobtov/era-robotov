@@ -9,7 +9,6 @@ const Form = () => {
     const [courses, setCourses] = useState('');
 
     async function handleSumbit(e) {
-        console.log('s')
         e.preventDefault();
 
         const json = {

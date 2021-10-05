@@ -14,27 +14,25 @@ const Course = ({index, id, title, logo, description, clip, asPath}) => {
   const addClasses = isOdd ? clip + ' ' + styles.colored : styles.uncolored;
 
   const handleClick = (e) => {
-    let cur = e.target;
-    let res = null;
-    let final = false;
-    while(!final) {
-      cur.classList.forEach((classItem) => {
-        if (classItem.toLowerCase().includes('layout')) {
-          final = true;
-        }
-      })
-
-      if (!final) {
-        res = cur;
-        cur = cur.parentNode;
-      }
-    }
-    console.log('COURSE');
-    localStorage.setItem(SCROLL_NODE, cur.id);
+    // let cur = e.target;
+    // let res = null;
+    // let final = false;
+    // while(!final) {
+    //   cur.classList.forEach((classItem) => {
+    //     if (classItem.toLowerCase().includes('layout')) {
+    //       final = true;
+    //     }
+    //   })
+    //
+    //   if (!final) {
+    //     res = cur;
+    //     cur = cur.parentNode;
+    //   }
+    // }
 
     setScroll({
       isScroll: navPaths.courses,
-      cords: res.offsetTop
+      cords: window.scrollY
     })
   }
 

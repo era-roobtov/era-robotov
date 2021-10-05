@@ -25,16 +25,6 @@ const Courses = ({courses}) => {
             });
         }
 
-        const node = localStorage.getItem(SCROLL_NODE);
-        if (node) {
-            document.getElementById(node).scrollIntoView({
-                behavior: "smooth"
-            });
-
-            localStorage.removeItem(SCROLL_NODE);
-        }
-
-
     }, [])
 
     return (
