@@ -116,6 +116,14 @@
   padding: 30px 16px 64px 16px;
 
   @media (min-width: 768px) {
-    padding: 60px 64px 60px 64px;
+    padding: 60px 260px 60px 146px;
+  }
+
+  @media (min-width: 992px) {
+    padding: 60px 260px 60px 116px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 60px 260px 60px 146px;
   }
 }
