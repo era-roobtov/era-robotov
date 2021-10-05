@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="23c62aac-87d1-4bbe-a2ed-c23d59aae260" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/components/InstaPosts/InstaPosts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/InstaPosts/InstaPosts.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/InstaPosts/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/instaConverter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/about.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/about.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Header/Header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/Header/Header.module.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +108,7 @@
       <workItem from="1633427657552" duration="3884000" />
       <workItem from="1633445388492" duration="1392000" />
       <workItem from="1633459451842" duration="326000" />
-      <workItem from="1633459811803" duration="715000" />
+      <workItem from="1633459811803" duration="924000" />
     </task>
     <servers />
   </component>

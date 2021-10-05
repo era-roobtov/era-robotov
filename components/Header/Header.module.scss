@@ -13,24 +13,25 @@ $duration: 400ms;
   left: 0;
   z-index: 10;
   min-height: 45px;
+  
+  &::after {
+    width: 60%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--bg-image-o);
+    clip-path: polygon(0px 10.13%, 44.23% 22.75%, 68.34% 67.5%, 0px 94.75%);
+  }
 
   @media (min-width: 992px) {
     min-height: 200px;
-  }
 
-  @media (min-width: 1440px) {
+    &::after {
+      width: 0;
+    }
   }
-
-  //&::after {
-  //  width: 60%;
-  //  height: 100%;
-  //  content: "";
-  //  position: absolute;
-  //  top: 0;
-  //  left: 0;
-  //  background-color: var(--bg-image-o);
-  //  clip-path: polygon(0px 10.13%, 44.23% 22.75%, 68.34% 67.5%, 0px 94.75%);
-  //}
 
   &::before {
     content: "";
