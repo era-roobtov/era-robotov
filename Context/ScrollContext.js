@@ -10,6 +10,11 @@ const ScrollContextProvider = ({children}) => {
     });
     const val = {scroll, setScroll};
 
+    useEffect(() => {
+        console.log('from context > ',scroll)
+    }, [scroll])
+
+
     return (
         <ScrollContext.Provider value={val}>
             {children}
