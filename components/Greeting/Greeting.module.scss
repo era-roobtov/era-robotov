@@ -51,6 +51,7 @@
       "h-btn h-btn";
     gap: 40px;
   }
+
 }
 
 .helloWithOutBtn {
@@ -85,6 +86,10 @@
     grid-template-areas:
       "h-head h-head"
       "h-text h-text";
+  }
+
+  @media (min-width: 992px) {
+    padding-bottom: 52px;
   }
 }
 
