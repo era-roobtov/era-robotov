@@ -1,18 +1,13 @@
 import Link from "next/link";
 import styles from "./Item.module.scss";
 import PropTypes from "prop-types";
-import {useContext} from "react";
-import {SCROLL_NODE, ScrollContext} from "../../../Context/ScrollContext";
 import navPaths from "@/utils/paths";
+import CustomLocalStorage from "@/utils/localStorage";
 
 const Item = ({text, link}) => {
-    const {setScroll} = useContext(ScrollContext);
 
     const handleClick = (e) => {
-        setScroll({
-            isScroll: navPaths.home,
-            cords: window.scrollY
-        })
+        CustomLocalStorage.loadScroll(navPaths.home, window.scrollY);
     }
 
     return <Link href={link}>

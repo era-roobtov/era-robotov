@@ -9,6 +9,7 @@ import Footer from '@/components/Footer/Footer';
 import {CLIP_BLUE, CLIP_ORANGE, SHIFT_DOUBLE, SHIFT_SINGLE,} from '@/utils/globalStyles';
 import navPaths from "@/utils/paths";
 import {SCROLL_NODE, ScrollContext} from "../Context/ScrollContext";
+import CustomLocalStorage from "@/utils/localStorage";
 
 const Index = ({textList, advantagesList}) => {
     const {scroll, setScroll} = useContext(ScrollContext);
@@ -20,18 +21,16 @@ const Index = ({textList, advantagesList}) => {
     ]
 
     useEffect(() => {
-        if (scroll.isScroll === navPaths.home) {
+        const savedScroll = CustomLocalStorage.getScroll();
+
+        if (savedScroll && savedScroll.url === navPaths.home) {
             window.scrollTo({
-                top: scroll.cords,
+                top: savedScroll.offset,
                 behavior: 'smooth'
-            })
-            setScroll({
-                isScroll: '',
-                cords: null
-            })
+            });
+
+            CustomLocalStorage.clearScroll();
         }
-
-
     }, [])
 
     return (

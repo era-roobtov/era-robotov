@@ -6,6 +6,7 @@ import OutlineButton from '@/components/Buttons/OutlineButton';
 import navPaths from '@/utils/paths';
 import {useContext} from "react";
 import {SCROLL_NODE, ScrollContext} from "../../Context/ScrollContext";
+import CustomLocalStorage from "@/utils/localStorage";
 
 const Course = ({index, id, title, logo, description, clip, asPath}) => {
   const {setScroll} = useContext(ScrollContext);
@@ -14,26 +15,7 @@ const Course = ({index, id, title, logo, description, clip, asPath}) => {
   const addClasses = isOdd ? clip + ' ' + styles.colored : styles.uncolored;
 
   const handleClick = (e) => {
-    // let cur = e.target;
-    // let res = null;
-    // let final = false;
-    // while(!final) {
-    //   cur.classList.forEach((classItem) => {
-    //     if (classItem.toLowerCase().includes('layout')) {
-    //       final = true;
-    //     }
-    //   })
-    //
-    //   if (!final) {
-    //     res = cur;
-    //     cur = cur.parentNode;
-    //   }
-    // }
-
-    setScroll({
-      isScroll: navPaths.courses,
-      cords: window.scrollY
-    })
+    CustomLocalStorage.loadScroll(navPaths.courses, window.scrollY);
   }
 
   return (

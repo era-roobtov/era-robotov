@@ -7,24 +7,22 @@ import Footer from '@/components/Footer';
 import {CLIP_BLUE, CLIP_BLUE_REVERSE} from '@/utils/globalStyles';
 import {SCROLL_NODE, ScrollContext} from "../Context/ScrollContext";
 import navPaths from "@/utils/paths";
+import CustomLocalStorage from "@/utils/localStorage";
 
 const Courses = ({courses}) => {
-    const {scroll, setScroll} = useContext(ScrollContext);
     let reverseClip = true;
 
     useEffect(() => {
-        if (scroll.isScroll === navPaths.courses) {
+        const savedScroll = CustomLocalStorage.getScroll();
+
+        if (savedScroll && savedScroll.url === navPaths.courses) {
             window.scrollTo({
-                top: scroll.cords,
+                top: savedScroll.offset,
                 behavior: 'smooth'
             });
 
-            return setScroll({
-                isScroll: '',
-                cords: null
-            });
+            CustomLocalStorage.clearScroll();
         }
-
     }, [])
 
     return (
