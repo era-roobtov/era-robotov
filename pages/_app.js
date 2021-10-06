@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import "./style.scss";
-import ScrollContextProvider, {ScrollContext} from "../Context/ScrollContext";
+import ScrollContextProvider from "../Context/ScrollContext";
 
 function MyApp({Component, pageProps}) {
     return <>

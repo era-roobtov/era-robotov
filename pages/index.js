@@ -8,11 +8,9 @@ import Advantages from '@/components/Advantages/Advantages';
 import Footer from '@/components/Footer/Footer';
 import {CLIP_BLUE, CLIP_ORANGE, SHIFT_DOUBLE, SHIFT_SINGLE,} from '@/utils/globalStyles';
 import navPaths from "@/utils/paths";
-import {SCROLL_NODE, ScrollContext} from "../Context/ScrollContext";
 import CustomLocalStorage from "@/utils/localStorage";
 
 const Index = ({textList, advantagesList}) => {
-    const {scroll, setScroll} = useContext(ScrollContext);
     const str = [
         <span className={styles.sub}>
             <p className={styles.sub__paragraph_main}>Место погружения в мир инновационных технологий</p>
@@ -21,6 +19,10 @@ const Index = ({textList, advantagesList}) => {
     ]
 
     useEffect(() => {
+        window.onbeforeunload = function () {
+            CustomLocalStorage.clearScroll();
+        };
+
         const savedScroll = CustomLocalStorage.getScroll();
 
         if (savedScroll && savedScroll.url === navPaths.home) {
