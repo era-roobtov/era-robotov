@@ -19,10 +19,6 @@ const Index = ({textList, advantagesList}) => {
     ]
 
     useEffect(() => {
-        window.onbeforeunload = function () {
-            CustomLocalStorage.clearScroll();
-        };
-
         const savedScroll = CustomLocalStorage.getScroll();
 
         if (savedScroll && savedScroll.url === navPaths.home) {
