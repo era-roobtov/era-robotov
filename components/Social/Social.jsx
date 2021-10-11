@@ -1,6 +1,6 @@
 import {instagramSvg, vkSVG} from '@/utils/svgPaths';
-import styles from './Social.module.scss';
 import Link from "next/link";
+import styles from './Social.module.scss';
 
 const socialItems = [
     {

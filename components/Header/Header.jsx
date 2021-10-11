@@ -5,7 +5,7 @@ import styles from "./Header.module.scss";
 import PropTypes from "prop-types";
 
 const Header = ({burger, handler}) => {
-    const {about, contact, courses, home} = navPaths;
+    const {about, contact, courses, home, news} = navPaths;
     let burgerStyle = "";
 
     switch (burger) {
@@ -52,6 +52,11 @@ const Header = ({burger, handler}) => {
                     <li className={styles.list__item}>
                         <Link href={contact}>
                             <a className={styles.list__item__text}>Контакты</a>
+                        </Link>
+                    </li>
+                    <li className={styles.list__item}>
+                        <Link href={news}>
+                            <a className={styles.list__item__text}>Новости</a>
                         </Link>
                     </li>
                 </ul>

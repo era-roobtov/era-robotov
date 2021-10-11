@@ -5,7 +5,6 @@ import styles from '@/assets/courses.module.scss';
 import Layout from '@/components/Layout/Layout';
 import Footer from '@/components/Footer';
 import {CLIP_BLUE, CLIP_BLUE_REVERSE} from '@/utils/globalStyles';
-import {SCROLL_NODE, ScrollContext} from "../Context/ScrollContext";
 import navPaths from "@/utils/paths";
 import CustomLocalStorage from "@/utils/localStorage";
 
