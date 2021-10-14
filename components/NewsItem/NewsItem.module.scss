@@ -1,26 +1,36 @@
 .blue {
-  border-radius: 15px 15px 40px 40px;
   background-color: var(--bg-image-b);
 }
 
 .orange {
-  border-radius: 15px 15px 40px 40px;
   background-color: var(--bg-image-o);
 }
 
 .item {
+  border-radius: 15px 15px 40px 40px;
   color: var(--txt-white);
-  display: grid;
-  gap: 8px;
   height: 100%;
 
+  @media (min-width: 992px) {
+    display: grid;
+    grid-template-areas: 'n-img n-text';
+    border-radius: 40px;
+  }
+
   &__img {
+    grid-area: n-img;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     width: 100%;
+
+    @media (min-width: 992px) {
+      height: 100%;
+      border-radius: 15px 0 0 15px;
+    }
   }
 
   &__text {
+    grid-area: n-text;
     padding: 12px;
     font-family: "RobotoLight", "Roboto", sans-serif;
     font-style: normal;
@@ -28,14 +38,13 @@
     font-size: 14px;
     line-height: 120%;
     margin-bottom: 16px;
-    text-align: center;
 
     @media (min-width: 768px) {
       font-size: 20px;
     }
 
     @media (min-width: 992px) {
-      font-size: 24px;
+      margin-bottom: 0;
     }
 
   }

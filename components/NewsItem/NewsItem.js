@@ -4,25 +4,26 @@ import Link from "next/link";
 import styles from './NewsItem.module.scss';
 
 const NewsItem = ({imgPath, text, color, link}) => {
-    const classes = `${styles.item} ${color === BLUE ? styles.blue : styles.orange}`
+  const classes = `${styles.item} ${color === BLUE ? styles.blue : styles.orange}`
 
-    return <article className={color === BLUE ? styles.blue : styles.orange}>
-        <Link href={link}>
-            <a className={styles.item} target="_blank">
-                <img className={styles.item__img} src={imgPath} alt="Картинка"/>
-                <p className={styles.item__text}>
-                    {text}
-                </p>
-            </a>
-        </Link>
-    </article>
+  return <article className={classes}>
+    <Link href={link}>
+      <a target="_blank">
+        <img className={styles.item__img} src={imgPath} alt="Картинка"/>
+      </a>
+    </Link>
+    <p className={styles.item__text}>
+      {text}
+    </p>
+
+  </article>
 }
 
 NewsItem.propTypes = {
-    imgPath: PropTypes.string.isRequired,
-    text: PropTypes.string.isRequired,
-    color: PropTypes.string.isRequired,
-    link: PropTypes.string.isRequired
+  imgPath: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+  color: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired
 }
 
 export default NewsItem;
