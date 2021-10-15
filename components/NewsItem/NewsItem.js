@@ -5,7 +5,7 @@ import styles from './NewsItem.module.scss';
 
 const NewsItem = ({imgPath, text, color, link}) => {
   const classes = `${styles.item} ${color === BLUE ? styles.blue : styles.orange}`
-
+  console.log(text.split('\n'));
   return <article className={classes}>
     <Link href={link}>
       <a target="_blank">
@@ -13,7 +13,15 @@ const NewsItem = ({imgPath, text, color, link}) => {
       </a>
     </Link>
     <p className={styles.item__text}>
-      {text}
+      {
+        text.split('\n').map((row) => {
+          if (row.length) {
+            return row;
+          } else {
+            return <br/>
+          }
+        })
+      }
     </p>
 
   </article>
