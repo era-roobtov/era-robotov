@@ -10,10 +10,12 @@
   border-radius: 15px 15px 40px 40px;
   color: var(--txt-white);
   height: 100%;
+  grid-template-areas: 'n-img' 'n-text';
 
   @media (min-width: 992px) {
     display: grid;
     grid-template-areas: 'n-img n-text';
+    grid-template-columns: 300px auto;
     border-radius: 40px;
   }
 
