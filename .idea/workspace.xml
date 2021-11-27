@@ -5,15 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="23c62aac-87d1-4bbe-a2ed-c23d59aae260" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/new_img/news/1_news.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/new_img/news/2_news.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/new_img/news/3_news.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/new_img/news/4_news.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/new_img/news/5_news.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/new_img/news/6_news.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/new_img/news/7_news.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/new_img/news/1_new_post.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/new_img/news/2_new_post.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/new_img/news/3_new_post.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/new_img/news/4_new_post.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/new_img/news/5_new_post.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/new_img/news/6_new_post.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/news.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/news.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/NewsItem/NewsItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/NewsItem/NewsItem.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/NewsItem/NewsItem.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/NewsItem/NewsItem.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/news.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/news.js" afterDir="false" />
     </list>
@@ -58,7 +58,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mfrsap" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -76,6 +76,23 @@
       <recent name="$PROJECT_DIR$/sections" />
       <recent name="$PROJECT_DIR$/pages/courses/[id]" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.dev" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -124,6 +141,7 @@
       <workItem from="1633957836358" duration="4269000" />
       <workItem from="1634203683001" duration="1448000" />
       <workItem from="1634301838476" duration="249000" />
+      <workItem from="1637979822465" duration="1133000" />
     </task>
     <servers />
   </component>

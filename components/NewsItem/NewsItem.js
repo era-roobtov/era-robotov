@@ -8,7 +8,7 @@ const NewsItem = ({imgPath, text, color, link}) => {
   console.log(text.split('\n'));
   return <article className={classes}>
     <Link href={link}>
-      <a target="_blank">
+      <a className={styles.item__link} target="_blank">
         <img className={styles.item__img} src={imgPath} alt="Картинка"/>
       </a>
     </Link>

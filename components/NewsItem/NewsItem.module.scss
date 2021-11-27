@@ -12,6 +12,10 @@
   height: 100%;
   grid-template-areas: 'n-img' 'n-text';
 
+  &__link {
+    height: 100%;
+  }
+
   @media (min-width: 992px) {
     display: grid;
     grid-template-areas: 'n-img n-text';
